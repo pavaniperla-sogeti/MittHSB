@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MittHSB]" guice-stage="DEVELOPMENT" verbose="10">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListner.ExtentRerportListener"/>
+  </listeners>
+  <test name="MittHSBMittUppdragPages(failed)">
+    <classes>
+      <class name="com.mitthsb.qa.testcases.HomePageTest">
+        <methods>
+          <include name="dokumentTabTest"/>
+          <include name="minProfilTabTest"/>
+          <include name="sokBostadTabTest"/>
+          <include name="tearDown"/>
+          <include name="mittUpdragLinkTest"/>
+          <include name="arendenAndFelanmalanPageTest"/>
+          <include name="bosparTabTest"/>
+          <include name="setUp"/>
+          <include name="brfFacklanPageTest"/>
+          <include name="adminTabTest"/>
+          <include name="clickMinaSidorLinkTest"/>
+          <include name="ekonomiTabTest"/>
+          <include name="fakturorDisplayTest"/>
+          <include name="homePageTitleTest"/>
+          <include name="medlemskapetTabTest"/>
+          <include name="minBostadTabTest"/>
+          <include name="validateMinaSidorlinkTest"/>
+          <include name="nyttLinkTest"/>
+          <include name="fastighetenTabTest"/>
+        </methods>
+      </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- MittHSBMittUppdragPages(failed) -->
+</suite> <!-- Failed suite [MittHSB] -->
