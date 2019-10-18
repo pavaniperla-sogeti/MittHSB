@@ -5,10 +5,15 @@
     <classes>
       <class name="com.mitthsb.qa.testcases.HomePageTest">
         <methods>
-          <include name="minBostadTabTest"/>
+          <include name="adminTabTest"/>
+          <include name="ekonomiTabTest"/>
+          <include name="dokumentTabTest"/>
+          <include name="fakturorDisplayTest"/>
+          <include name="homePageTitleTest"/>
           <include name="tearDown"/>
-          <include name="arendenAndFelanmalanPageTest"/>
+          <include name="nyttLinkTest"/>
           <include name="setUp"/>
+          <include name="fastighetenTabTest"/>
         </methods>
       </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->
     </classes>

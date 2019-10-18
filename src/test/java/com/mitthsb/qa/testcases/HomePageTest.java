@@ -70,23 +70,23 @@ public class HomePageTest extends TestBase{
 	}
 	
 	
-	@Test(priority=2)
-	public void mittUpdragLinkTest() {
-		//if you want to tswitch the frame before checking any link 
-		//testUtil.switchToFrame();
-		if(prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
-		boolean flag=homePage.validateMittUpdragLink();
-		softAssert.assertTrue(flag);
-		
-	}
-	
-	@Test(priority=3)
-	public void validateMinaSidorlinkTest() {
-		boolean flag=homePage.validateMinaSidorLink();
-		softAssert.assertTrue(flag);
-		
-	}
+//	@Test(priority=2)
+//	public void mittUpdragLinkTest() {
+//		//if you want to tswitch the frame before checking any link 
+//		//testUtil.switchToFrame();
+//		if(prop.getProperty("role").equals("Grund"))
+//			throw new SkipException("Skipping this exception");
+//		boolean flag=homePage.validateMittUpdragLink();
+//		softAssert.assertTrue(flag);
+//		
+//	}
+//	
+//	@Test(priority=3)
+//	public void validateMinaSidorlinkTest() {
+//		boolean flag=homePage.validateMinaSidorLink();
+//		softAssert.assertTrue(flag);
+//		
+//	}
 	
 	@Test(priority=4)
 	public void nyttLinkTest() {
@@ -151,116 +151,99 @@ public class HomePageTest extends TestBase{
 		
 	}
 	
-	@Test(priority=11)
-	public void clickMinaSidorLinkTest() {
-		if(prop.getProperty("role").equals("Grund"))
-				Assert.assertTrue(true);
-		else
-			MinaSidorPage=homePage.minaSidorLink();
-			
-		
-	}
-	
-
-	
-	//Minasidor methods if login user is only have access to private page
-	
-//@Test(priority=12)
-//	
-//	public void brfFacklanPageTest() {
+//	@Test(priority=11)
+//	public void clickMinaSidorLinkTest() {
 //		if(prop.getProperty("role").equals("Grund"))
-//			BrfFacklanPage=homePage.BrfFacklanTab();
-//		//System.out.println("insideif");}
+//				Assert.assertTrue(true);
 //		else
-//		{
-//			//System.out.println("inside else");
 //			MinaSidorPage=homePage.minaSidorLink();
-//		MinaSidorPage.BrfFacklanTab();
+//			
+//		
+//	}
+//	
+//
+//
+//
+//@Test(priority=13)
+//
+//public void arendenAndFelanmalanPageTest() {
+//	if(prop.getProperty("role").equals("Grund"))
+//		ArendenAndFelanmalanPage=homePage.arendenAndFelanmalanTab();
+//	else {
+//		MinaSidorPage=homePage.minaSidorLink();
+//	MinaSidorPage.arendenAndFelanmalanTab();
+//	}
+//	
+//}
+//	
+//	@Test(priority=14)
+//	public void minBostadTabTest() {
+//		if(prop.getProperty("role").equals("Grund"))
+//				MinBostadPage=homePage.MinBostadTab();
+//		else {
+//			MinaSidorPage=homePage.minaSidorLink();
+//		MinaSidorPage.MinBostadTab();
+//	}
+//		
+//	}
+//	
+//	@Test(priority=15)
+//	public void bosparTabTest() {
+//		if(prop.getProperty("role").equals("Grund"))
+//				BosparPage=homePage.BosparTab();
+//		else {
+//			MinaSidorPage=homePage.minaSidorLink();
+//		MinaSidorPage.BosparTab();
+//		
+//	}
+//	}
+//	
+//	@Test(priority=16)
+//	public void medlemskapetTabTest() {
+//		if(prop.getProperty("role").equals("Grund"))
+//					MedlemskapetPage=homePage.MedlemskapetTab();
+//		else {
+//			MinaSidorPage=homePage.minaSidorLink();
+//		MinaSidorPage.MedlemskapetTab();
+//		
+//		}
+//	}
+//	
+//
+//	@Test(priority=17)
+//	public void sokBostadTabTest() {
+//		if(prop.getProperty("role").equals("Grund"))
+//					SokBostadPage=homePage.SokBostadTab();
+//		
+//		else {
+//			MinaSidorPage=homePage.minaSidorLink();
+//		MinaSidorPage.SokBostadTab();
 //		}
 //		
-//		
 //	}
-
-@Test(priority=13)
-
-public void arendenAndFelanmalanPageTest() {
-	if(prop.getProperty("role").equals("Grund"))
-		ArendenAndFelanmalanPage=homePage.arendenAndFelanmalanTab();
-	else {
-		MinaSidorPage=homePage.minaSidorLink();
-	MinaSidorPage.arendenAndFelanmalanTab();
-	}
-	
-}
-	
-	@Test(priority=14)
-	public void minBostadTabTest() {
-		if(prop.getProperty("role").equals("Grund"))
-				MinBostadPage=homePage.MinBostadTab();
-		else {
-			MinaSidorPage=homePage.minaSidorLink();
-		MinaSidorPage.MinBostadTab();
-	}
-		
-	}
-	
-	@Test(priority=15)
-	public void bosparTabTest() {
-		if(prop.getProperty("role").equals("Grund"))
-				BosparPage=homePage.BosparTab();
-		else {
-			MinaSidorPage=homePage.minaSidorLink();
-		MinaSidorPage.BosparTab();
-		
-	}
-	}
-	
-	@Test(priority=16)
-	public void medlemskapetTabTest() {
-		if(prop.getProperty("role").equals("Grund"))
-					MedlemskapetPage=homePage.MedlemskapetTab();
-		else {
-			MinaSidorPage=homePage.minaSidorLink();
-		MinaSidorPage.MedlemskapetTab();
-		
-		}
-	}
-	
-
-	@Test(priority=17)
-	public void sokBostadTabTest() {
-		if(prop.getProperty("role").equals("Grund"))
-					SokBostadPage=homePage.SokBostadTab();
-		
-		else {
-			MinaSidorPage=homePage.minaSidorLink();
-		MinaSidorPage.SokBostadTab();
-		}
-		
-	}
-	
-	@Test(priority=18)
-	public void minProfilTabTest() {
-		if(prop.getProperty("role").equals("Grund"))
-			MinProfilPage=homePage.MinProfilTab();
-		
-		else {
-			MinaSidorPage=homePage.minaSidorLink();
-		MinaSidorPage.MinProfilTab();
-	}
-		
-	}
-
-//	@Test(priority=19)
-//	public void HomePageBrokenLinksTest()
 //	
-//	{
+//	@Test(priority=18)
+//	public void minProfilTabTest() {
+//		if(prop.getProperty("role").equals("Grund"))
+//			MinProfilPage=homePage.MinProfilTab();
 //		
-//			int Brokencount=TestUtil.BrokenLinks();
-//			Assert.assertFalse(Brokencount>0);
-//		
+//		else {
+//			MinaSidorPage=homePage.minaSidorLink();
+//		MinaSidorPage.MinProfilTab();
 //	}
 //		
+//	}
+//
+////	@Test(priority=19)
+////	public void HomePageBrokenLinksTest()
+////	
+////	{
+////		
+////			int Brokencount=TestUtil.BrokenLinks();
+////			Assert.assertFalse(Brokencount>0);
+////		
+////	}
+////		
 
 	@AfterTest
 	public void tearDown() {
