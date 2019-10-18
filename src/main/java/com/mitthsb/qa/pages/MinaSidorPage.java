@@ -82,7 +82,7 @@ public class MinaSidorPage extends TestBase {
 
 			arendenTab.click();
 
-			 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
+			// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
 
 			return new ArendenAndFelanmalanPage();
 
@@ -92,7 +92,7 @@ public class MinaSidorPage extends TestBase {
 
 			minBostadTab.click();
 
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
+			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
 
 			return new MinBostadPage();
 
