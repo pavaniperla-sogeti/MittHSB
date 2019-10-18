@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MittHSB]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListner.ExtentRerportListener"/>
+  </listeners>
+  <test name="MittHSBMittUppdragPages(failed)">
+    <classes>
+      <class name="com.mitthsb.qa.testcases.HomePageTest">
+        <methods>
+          <include name="adminTabTest"/>
+          <include name="ekonomiTabTest"/>
+          <include name="dokumentTabTest"/>
+          <include name="fakturorDisplayTest"/>
+          <include name="homePageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="nyttLinkTest"/>
+          <include name="setUp"/>
+          <include name="fastighetenTabTest"/>
+        </methods>
+      </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->
+      <class name="com.mitthsb.qa.testcases.dummy">
+        <methods>
+          <include name="dummyTest"/>
+        </methods>
+      </class> <!-- com.mitthsb.qa.testcases.dummy -->
+    </classes>
+  </test> <!-- MittHSBMittUppdragPages(failed) -->
+</suite> <!-- Failed suite [MittHSB] -->

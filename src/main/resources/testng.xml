@@ -12,6 +12,7 @@
 			<classes>			
 			 <!--<class name="com.mitthsb.qa.testcases.LoginPageTest" />-->
 			<class name="com.mitthsb.qa.testcases.HomePageTest" />
+			<class name="com.mitthsb.qa.testcases.dummy" />
 		<!--	<class name="com.mitthsb.qa.testcases.EkonomiPageTest" /> -->
 		</classes>
 	</test>

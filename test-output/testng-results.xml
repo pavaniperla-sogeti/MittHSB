@@ -1,49 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-18T10:04:48Z" name="Default suite" finished-at="2019-10-18T10:05:11Z" duration-ms="23125">
+  <suite started-at="2019-10-18T12:24:05Z" name="MittHSB" finished-at="2019-10-18T12:24:33Z" duration-ms="27520">
     <groups>
     </groups>
-    <test started-at="2019-10-18T10:04:48Z" name="Default test" finished-at="2019-10-18T10:05:11Z" duration-ms="23125">
+    <test started-at="2019-10-18T12:24:05Z" name="MittHSBMittUppdragPages" finished-at="2019-10-18T12:24:33Z" duration-ms="27520">
+      <class name="com.mitthsb.qa.testcases.dummy">
+        <test-method signature="dummyTest()[pri:1, instance:com.mitthsb.qa.testcases.dummy@693fe6c9]" started-at="2019-10-18T14:24:24Z" name="dummyTest" finished-at="2019-10-18T14:24:24Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dummyTest -->
+      </class> <!-- com.mitthsb.qa.testcases.dummy -->
       <class name="com.mitthsb.qa.testcases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@be35cd9]" started-at="2019-10-18T12:04:48Z" name="setUp" finished-at="2019-10-18T12:05:05Z" duration-ms="16376" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@649bec2e]" started-at="2019-10-18T14:24:05Z" name="setUp" finished-at="2019-10-18T14:24:24Z" duration-ms="18761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="homePageTitleTest()[pri:1, instance:com.mitthsb.qa.testcases.HomePageTest@be35cd9]" started-at="2019-10-18T12:05:05Z" name="homePageTitleTest" finished-at="2019-10-18T12:05:05Z" duration-ms="68" status="PASS">
+        <test-method signature="homePageTitleTest()[pri:1, instance:com.mitthsb.qa.testcases.HomePageTest@649bec2e]" started-at="2019-10-18T14:24:24Z" name="homePageTitleTest" finished-at="2019-10-18T14:24:24Z" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method signature="nyttLinkTest()[pri:4, instance:com.mitthsb.qa.testcases.HomePageTest@be35cd9]" started-at="2019-10-18T12:05:05Z" name="nyttLinkTest" finished-at="2019-10-18T12:05:05Z" duration-ms="50" status="PASS">
+        <test-method signature="nyttLinkTest()[pri:4, instance:com.mitthsb.qa.testcases.HomePageTest@649bec2e]" started-at="2019-10-18T14:24:24Z" name="nyttLinkTest" finished-at="2019-10-18T14:24:24Z" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nyttLinkTest -->
-        <test-method signature="fakturorDisplayTest()[pri:5, instance:com.mitthsb.qa.testcases.HomePageTest@be35cd9]" started-at="2019-10-18T12:05:05Z" name="fakturorDisplayTest" finished-at="2019-10-18T12:05:05Z" duration-ms="39" status="PASS">
+        <test-method signature="fakturorDisplayTest()[pri:5, instance:com.mitthsb.qa.testcases.HomePageTest@649bec2e]" started-at="2019-10-18T14:24:24Z" name="fakturorDisplayTest" finished-at="2019-10-18T14:24:24Z" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fakturorDisplayTest -->
-        <test-method signature="adminTabTest()[pri:7, instance:com.mitthsb.qa.testcases.HomePageTest@be35cd9]" started-at="2019-10-18T12:05:05Z" name="adminTabTest" finished-at="2019-10-18T12:05:07Z" duration-ms="2253" status="PASS">
+        <test-method signature="adminTabTest()[pri:7, instance:com.mitthsb.qa.testcases.HomePageTest@649bec2e]" started-at="2019-10-18T14:24:24Z" name="adminTabTest" finished-at="2019-10-18T14:24:26Z" duration-ms="1953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminTabTest -->
-        <test-method signature="fastighetenTabTest()[pri:8, instance:com.mitthsb.qa.testcases.HomePageTest@be35cd9]" started-at="2019-10-18T12:05:07Z" name="fastighetenTabTest" finished-at="2019-10-18T12:05:08Z" duration-ms="917" status="PASS">
+        <test-method signature="fastighetenTabTest()[pri:8, instance:com.mitthsb.qa.testcases.HomePageTest@649bec2e]" started-at="2019-10-18T14:24:26Z" name="fastighetenTabTest" finished-at="2019-10-18T14:24:28Z" duration-ms="1786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fastighetenTabTest -->
-        <test-method signature="dokumentTabTest()[pri:9, instance:com.mitthsb.qa.testcases.HomePageTest@be35cd9]" started-at="2019-10-18T12:05:08Z" name="dokumentTabTest" finished-at="2019-10-18T12:05:09Z" duration-ms="476" status="PASS">
+        <test-method signature="dokumentTabTest()[pri:9, instance:com.mitthsb.qa.testcases.HomePageTest@649bec2e]" started-at="2019-10-18T14:24:28Z" name="dokumentTabTest" finished-at="2019-10-18T14:24:28Z" duration-ms="487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dokumentTabTest -->
-        <test-method signature="ekonomiTabTest()[pri:10, instance:com.mitthsb.qa.testcases.HomePageTest@be35cd9]" started-at="2019-10-18T12:05:09Z" name="ekonomiTabTest" finished-at="2019-10-18T12:05:10Z" duration-ms="1969" status="PASS">
+        <test-method signature="ekonomiTabTest()[pri:10, instance:com.mitthsb.qa.testcases.HomePageTest@649bec2e]" started-at="2019-10-18T14:24:28Z" name="ekonomiTabTest" finished-at="2019-10-18T14:24:32Z" duration-ms="3383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ekonomiTabTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@be35cd9]" started-at="2019-10-18T12:05:11Z" name="tearDown" finished-at="2019-10-18T12:05:11Z" duration-ms="860" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@649bec2e]" started-at="2019-10-18T14:24:32Z" name="tearDown" finished-at="2019-10-18T14:24:33Z" duration-ms="919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- MittHSBMittUppdragPages -->
+  </suite> <!-- MittHSB -->
 </testng-results>
