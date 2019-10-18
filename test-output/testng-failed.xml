@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test(failed)">
+<suite name="Failed suite [MittHSB]" guice-stage="DEVELOPMENT" verbose="10">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListner.ExtentRerportListener"/>
+  </listeners>
+  <test name="MittHSBMittUppdragPages(failed)">
     <classes>
-      <class name="com.mitthsb.qa.testcases.LoginPageTest">
+      <class name="com.mitthsb.qa.testcases.HomePageTest">
         <methods>
-          <include name="setUp"/>
+          <include name="minBostadTabTest"/>
           <include name="tearDown"/>
-          <include name="loginBasedonHashMap" invocation-numbers="1"/>
+          <include name="arendenAndFelanmalanPageTest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.mitthsb.qa.testcases.LoginPageTest -->
+      </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- MittHSBMittUppdragPages(failed) -->
+</suite> <!-- Failed suite [MittHSB] -->

@@ -8,25 +8,10 @@
     <classes>
       <class name="com.mitthsb.qa.testcases.HomePageTest">
         <methods>
-          <include name="dokumentTabTest"/>
-          <include name="minProfilTabTest"/>
-          <include name="sokBostadTabTest"/>
-          <include name="tearDown"/>
-          <include name="mittUpdragLinkTest"/>
-          <include name="arendenAndFelanmalanPageTest"/>
-          <include name="bosparTabTest"/>
-          <include name="setUp"/>
-          <include name="brfFacklanPageTest"/>
-          <include name="adminTabTest"/>
-          <include name="clickMinaSidorLinkTest"/>
-          <include name="ekonomiTabTest"/>
-          <include name="fakturorDisplayTest"/>
-          <include name="homePageTitleTest"/>
-          <include name="medlemskapetTabTest"/>
           <include name="minBostadTabTest"/>
-          <include name="validateMinaSidorlinkTest"/>
-          <include name="nyttLinkTest"/>
-          <include name="fastighetenTabTest"/>
+          <include name="tearDown"/>
+          <include name="arendenAndFelanmalanPageTest"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->
     </classes>

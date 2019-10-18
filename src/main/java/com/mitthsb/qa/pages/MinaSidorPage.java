@@ -14,7 +14,7 @@ public class MinaSidorPage extends TestBase {
 		@FindBy(linkText = "Brf Facklan")
 		WebElement brfFacklanTab;
 		
-		@FindBy(linkText = "Ärenden & felanmälan")
+		@FindBy(xpath = "//a[contains(@class,'mn-btn')][contains(text(),'felanm')]")
 		WebElement arendenTab;
 
 		@FindBy(linkText = "Min Bostad")
@@ -26,7 +26,7 @@ public class MinaSidorPage extends TestBase {
 		@FindBy(linkText = "Medlemskapet")
 		WebElement medlemskapTab;
 
-		@FindBy(linkText = "Sök bostad")
+		@FindBy(xpath = "//a[contains(@class,'mn-btn')][contains(text(),'S�k bostad')]")
 		WebElement sokBostadTab;
 		
 		@FindBy(linkText = "Min profil")

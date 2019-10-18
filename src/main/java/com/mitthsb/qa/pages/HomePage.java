@@ -55,10 +55,10 @@ public class HomePage extends TestBase {
 	@FindBy(linkText = "Brf Facklan")
 	WebElement brfFacklanTab;
 	
-	@FindBy(partialLinkText = "felanm")
+	@FindBy(xpath = "//a[contains(@class,'mn-btn')][contains(text(),'felanm')]")
 	WebElement arendenTab;
 
-	@FindBy(linkText = "Min Bostad")
+	@FindBy(xpath = "//a[contains(@class,'mn-btn')][contains(text(),'Min Bostad')]")
 	WebElement minBostadTab;
 
 	@FindBy(linkText = "Bospar")

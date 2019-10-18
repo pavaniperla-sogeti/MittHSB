@@ -40,7 +40,8 @@ public class TestUtil extends TestBase{
 	//public static long PAGE_LOAD_TIMEOUT=20;
 	public static  long IMPLICIT_WAIT=20;
 	
-	public static String TESTDATA_SHEET_PATH = "C:/Users/pperla/eclipse-workspace/MittHSBTest/src/main/java/com/mitthsb/qa/testdata/data.xlsx";
+	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir")+ "/src/main/java/com/mitthsb/qa/testdata/data.xlsx";
+			//"C:/Users/pperla/eclipse-workspace/MittHSBTest/src/main/java/com/mitthsb/qa/testdata/data.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;
