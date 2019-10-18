@@ -70,23 +70,23 @@ public class HomePageTest extends TestBase{
 	}
 	
 	
-//	@Test(priority=2)
-//	public void mittUpdragLinkTest() {
-//		//if you want to tswitch the frame before checking any link 
-//		//testUtil.switchToFrame();
-//		if(prop.getProperty("role").equals("Grund"))
-//			throw new SkipException("Skipping this exception");
-//		boolean flag=homePage.validateMittUpdragLink();
-//		softAssert.assertTrue(flag);
-//		
-//	}
-//	
-//	@Test(priority=3)
-//	public void validateMinaSidorlinkTest() {
-//		boolean flag=homePage.validateMinaSidorLink();
-//		softAssert.assertTrue(flag);
-//		
-//	}
+	@Test(priority=2)
+	public void mittUpdragLinkTest() {
+		//if you want to tswitch the frame before checking any link 
+		//testUtil.switchToFrame();
+		if(prop.getProperty("role").equals("Grund"))
+			throw new SkipException("Skipping this exception");
+		boolean flag=homePage.validateMittUpdragLink();
+		softAssert.assertTrue(flag);
+		
+	}
+	
+	@Test(priority=3)
+	public void validateMinaSidorlinkTest() {
+		boolean flag=homePage.validateMinaSidorLink();
+		softAssert.assertTrue(flag);
+		
+	}
 	
 	@Test(priority=4)
 	public void nyttLinkTest() {
