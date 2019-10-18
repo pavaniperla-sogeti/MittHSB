@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.mitthsb.qa.testcases.LoginPageTest">
+      <class name="com.mitthsb.qa.testcases.HomePageTest">
         <methods>
-          <include name="setUp"/>
+          <include name="minBostadTabTest"/>
           <include name="tearDown"/>
-          <include name="loginBasedonHashMap" invocation-numbers="1"/>
+          <include name="arendenAndFelanmalanPageTest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.mitthsb.qa.testcases.LoginPageTest -->
+      </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
