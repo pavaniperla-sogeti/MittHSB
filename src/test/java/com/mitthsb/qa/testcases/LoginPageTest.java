@@ -94,7 +94,9 @@ public class LoginPageTest extends TestBase {
 	// reading data from json use this data provider.
 	@DataProvider
 	public Object[][] getTestDataForLoginfromJson() throws IOException, ParseException {
-		return TestUtil.getJSONdata("C:\\Users\\pperla\\eclipse-workspace\\MittHSBTest\\src\\main\\java\\com\\mitthsb\\qa\\testdata\\LoginFile.json", "Login Data",3);
+		return TestUtil.getJSONdata(System.getProperty("user.dir")+ "/src/main/java/com/mitthsb/qa/testdata/LoginFile.json", "Login Data",3);
+		
+		
 		
 			}
 	
