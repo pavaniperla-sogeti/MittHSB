@@ -11,7 +11,7 @@ public class dummy extends TestBase{
 	public void dummyTest() {
 	//	String title=homePage.validateHomePageTitle();	
 		
-		System.out.println("dummy");
+		System.out.println("dummyjavascript");
 			
 		Assert.assertTrue(true);		
 		//softAssert.assertTrue(homePage.validateHomePageTitle(), "&#214;versikt");
