@@ -38,6 +38,7 @@ public class Loginpage extends TestBase {
 	public Loginpage() {
 
 		// to initialize page factory /object repository objects
+		System.out.println("loginpage constructor");
 
 		PageFactory.initElements(driver, this);
 	}
@@ -63,10 +64,20 @@ public class Loginpage extends TestBase {
 
 	public HomePage login(String un, String pwd, String role) {
 
-		username.sendKeys(un);
+		try {
+			username.sendKeys(un);			
+			Thread.sleep(2000);
+			
+			password.sendKeys(pwd);
+			Thread.sleep(2000);
 
-		password.sendKeys(pwd);
-		loginBtn.click();
+			loginBtn.click();
+			Thread.sleep(2000);
+			
+		} catch (InterruptedException | NoSuchElementException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		// try {
 		if (role.equals("Grund"))

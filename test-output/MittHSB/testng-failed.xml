@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [MittHSB]" guice-stage="DEVELOPMENT" verbose="10">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [MittHSB]">
   <listeners>
     <listener class-name="com.qa.ExtentReportListner.ExtentRerportListener"/>
   </listeners>
@@ -8,9 +8,9 @@
     <classes>
       <class name="com.mitthsb.qa.testcases.HomePageTest">
         <methods>
-          <include name="minBostadTabTest"/>
+          <include name="ekonomiTabTest"/>
           <include name="tearDown"/>
-          <include name="arendenAndFelanmalanPageTest"/>
+          <include name="ekonomiOversiktGraphTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->

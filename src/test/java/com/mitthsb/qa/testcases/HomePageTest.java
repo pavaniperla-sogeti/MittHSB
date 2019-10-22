@@ -1,8 +1,11 @@
 package com.mitthsb.qa.testcases;
+import java.lang.reflect.Method;
 
-import org.testng.Assert;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.testng.SkipException;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -21,6 +24,7 @@ import com.mitthsb.qa.pages.MedlemskapetPage;
 import com.mitthsb.qa.pages.MinBostadPage;
 import com.mitthsb.qa.pages.MinProfilPage;
 import com.mitthsb.qa.pages.MinaSidorPage;
+import com.mitthsb.qa.pages.NyttFranHSBPage;
 import com.mitthsb.qa.pages.SokBostadPage;
 import com.mitthsb.qa.util.TestUtil;
 
@@ -41,26 +45,30 @@ public class HomePageTest extends TestBase{
 	MinProfilPage MinProfilPage;
 	ArendenAndFelanmalanPage ArendenAndFelanmalanPage;
 	MinaSidorPage MinaSidorPage ;
+	NyttFranHSBPage NyttFranHSBPage;
 	SoftAssert softAssert=new SoftAssert();
 	
 	public HomePageTest() {
-		super();
+				super();
 		// to call testbase constructor to execute prop
 
 	}
 	
 	//testcases should be independent.. ideal is to close the browser afer every case and launched before the test case.
-	@BeforeTest
-	public void setUp() {
+	@BeforeMethod
+	public void setUp(Method method) throws StaleElementReferenceException {
+		
+		System.out.println("before intialization");
 
 		initialization();
+		System.out.println("class is"+this.getClass().getName()+"and method is"+method.getName());
 		loginPage = new Loginpage();
 		testUtil = new TestUtil();
 		homePage=loginPage.login(prop.getProperty("login"),prop.getProperty("pwd"),prop.getProperty("role"));
 
 	}
 	
-	@Test(priority=1)
+	@Test
 	public void homePageTitleTest() {
 		String title=homePage.validateHomePageTitle();		
 			
@@ -69,8 +77,38 @@ public class HomePageTest extends TestBase{
 		
 	}
 	
+	@Test
+	public void hsbLogoTest() {
+		
+		boolean flag=homePage.validateHSBLogoHomePage();
+		softAssert.assertTrue(flag);
+				
+		//softAssert.assertTrue(homePage.validateHomePageTitle(), "&#214;versikt");
+		
+	}
 	
-	@Test(priority=2)
+	@Test
+	public void stallIDinListaTest() {
+		
+		boolean flag=homePage.validateStallInDinLista();
+		softAssert.assertTrue(flag);
+				
+		//softAssert.assertTrue(homePage.validateHomePageTitle(), "&#214;versikt");
+		
+	}
+	
+	@Test
+	public void brfDisplayTest() {
+		
+		boolean flag=homePage.validateBrfDisplay();
+		softAssert.assertTrue(flag);
+				
+		//softAssert.assertTrue(homePage.validateHomePageTitle(), "&#214;versikt");
+		
+	}
+	
+	
+	@Test
 	public void mittUpdragLinkTest() {
 		//if you want to tswitch the frame before checking any link 
 		//testUtil.switchToFrame();
@@ -81,14 +119,14 @@ public class HomePageTest extends TestBase{
 		
 	}
 	
-	@Test(priority=3)
-	public void validateMinaSidorlinkTest() {
+	@Test
+	public void minaSidorlinkTest() {
 		boolean flag=homePage.validateMinaSidorLink();
 		softAssert.assertTrue(flag);
 		
 	}
 	
-	@Test(priority=4)
+	@Test
 	public void nyttLinkTest() {
 		boolean flag=homePage.validateNyttFranHsb();
 		//Assert.assertTrue(false);		
@@ -96,15 +134,93 @@ public class HomePageTest extends TestBase{
 		
 	}
 	
-	@Test(priority=5)
+	@Test
 	public void fakturorDisplayTest() {
 		if(prop.getProperty("role").equals("Grund"))
 			throw new SkipException("Skipping this exception");
-		boolean title=homePage.validateFakturorDisplay();
-		softAssert.assertEquals(title, "&#214;versikt");
+		boolean flag=homePage.validateFakturorDisplay();
+		softAssert.assertTrue(flag);
 		
 		
 	}
+	
+	@Test
+	public void goTillKalenderLinkTest() {
+		if(prop.getProperty("role").equals("Grund"))
+			throw new SkipException("Skipping this exception");
+		adminPage=homePage.goTillKalender();
+		
+		
+	}
+	
+	@Test
+	public void seAllaNyheterLinkTest() {
+		NyttFranHSBPage=homePage.validateSeAllaNyheter();
+		
+		
+	}
+	
+	@Test
+	public void nyheterArticleTest() {
+		NyttFranHSBPage=homePage.validateNyheterArticle();
+		
+		
+	}
+	
+	
+	@Test//for testing shortcuts functionalities to add or delete
+	public void genvagarLinkTest() {
+		if(prop.getProperty("role").equals("Grund"))
+			throw new SkipException("Skipping this exception");
+		boolean flag=homePage.validateRedigeraGenvägar();
+		softAssert.assertTrue(flag);
+		
+		
+		
+	}
+	
+	@Test//for validating ekonomi shortcut
+	public void EkonomiGenvagarLinkTest() {
+		if(prop.getProperty("role").equals("Grund"))
+			throw new SkipException("Skipping this exception");
+		boolean flag=homePage.validateGenvägar();
+		softAssert.assertTrue(flag);	
+		
+		
+	}
+	
+	@Test//for validating ekonomi oversiktGraph
+	public void ekonomiOversiktGraphTest() {
+		if(prop.getProperty("role").equals("Grund"))
+			throw new SkipException("Skipping this exception");
+		boolean flag=homePage.validateEkonomicOversiktGraph();
+		softAssert.assertTrue(flag);	
+		
+		
+	}
+	
+	@Test//for validating senaste 7handelser frame display
+	public void senatste7HandelserFrameTest() {
+		if(prop.getProperty("role").equals("Grund"))
+			throw new SkipException("Skipping this exception");
+		boolean flag=homePage.validateSenate7HandelserFrame();
+		softAssert.assertTrue(flag);		
+		
+		
+	}
+	
+	@Test//for validating senaste Aldre handelser frame display
+	public void senatsteAldreHandelserFrameTest() {
+		if(prop.getProperty("role").equals("Grund"))
+			throw new SkipException("Skipping this exception");
+		boolean flag=homePage.validateSenateAldreHandelserFrame();
+		softAssert.assertTrue(flag);		
+		
+		
+	}
+	
+	
+	
 	
 //	@Test(priority=6)
 //	public void hsbNewsTest() {
@@ -114,7 +230,17 @@ public class HomePageTest extends TestBase{
 //		
 //	}
 	
-	@Test(priority=7)
+	@Test
+	public void ekonomiTabTest() {
+		if(prop.getProperty("role").equals("Grund"))
+			throw new SkipException("Skipping this exception");
+		ekonomiPage=homePage.ekonomiTab();
+		
+		
+	}
+	
+	
+	@Test
 	
 	public void adminTabTest() {
 		if(prop.getProperty("role").equals("Grund"))
@@ -124,7 +250,7 @@ public class HomePageTest extends TestBase{
 		
 	}
 	
-	@Test(priority=8)
+	@Test
 	public void fastighetenTabTest() {
 		if(prop.getProperty("role").equals("Grund"))
 			throw new SkipException("Skipping this exception");
@@ -133,7 +259,7 @@ public class HomePageTest extends TestBase{
 		
 	}
 	
-	@Test(priority=9)
+	@Test
 	public void dokumentTabTest() {
 		if(prop.getProperty("role").equals("Grund"))
 			throw new SkipException("Skipping this exception");
@@ -142,15 +268,7 @@ public class HomePageTest extends TestBase{
 		
 	}
 	
-	@Test(priority=10)
-	public void ekonomiTabTest() {
-		if(prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
-		ekonomiPage=homePage.ekonomiTab();
-		
-		
-	}
-	
+
 //	@Test(priority=11)
 //	public void clickMinaSidorLinkTest() {
 //		if(prop.getProperty("role").equals("Grund"))
@@ -245,10 +363,16 @@ public class HomePageTest extends TestBase{
 ////	}
 ////		
 
-	@AfterTest
+	@AfterMethod
 	public void tearDown() {
+		
+System.out.println("this methiod is ended");
+		//driver.close();
 		driver.quit();
 	}
+	
+	
+	
 	
 	
 

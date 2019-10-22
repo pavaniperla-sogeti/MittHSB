@@ -2,6 +2,8 @@
 
 package com.mitthsb.qa.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,8 +14,38 @@ import com.mitthsb.qa.base.TestBase;
 
 public class HomePage extends TestBase {
 
-	@FindBy(xpath = "//div[contains(@id,'graph1')]")
-	WebElement LikvidaGraph;
+	@FindBy(xpath = "//div[@class='visible']//div[@id='graph1']")
+	WebElement ekonomiskOversiktGraph;
+	
+	@FindBy(xpath = "//div[@class='visible']//div[@class='card-body']//p[contains(text(),'7 dagarna')]")
+	WebElement senaste7Handelser;
+	
+	@FindBy(xpath = "//div[@class='visible']//div[@class='card-body']//p[contains(text(),'äldre händelser')]")
+	WebElement senasteAldreHandelser;
+	
+	@FindBy(xpath = "//a[contains(text(),'Se alla nyheter')]")
+	WebElement seAllaNyheter;
+	
+	@FindBy(xpath = "//body//latest-news//li[1]")
+	WebElement NyheterArticle;
+	
+	@FindBy(xpath = "//div[@class='menu-item menu-item--logo']//img")
+	WebElement hsbLogo;
+	
+	@FindBy(xpath = "//a[@class='link-secondary white preferences'][contains(text(),'in din lista')]")
+	WebElement stallDinListaLink;		
+	
+	@FindBy(xpath = "//div[@class='view-selector-component--desktop']//button[@class='view-selector-trigger'][contains(text(),'brf')]")
+	WebElement brf;
+	
+	@FindBy(xpath = "//a[@class='link-shortcuts'][contains(text(),'Redigera genväg')]")
+	WebElement redigeraGenvagar;
+	
+	@FindBy(xpath = "//label[contains(text(),'Ekonomisk översikt')]")
+	WebElement ekonomiShortcut;
+	
+	@FindBy(xpath = "//a[@class='link-primary'][contains(text(),'Klar')]")
+	WebElement genvagarKlarButton;
 
 	@FindBy(xpath = "//div[contains(@class, 'col-12 col-md-5 centered-second')]")
 	WebElement hsbNews;
@@ -42,7 +74,7 @@ public class HomePage extends TestBase {
 	@FindBy(linkText = "Dokument")
 	WebElement dokumentTab;
 	
-	@FindBy(linkText = "Logga ut")
+	@FindBy(xpath = "//div[@class='view-selector-component--desktop']//a[@class='link-secondary'][contains(text(),'Logga ut')]")
 	WebElement logoutBtn;
 	
 	@FindBy(linkText = "Logga ut")
@@ -50,6 +82,12 @@ public class HomePage extends TestBase {
 	
 	@FindBy(linkText = "Logga ut")
 	WebElement vivalya_NyttfranHsb;
+	
+	@FindBy(xpath = "//div[@class='view-selector-component--desktop']//button[@class='view-selector-trigger']")
+	WebElement vivalyaren;
+	
+	@FindBy(xpath = "//a[contains(text(),'Gå till kalender')]")
+	WebElement goTillKalender;	
 	
 	//minasidor objects
 	@FindBy(linkText = "Brf Facklan")
@@ -67,7 +105,7 @@ public class HomePage extends TestBase {
 	@FindBy(linkText = "Medlemskapet")
 	WebElement medlemskapTab;
 
-	@FindBy(xpath = "//a[contains(@class,'mn-btn')][contains(text(),'Sök bostad')]")
+	@FindBy(xpath = "//button[@class='btn-primary'][contains(text(),'Skapa kalenderhändelse')]")
 	WebElement sokBostadTab;
 	
 	@FindBy(linkText = "Min profil")
@@ -78,8 +116,13 @@ public class HomePage extends TestBase {
 	public HomePage() {
 
 		// to initialize page factory /object repository objects
+		System.out.println("homepage constructor");
 
 		PageFactory.initElements(driver, this);
+	}
+	
+	public boolean validateHSBLogoHomePage() {
+		return hsbLogo.isDisplayed();
 	}
 
 	public String validateHomePageTitle() {
@@ -89,6 +132,10 @@ public class HomePage extends TestBase {
 
 	public boolean validateMittUpdragLink() {
 		return mittUppdragLink.isDisplayed();
+	}
+	
+	public boolean validateBrfDisplay() {
+		return brf.isDisplayed();	
 	}
 
 	public boolean validateMinaSidorLink() {
@@ -106,13 +153,139 @@ public class HomePage extends TestBase {
 	public boolean validateHsbNews() {
 		return hsbNews.isDisplayed();
 	}
+	
+	public boolean validateStallInDinLista() {
+		return hsbNews.isDisplayed();
+	}
+	
+	public boolean validateEkonomicOversiktGraph() {
+		return ekonomiskOversiktGraph.isDisplayed();
+	}
+	
+	public boolean validateSenate7HandelserFrame() {
+		return senaste7Handelser.isDisplayed();
+	}
+	
+	public boolean validateSenateAldreHandelserFrame() {
+		return senasteAldreHandelser.isDisplayed();
+	}
+
+	
+	
+	public boolean validateGenvägar() {
+	
+		boolean flag = false;
+		int j = 1;
+		while (j == 1) {
+			List<WebElement> dropdown = driver.findElements(By.xpath("//a[@id='linkName-a']"));
+			for (int i = 0; i < dropdown.size(); i++) {
+				String drop_down_values = dropdown.get(i).getText();
+				if (drop_down_values.equals("Ekonomisk översikt")) {
+					dropdown.get(i).click();
+					wait.until(ExpectedConditions.visibilityOfElementLocated(
+							By.xpath("//h4[@class='bold-uppercase'][contains(text(),'Ekonomisk översikt')]")));
+					System.out.println("shortcut is present ");
+					flag = true;
+				}
+			}
+			if (flag) {
+				j = 0;
+				System.out.println("shortcut is present, so breaking the loop ");
+				break;
+			}
+
+			else {
+				System.out.println("shortcut is not present, so adding it ");
+				redigeraGenvagar.click();
+				ekonomiShortcut.click();
+				genvagarKlarButton.click();
+
+			}
+
+		}
+		return flag;
+	}
+	
+	public boolean validateRedigeraGenvägar()  {
+
+		Boolean flag_before = false;
+		Boolean flag_after = false;
+		List<WebElement> dropdown = driver.findElements(By.xpath("//a[@id='linkName-a']"));
+		for (int i = 0; i < dropdown.size(); i++) {
+			String drop_down_values = dropdown.get(i).getText();
+			if (drop_down_values.equals("Ekonomisk översikt")) {
+				System.out.println("shortcut is present " + drop_down_values);
+				flag_before = true;
+			}
+		}
+
+		try {
+			redigeraGenvagar.click();
+			Thread.sleep(2000);
+			ekonomiShortcut.click();
+			Thread.sleep(2000);
+			genvagarKlarButton.click();
+			Thread.sleep(2000);
+				} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//refresh page and see whether shortcuts are properly added or deleted.
+
+		driver.navigate().refresh();	
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("in din lista")));
+		List<WebElement> dropdownLatest = driver.findElements(By.xpath("//a[@id='linkName-a']"));
+		for (int j = 0; j < dropdownLatest.size(); j++) {
+			String drop_down_latest_values = dropdownLatest.get(j).getText();
+			if (drop_down_latest_values.equals("Ekonomisk översikt")) {
+				System.out.println("shortcut is present " + drop_down_latest_values);
+				flag_after = true;
+			}
+		}
+		if (flag_before == flag_after)
+			return false;
+		else			
+		return true;
+	}
+	
+	
+	public NyttFranHSBPage validateSeAllaNyheter() {
+		
+		seAllaNyheter.click();
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1[contains(text(),'NYTT FRÅN HSB')]")));
+		
+		return new NyttFranHSBPage();
+	}
+	
+	public NyttFranHSBPage validateNyheterArticle() {
+		
+		js.executeScript("arguments[0].scrollIntoView(true);", NyheterArticle);
+		
+		NyheterArticle.click();
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/nytt-fran-hsb/' and @class='link-dark']")));
+		
+		return new NyttFranHSBPage();
+	}
+	
+	public AdministrationPage goTillKalender() {
+
+		goTillKalender.click();
+
+		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='btn-primary']")));
+
+		return new AdministrationPage();
+
+	}
+
 
 	public EkonomiPage ekonomiTab() {
 		
 
 		ekonomiTab.click();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='graph1']")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h4[@class='bold-uppercase'][contains(text(),'Ekonomisk översikt')]")));
 
 		return new EkonomiPage();
 		}
@@ -258,6 +431,19 @@ public class HomePage extends TestBase {
 
 		return new MinProfilPage();
 
+	}
+	
+	public logoutPage logout() {
+		
+		vivalyaren.click();
+		
+		logoutBtn.click();
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id='login_title']")));
+		
+		return new logoutPage();
+		
+		
 	}
 
 }

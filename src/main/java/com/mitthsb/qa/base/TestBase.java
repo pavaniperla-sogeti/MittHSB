@@ -8,6 +8,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -32,10 +33,12 @@ public class TestBase {
 	 public ExtentReports extent;
 	 public ExtentTest logger;
 	 public ITestResult result1;
-	 
+public static JavascriptExecutor js;
 
 	public TestBase() {
 		try {
+			
+			System.out.println("reading properties in testbase constructor");
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/mitthsb/qa/config/config.properties");
 				//	"C:\\Users\\pperla\\eclipse-workspace\\MittHSBTest\\src\\main\\java\\com\\mitthsb\\qa\\config\\config.properties");
@@ -49,6 +52,8 @@ public class TestBase {
 	}
 
 	public static void initialization() {
+		
+		System.out.println("reading property browser in intialization method");
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {
@@ -65,6 +70,9 @@ public class TestBase {
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
 		driver = e_driver;
+		js = (JavascriptExecutor) driver;
+		
+		System.out.println("driver is created");
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -72,6 +80,12 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
 		driver.get(prop.getProperty("url"));
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		wait=new WebDriverWait(driver, 10);
 		
 		

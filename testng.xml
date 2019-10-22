@@ -8,11 +8,17 @@
 		<!--<listener class-name="com.mitthsb.qa.util.TestNGEmailableReport2" />-->
 		</listeners>
 
-	<test name="MittHSBMittUppdragPages">
-			<classes>			
-			 <!--<class name="com.mitthsb.qa.testcases.LoginPageTest" />-->
+	<test name="MittHSBMittUppdragPages"  preserve-order="true" parallel="false">
+			<classes>
+			<class name="com.mitthsb.qa.testcases.HomePageTest">	
+				<!-- <methods>
+     				 			  <include name="senatsteAldreHandelserFrameTest"/>
+    			 </methods>		
+			 <class name="com.mitthsb.qa.testcases.LoginPageTest" />
 			<class name="com.mitthsb.qa.testcases.HomePageTest" />
-			<!--	<class name="com.mitthsb.qa.testcases.EkonomiPageTest" /> -->
+			<class name="com.mitthsb.qa.testcases.EkonomiPageTest" />
+		 -->
+		  </class>
 		</classes>
 	</test>
 

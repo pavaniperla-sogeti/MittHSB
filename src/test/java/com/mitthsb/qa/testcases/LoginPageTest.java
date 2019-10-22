@@ -1,5 +1,10 @@
 package com.mitthsb.qa.testcases;
 
+import java.io.IOException;
+
+import org.apache.log4j.Logger;
+import org.json.simple.parser.ParseException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -8,17 +13,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
-import java.io.IOException;
-import java.util.Map;
-
-import org.apache.log4j.Logger;
-import org.json.simple.parser.ParseException;
+import java.lang.reflect.Method;
 
 import com.mitthsb.qa.base.TestBase;
 import com.mitthsb.qa.pages.HomePage;
 import com.mitthsb.qa.pages.Loginpage;
-import com.mitthsb.qa.testdata.UserHashMap;
+import com.mitthsb.qa.pages.logoutPage;
 import com.mitthsb.qa.util.TestUtil;
 
 public class LoginPageTest extends TestBase {
@@ -26,6 +26,7 @@ public class LoginPageTest extends TestBase {
 	HomePage homePage;
 	SoftAssert softAssert=new SoftAssert();
 	String Sheetname="Sheet1";
+	logoutPage logoutPage;
 	
 	
 	
@@ -36,37 +37,38 @@ public class LoginPageTest extends TestBase {
 
 	}
 
-	@BeforeTest
-	public void setUp() {
+	@BeforeMethod
+	public void setUp(Method method) throws StaleElementReferenceException {
 
 		initialization();
 		loginPage = new Loginpage();
 		log = Logger.getLogger(LoginPageTest.class);
+		System.out.println("class is"+this.getClass().getName()+"and method is"+method.getName());
 
 	}
 	
-	@Test(priority=1)
+	@Test
 	public void loginPageTitleTest() {
 		String title=loginPage.validateLoginPageTitle();
 		softAssert.assertEquals(title, "NetScaler Gateway");
 		
 	}
 	
-	@Test(priority=2)
+	@Test
 	public void hsbLogoTest() {
 		boolean flag=loginPage.validateHSBLogo();
 		softAssert.assertTrue(flag);
 		
 	}
 	
-	@Test(priority=3)
+	@Test
 	public void bankIdlinkTest() {
 		boolean flag=loginPage.validateBankIDLink();
 		softAssert.assertTrue(flag);
 		
 	}
 	
-	@Test(priority=4)
+	@Test
 	public void gdprLinkTest() {
 		boolean flag=loginPage.validateGDPRLink();
 		softAssert.assertTrue(flag);
@@ -100,24 +102,25 @@ public class LoginPageTest extends TestBase {
 		
 			}
 	
-	@Test(priority=5,dataProvider="getTestDataForLogin",groups={"LoginPageTest.login"})
-//	//@Test(priority=5,dataProvider="getTestDataForLoginfromJson",groups={"LoginPageTest.login"})
+	//	@Test(priority=5,dataProvider="getTestDataForLogin",groups={"LoginPageTest.login"})
+	@Test(dataProvider="getTestDataForLoginfromJson",groups={"LoginPageTest.login"})
 	public void login(String login, String pwd, String role)
 	
 {
 	
 			homePage=loginPage.login(login,pwd,role);
+			homePage.logout();
 		
 	}
 	
-	@Test(priority=6,dataProvider="getTestDataForLoginHashMap",groups={"LoginPageTest.login"})	
-public void loginBasedonHashMap(Map<Object, Object> map)
-	
-	{
-		//System.out.println("useris"+(String)map.get("UserName")+"pwd id"+(String)map.get("password")+"role is"+(String)map.get("Role"));
-			homePage=loginPage.login(String.valueOf(map.get("UserName")),(String)map.get("password"),(String)map.get("Role"));
-		
-	}
+//	@Test(priority=6,dataProvider="getTestDataForLoginHashMap",groups={"LoginPageTest.login"})	
+//public void loginBasedonHashMap(Map<Object, Object> map)
+//	
+//	{
+//		//System.out.println("useris"+(String)map.get("UserName")+"pwd id"+(String)map.get("password")+"role is"+(String)map.get("Role"));
+//			homePage=loginPage.login(String.valueOf(map.get("UserName")),(String)map.get("password"),(String)map.get("Role"));
+//		
+//	}
 	
 //	@Test(priority = 6)
 //	public void longPageBrokenLinksTest()
@@ -128,11 +131,12 @@ public void loginBasedonHashMap(Map<Object, Object> map)
 //		Assert.assertFalse(Brokencount > 0);
 //
 //	}
-	
+//	
 		
 
-	@AfterTest
+	@AfterMethod
 	public void tearDown() {
+		driver.close();
 		driver.quit();
 	}
 	

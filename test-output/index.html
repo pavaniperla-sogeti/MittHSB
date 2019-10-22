@@ -24,21 +24,21 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-MittHSB" class="navigator-link">
-              <span class="suite-name border-passed">MittHSB</span>
+            <a href="#" class="navigator-link" panel-name="suite-MittHSB">
+              <span class="suite-name border-failed">MittHSB</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-MittHSB" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-MittHSB">
                     <span>C:\Users\pperla\eclipse-workspace\MittHSBTest\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-MittHSB" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-MittHSB">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-MittHSB" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-MittHSB">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-MittHSB" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-MittHSB">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-MittHSB" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-MittHSB">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-MittHSB" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-MittHSB">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-MittHSB" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-MittHSB">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">20 methods, 2 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MittHSB" class="hide-methods failed suite-MittHSB"> (hide)</a> <!-- hide-methods failed suite-MittHSB -->
+                      <a href="#" panel-name="suite-MittHSB" class="show-methods failed suite-MittHSB"> (show)</a> <!-- show-methods failed suite-MittHSB -->
+                    </span>
+                    <div class="method-list-content failed suite-MittHSB">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="ekonomiOversiktGraphTest">ekonomiOversiktGraphTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="ekonomiTabTest">ekonomiTabTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MittHSB -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,48 +120,93 @@
                     </span>
                     <div class="method-list-content passed suite-MittHSB">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="adminTabTest">adminTabTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="EkonomiGenvagarLinkTest">EkonomiGenvagarLinkTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="dokumentTabTest">dokumentTabTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="adminTabTest">adminTabTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="ekonomiTabTest">ekonomiTabTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="brfDisplayTest">brfDisplayTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="fakturorDisplayTest">fakturorDisplayTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="dokumentTabTest">dokumentTabTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="fastighetenTabTest">fastighetenTabTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="fakturorDisplayTest">fakturorDisplayTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="homePageTitleTest">homePageTitleTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="fastighetenTabTest">fastighetenTabTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="mittUpdragLinkTest">mittUpdragLinkTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="genvagarLinkTest">genvagarLinkTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="nyttLinkTest">nyttLinkTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="goTillKalenderLinkTest">goTillKalenderLinkTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="validateMinaSidorlinkTest">validateMinaSidorlinkTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="homePageTitleTest">homePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="hsbLogoTest">hsbLogoTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="minaSidorlinkTest">minaSidorlinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="mittUpdragLinkTest">mittUpdragLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="nyheterArticleTest">nyheterArticleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="nyttLinkTest">nyttLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="seAllaNyheterLinkTest">seAllaNyheterLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="senatste7HandelserFrameTest">senatste7HandelserFrameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="senatsteAldreHandelserFrameTest">senatsteAldreHandelserFrameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.HomePageTest" hash-for-method="stallIDinListaTest">stallIDinListaTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MittHSB -->
@@ -157,12 +221,139 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MittHSB" class="panel MittHSB">
+          <div class="suite-MittHSB-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.mitthsb.qa.testcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ekonomiOversiktGraphTest">
+                  </a> <!-- ekonomiOversiktGraphTest -->
+                  <span class="method-name">ekonomiOversiktGraphTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;visible&apos;]//div[@id=&apos;graph1&apos;]&quot;}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LNOR070828&apos;, ip: &apos;10.225.99.144&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\pperla\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:6992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 87d08aa67d5ebce45d76cbc8c0e7506f
+*** Element info: {Using=xpath, value=//div[@class=&apos;visible&apos;]//div[@id=&apos;graph1&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at com.mitthsb.qa.pages.HomePage.validateEkonomicOversiktGraph(HomePage.java:162)
+	at com.mitthsb.qa.testcases.HomePageTest.ekonomiOversiktGraphTest(HomePageTest.java:196)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ekonomiTabTest">
+                  </a> <!-- ekonomiTabTest -->
+                  <span class="method-name">ekonomiTabTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id=&apos;graph1&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LNOR070828&apos;, ip: &apos;10.225.99.144&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\pperla\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:7170}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 38d7a790a9381b37b6004cbe62eec6d0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.mitthsb.qa.pages.HomePage.ekonomiTab(HomePage.java:288)
+	at com.mitthsb.qa.testcases.HomePageTest.ekonomiTabTest(HomePageTest.java:237)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MittHSB-class-failed -->
           <div class="suite-MittHSB-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.mitthsb.qa.testcases.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EkonomiGenvagarLinkTest">
+                  </a> <!-- EkonomiGenvagarLinkTest -->
+                  <span class="method-name">EkonomiGenvagarLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="adminTabTest">
@@ -172,16 +363,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="dokumentTabTest">
-                  </a> <!-- dokumentTabTest -->
-                  <span class="method-name">dokumentTabTest</span>
+                  <a name="brfDisplayTest">
+                  </a> <!-- brfDisplayTest -->
+                  <span class="method-name">brfDisplayTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="ekonomiTabTest">
-                  </a> <!-- ekonomiTabTest -->
-                  <span class="method-name">ekonomiTabTest</span>
+                  <a name="dokumentTabTest">
+                  </a> <!-- dokumentTabTest -->
+                  <span class="method-name">dokumentTabTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -200,9 +391,37 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="genvagarLinkTest">
+                  </a> <!-- genvagarLinkTest -->
+                  <span class="method-name">genvagarLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goTillKalenderLinkTest">
+                  </a> <!-- goTillKalenderLinkTest -->
+                  <span class="method-name">goTillKalenderLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="homePageTitleTest">
                   </a> <!-- homePageTitleTest -->
                   <span class="method-name">homePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hsbLogoTest">
+                  </a> <!-- hsbLogoTest -->
+                  <span class="method-name">hsbLogoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="minaSidorlinkTest">
+                  </a> <!-- minaSidorlinkTest -->
+                  <span class="method-name">minaSidorlinkTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -214,6 +433,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="nyheterArticleTest">
+                  </a> <!-- nyheterArticleTest -->
+                  <span class="method-name">nyheterArticleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="nyttLinkTest">
                   </a> <!-- nyttLinkTest -->
                   <span class="method-name">nyttLinkTest</span>
@@ -221,9 +447,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validateMinaSidorlinkTest">
-                  </a> <!-- validateMinaSidorlinkTest -->
-                  <span class="method-name">validateMinaSidorlinkTest</span>
+                  <a name="seAllaNyheterLinkTest">
+                  </a> <!-- seAllaNyheterLinkTest -->
+                  <span class="method-name">seAllaNyheterLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="senatste7HandelserFrameTest">
+                  </a> <!-- senatste7HandelserFrameTest -->
+                  <span class="method-name">senatste7HandelserFrameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="senatsteAldreHandelserFrameTest">
+                  </a> <!-- senatsteAldreHandelserFrameTest -->
+                  <span class="method-name">senatsteAldreHandelserFrameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stallIDinListaTest">
+                  </a> <!-- stallIDinListaTest -->
+                  <span class="method-name">stallIDinListaTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -237,7 +484,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;MittHSB&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot; name=&quot;MittHSB&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.ExtentReportListner.ExtentRerportListener&quot;/&gt;
   &lt;/listeners&gt;
@@ -283,48 +530,92 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(20);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'fastighetenTabTest')
+data.setCell(0, 1, 'ekonomiOversiktGraphTest')
 data.setCell(0, 2, 'com.mitthsb.qa.testcases.HomePageTest')
-data.setCell(0, 3, 9230);
+data.setCell(0, 3, 31017);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'dokumentTabTest')
+data.setCell(1, 1, 'ekonomiTabTest')
 data.setCell(1, 2, 'com.mitthsb.qa.testcases.HomePageTest')
-data.setCell(1, 3, 2650);
+data.setCell(1, 3, 13120);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'adminTabTest')
+data.setCell(2, 1, 'genvagarLinkTest')
 data.setCell(2, 2, 'com.mitthsb.qa.testcases.HomePageTest')
-data.setCell(2, 3, 2638);
+data.setCell(2, 3, 12738);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ekonomiTabTest')
+data.setCell(3, 1, 'EkonomiGenvagarLinkTest')
 data.setCell(3, 2, 'com.mitthsb.qa.testcases.HomePageTest')
-data.setCell(3, 3, 2106);
+data.setCell(3, 3, 3408);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'homePageTitleTest')
+data.setCell(4, 1, 'goTillKalenderLinkTest')
 data.setCell(4, 2, 'com.mitthsb.qa.testcases.HomePageTest')
-data.setCell(4, 3, 114);
+data.setCell(4, 3, 3255);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'nyttLinkTest')
+data.setCell(5, 1, 'adminTabTest')
 data.setCell(5, 2, 'com.mitthsb.qa.testcases.HomePageTest')
-data.setCell(5, 3, 52);
+data.setCell(5, 3, 2983);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validateMinaSidorlinkTest')
+data.setCell(6, 1, 'seAllaNyheterLinkTest')
 data.setCell(6, 2, 'com.mitthsb.qa.testcases.HomePageTest')
-data.setCell(6, 3, 51);
+data.setCell(6, 3, 2712);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'mittUpdragLinkTest')
+data.setCell(7, 1, 'nyheterArticleTest')
 data.setCell(7, 2, 'com.mitthsb.qa.testcases.HomePageTest')
-data.setCell(7, 3, 46);
+data.setCell(7, 3, 1797);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'fakturorDisplayTest')
+data.setCell(8, 1, 'dokumentTabTest')
 data.setCell(8, 2, 'com.mitthsb.qa.testcases.HomePageTest')
-data.setCell(8, 3, 39);
+data.setCell(8, 3, 638);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'fastighetenTabTest')
+data.setCell(9, 2, 'com.mitthsb.qa.testcases.HomePageTest')
+data.setCell(9, 3, 556);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'stallIDinListaTest')
+data.setCell(10, 2, 'com.mitthsb.qa.testcases.HomePageTest')
+data.setCell(10, 3, 63);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'hsbLogoTest')
+data.setCell(11, 2, 'com.mitthsb.qa.testcases.HomePageTest')
+data.setCell(11, 3, 61);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'brfDisplayTest')
+data.setCell(12, 2, 'com.mitthsb.qa.testcases.HomePageTest')
+data.setCell(12, 3, 44);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'nyttLinkTest')
+data.setCell(13, 2, 'com.mitthsb.qa.testcases.HomePageTest')
+data.setCell(13, 3, 42);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'minaSidorlinkTest')
+data.setCell(14, 2, 'com.mitthsb.qa.testcases.HomePageTest')
+data.setCell(14, 3, 42);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'mittUpdragLinkTest')
+data.setCell(15, 2, 'com.mitthsb.qa.testcases.HomePageTest')
+data.setCell(15, 3, 41);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'senatsteAldreHandelserFrameTest')
+data.setCell(16, 2, 'com.mitthsb.qa.testcases.HomePageTest')
+data.setCell(16, 3, 41);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'senatste7HandelserFrameTest')
+data.setCell(17, 2, 'com.mitthsb.qa.testcases.HomePageTest')
+data.setCell(17, 3, 36);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'fakturorDisplayTest')
+data.setCell(18, 2, 'com.mitthsb.qa.testcases.HomePageTest')
+data.setCell(18, 3, 35);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'homePageTitleTest')
+data.setCell(19, 2, 'com.mitthsb.qa.testcases.HomePageTest')
+data.setCell(19, 3, 9);
 window.suiteTableData['MittHSB']= { tableData: data, tableDiv: 'times-div-MittHSB'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-MittHSB">
               </div> <!-- times-div-MittHSB -->
             </div> <!-- times-div -->
@@ -351,50 +642,250 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.mitthsb.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setUp</span>
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.EkonomiGenvagarLinkTest())</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">homePageTitleTest</span>
-                <span class="method-start">19158 ms</span>
+                <span class="method-name">EkonomiGenvagarLinkTest</span>
+                <span class="method-start">24669 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">mittUpdragLinkTest</span>
-                <span class="method-start">19352 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validateMinaSidorlinkTest</span>
-                <span class="method-start">19407 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">nyttLinkTest</span>
-                <span class="method-start">19462 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">fakturorDisplayTest</span>
-                <span class="method-start">19518 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28090 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.adminTabTest())</span>
+                <span class="method-start">29022 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminTabTest</span>
-                <span class="method-start">19561 ms</span>
+                <span class="method-start">55209 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">58196 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.brfDisplayTest())</span>
+                <span class="method-start">59097 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">fastighetenTabTest</span>
-                <span class="method-start">22206 ms</span>
+                <span class="method-name">brfDisplayTest</span>
+                <span class="method-start">82963 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">83012 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.dokumentTabTest())</span>
+                <span class="method-start">83920 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dokumentTabTest</span>
-                <span class="method-start">31440 ms</span>
+                <span class="method-start">109067 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">ekonomiTabTest</span>
-                <span class="method-start">34092 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36202 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">109709 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.ekonomiOversiktGraphTest())</span>
+                <span class="method-start">110665 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ekonomiOversiktGraphTest</span>
+                <span class="method-start">137344 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">168369 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.ekonomiTabTest())</span>
+                <span class="method-start">169591 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ekonomiTabTest</span>
+                <span class="method-start">195423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">208552 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.fakturorDisplayTest())</span>
+                <span class="method-start">209616 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fakturorDisplayTest</span>
+                <span class="method-start">237447 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">237485 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.fastighetenTabTest())</span>
+                <span class="method-start">238439 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fastighetenTabTest</span>
+                <span class="method-start">263123 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">263682 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.genvagarLinkTest())</span>
+                <span class="method-start">264548 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">genvagarLinkTest</span>
+                <span class="method-start">289196 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">301942 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.goTillKalenderLinkTest())</span>
+                <span class="method-start">302949 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">goTillKalenderLinkTest</span>
+                <span class="method-start">328454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">331714 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.homePageTitleTest())</span>
+                <span class="method-start">332767 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">homePageTitleTest</span>
+                <span class="method-start">356030 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">356042 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.hsbLogoTest())</span>
+                <span class="method-start">356905 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hsbLogoTest</span>
+                <span class="method-start">382260 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">382324 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.minaSidorlinkTest())</span>
+                <span class="method-start">383215 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">minaSidorlinkTest</span>
+                <span class="method-start">411576 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">411621 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.mittUpdragLinkTest())</span>
+                <span class="method-start">412541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mittUpdragLinkTest</span>
+                <span class="method-start">435689 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">435733 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.nyheterArticleTest())</span>
+                <span class="method-start">436650 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">nyheterArticleTest</span>
+                <span class="method-start">459924 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">461723 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.nyttLinkTest())</span>
+                <span class="method-start">462642 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">nyttLinkTest</span>
+                <span class="method-start">486156 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">486203 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.seAllaNyheterLinkTest())</span>
+                <span class="method-start">487095 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">seAllaNyheterLinkTest</span>
+                <span class="method-start">513962 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">516677 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.senatste7HandelserFrameTest())</span>
+                <span class="method-start">517675 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">senatste7HandelserFrameTest</span>
+                <span class="method-start">540693 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">540732 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.senatsteAldreHandelserFrameTest())</span>
+                <span class="method-start">541659 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">senatsteAldreHandelserFrameTest</span>
+                <span class="method-start">566361 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">566406 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.HomePageTest.stallIDinListaTest())</span>
+                <span class="method-start">567344 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">stallIDinListaTest</span>
+                <span class="method-start">589952 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">590019 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,6 +1,11 @@
 //author pavani
 package com.mitthsb.qa.testcases;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+
+import java.lang.reflect.Method;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -38,10 +43,11 @@ public class EkonomiPageTest extends TestBase {
 	}
 	
 	//testcases should be independent.. ideal is to close the browser afer every case and launched before the test case.
-	@BeforeTest
-	public void setUp() {
+	@BeforeMethod
+	public void setUp(Method method) throws StaleElementReferenceException {
 
 		initialization();
+		System.out.println("class is"+this.getClass().getName()+"and method is"+method.getName());
 		loginPage = new Loginpage();
 		testUtil = new TestUtil();
 		homePage=loginPage.login(prop.getProperty("login"),prop.getProperty("pwd"),prop.getProperty("role"));
@@ -49,7 +55,7 @@ public class EkonomiPageTest extends TestBase {
 
 	}
 	
-	@Test(priority=1)
+	@Test
 	public void ekonomiPageTitleTest() {
 		String title=ekonomiPage.validateEkonomiPageTitle();
 		softAssert.assertEquals(title, "Ekonomisk &#246;versikt");
@@ -58,21 +64,21 @@ public class EkonomiPageTest extends TestBase {
 		
 	}
 	
-	@Test(priority=2)
+	@Test
 	public void validateAllaFakturorListItemTest() {
 		boolean flag=ekonomiPage.validateAllaFakturorListItem();
 		softAssert.assertTrue(flag);
 		
 	}
 	
-	@Test(priority=3)
+	@Test
 	public void validateFinansiellaRapportListItemTest() {
 		boolean flag=ekonomiPage.validatefinansiellaRapportListItem();
 		softAssert.assertTrue(flag);
 		
 	}
 	
-	@Test(priority=4)
+	@Test
 	public void validatesaldoRapportTest() {
 		boolean title=ekonomiPage.validatesaldoRapport();
 		softAssert.assertEquals(title, "&#214;versikt");
@@ -81,21 +87,21 @@ public class EkonomiPageTest extends TestBase {
 	
 	
 	
-	@Test(priority=5)
+	@Test
 	public void  saldoRapportLinkTest() {
 		SaldoRapportPage=ekonomiPage.clicksaldoRapport();
 		
 		
 	}
 	
-	@Test(priority=6)
+	@Test
 	public void  finansiellaRapporterTest() {
 		FinansiellaRapporterPage=ekonomiPage.clickfinansiellaRapportListItem();
 		
 		
 	}
 	
-	@Test(priority=7)
+	@Test
 	public void  allaFakturorListItemTest() {
 		AllaFakturorListItemPage=ekonomiPage.clickAllaFakturorListItem();
 		
@@ -104,7 +110,7 @@ public class EkonomiPageTest extends TestBase {
 	
 	
 	
-	@AfterTest
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
