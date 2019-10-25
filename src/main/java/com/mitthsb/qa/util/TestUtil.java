@@ -46,6 +46,9 @@ public class TestUtil extends TestBase{
 	static Workbook book;
 	static Sheet sheet;
 	static JavascriptExecutor js;
+	public static SimpleDateFormat formatter;
+	 public static Date date;
+	 public  int day;
 	
 	public void switchToFrame() {
 		
@@ -250,6 +253,17 @@ public class TestUtil extends TestBase{
 		}
 		return arr;
 	}
+	
+	public static String getTomorrowDate() {
+		SimpleDateFormat formatter= new SimpleDateFormat("dd");
+		Date date = new Date(System.currentTimeMillis());
+		int day=Integer.parseInt(formatter.format(date));
+		day++;
+		String dayString=String.valueOf(day);
+		return(dayString);
+		
+	}
+	
 	
 	
 

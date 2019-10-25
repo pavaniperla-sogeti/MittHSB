@@ -4,6 +4,8 @@ import java.io.FileInputStream;
 import org.json.simple.parser.ParseException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
@@ -33,6 +35,8 @@ public class TestBase {
 	 public ExtentReports extent;
 	 public ExtentTest logger;
 	 public ITestResult result1;
+	 
+	 
 public static JavascriptExecutor js;
 
 	public TestBase() {

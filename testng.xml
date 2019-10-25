@@ -10,7 +10,8 @@
 
 	<test name="MittHSBMittUppdragPages"  preserve-order="true" parallel="false">
 			<classes>
-			<class name="com.mitthsb.qa.testcases.HomePageTest">	
+			<class name="com.mitthsb.qa.testcases.HomePageTest"
+			<class name="com.mitthsb.qa.testcases.AdministrationPageTest">	
 				<!-- <methods>
      				 			  <include name="senatsteAldreHandelserFrameTest"/>
     			 </methods>		

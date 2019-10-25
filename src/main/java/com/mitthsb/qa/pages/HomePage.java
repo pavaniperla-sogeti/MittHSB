@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.mitthsb.qa.base.TestBase;
+import com.mitthsb.qa.util.TestUtil;
 
 public class HomePage extends TestBase {
 
@@ -88,6 +89,9 @@ public class HomePage extends TestBase {
 	
 	@FindBy(xpath = "//a[contains(text(),'Gå till kalender')]")
 	WebElement goTillKalender;	
+	
+	@FindBy(xpath = "//div[@class='calendar-item-wrapper']//descendant::p[@class='bold'][contains(text(),'Automat')]")
+	WebElement calenderEventCheck;
 	
 	//minasidor objects
 	@FindBy(linkText = "Brf Facklan")
@@ -246,6 +250,11 @@ public class HomePage extends TestBase {
 			return false;
 		else			
 		return true;
+	}
+	
+public boolean displayKalenderHäandelse() {
+		
+		return calenderEventCheck.isDisplayed();
 	}
 	
 	
