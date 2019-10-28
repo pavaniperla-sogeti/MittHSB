@@ -88,7 +88,7 @@ public class HomePageTest extends TestBase{
 	}
 	
 	@Test
-	public void stallIDinListaTest() {
+	public void stallIDinListaLinkDisplayTest() {
 		
 		boolean flag=homePage.validateStallInDinLista();
 		softAssert.assertTrue(flag);
@@ -96,6 +96,29 @@ public class HomePageTest extends TestBase{
 		//softAssert.assertTrue(homePage.validateHomePageTitle(), "&#214;versikt");
 		
 	}
+	
+	@Test
+	public void informationIconLikvidaMedelGraphTest() {
+		
+		boolean flag=homePage.validateInformationIcon();
+		softAssert.assertTrue(flag);
+				
+		//softAssert.assertTrue(homePage.validateHomePageTitle(), "&#214;versikt");
+		
+	}
+	
+	
+	@Test
+	public void stallIDinListaFunctionTest() {
+		
+		boolean flag=homePage.stallInDinListaLinkTest();
+		softAssert.assertTrue(flag);
+				
+		//softAssert.assertTrue(homePage.validateHomePageTitle(), "&#214;versikt");
+		
+	}
+	
+	
 	
 	@Test
 	public void brfDisplayTest() {

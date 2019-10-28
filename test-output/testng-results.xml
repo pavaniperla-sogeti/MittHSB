@@ -1,58 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="12" total="16" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="82115" started-at="2019-10-25T07:29:57Z" finished-at="2019-10-25T07:31:19Z">
+  <suite name="MittHSB" duration-ms="112090" started-at="2019-10-28T14:15:53Z" finished-at="2019-10-28T14:17:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="82115" started-at="2019-10-25T07:29:57Z" finished-at="2019-10-25T07:31:19Z">
-      <class name="com.mitthsb.qa.testcases.AdministrationPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.AdministrationPageTest@79ca92b9]" name="setUp" is-config="true" duration-ms="24259" started-at="2019-10-25T09:29:57Z" finished-at="2019-10-25T09:30:21Z">
+    <test name="MittHSBMittUppdragPages" duration-ms="112090" started-at="2019-10-28T14:15:53Z" finished-at="2019-10-28T14:17:45Z">
+      <class name="com.mitthsb.qa.testcases.EkonomiPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="26207" started-at="2019-10-28T15:15:53Z" finished-at="2019-10-28T15:16:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.AdministrationPageTest.skapaKalenderTest()]]>
+                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.InformationIconLikvidaMedelGraphTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="skapaKalenderTest()[pri:0, instance:com.mitthsb.qa.testcases.AdministrationPageTest@79ca92b9]" name="skapaKalenderTest" duration-ms="11776" started-at="2019-10-25T09:30:21Z" finished-at="2019-10-25T09:30:33Z">
+        <test-method status="PASS" signature="InformationIconLikvidaMedelGraphTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="InformationIconLikvidaMedelGraphTest" duration-ms="332" started-at="2019-10-28T15:16:19Z" finished-at="2019-10-28T15:16:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- skapaKalenderTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.AdministrationPageTest@79ca92b9]" name="setUp" is-config="true" duration-ms="20470" started-at="2019-10-25T09:30:33Z" finished-at="2019-10-25T09:30:53Z">
+        </test-method> <!-- InformationIconLikvidaMedelGraphTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="1108" started-at="2019-10-28T15:16:20Z" finished-at="2019-10-28T15:16:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="26058" started-at="2019-10-28T15:16:21Z" finished-at="2019-10-28T15:16:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.AdministrationPageTest.displayKalenderEventHomePageTest()]]>
+                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.InformationIconRapportGenvagarFrameTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="displayKalenderEventHomePageTest()[pri:0, instance:com.mitthsb.qa.testcases.AdministrationPageTest@79ca92b9]" name="displayKalenderEventHomePageTest" duration-ms="36" started-at="2019-10-25T09:30:53Z" depends-on-methods="com.mitthsb.qa.testcases.AdministrationPageTest.skapaKalenderTest" finished-at="2019-10-25T09:30:53Z">
+        <test-method status="PASS" signature="InformationIconRapportGenvagarFrameTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="InformationIconRapportGenvagarFrameTest" duration-ms="178" started-at="2019-10-28T15:16:47Z" finished-at="2019-10-28T15:16:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- displayKalenderEventHomePageTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.AdministrationPageTest@79ca92b9]" name="setUp" is-config="true" duration-ms="21176" started-at="2019-10-25T09:30:53Z" finished-at="2019-10-25T09:31:15Z">
+        </test-method> <!-- InformationIconRapportGenvagarFrameTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="1076" started-at="2019-10-28T15:16:47Z" finished-at="2019-10-28T15:16:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="28407" started-at="2019-10-28T15:16:48Z" finished-at="2019-10-28T15:17:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.AdministrationPageTest.deleteKalenderTest()]]>
+                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.InformationIconDisponiBeltGraphTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deleteKalenderTest()[pri:0, instance:com.mitthsb.qa.testcases.AdministrationPageTest@79ca92b9]" name="deleteKalenderTest" duration-ms="4287" started-at="2019-10-25T09:31:15Z" depends-on-methods="com.mitthsb.qa.testcases.AdministrationPageTest.skapaKalenderTest, com.mitthsb.qa.testcases.AdministrationPageTest.displayKalenderEventHomePageTest" finished-at="2019-10-25T09:31:19Z">
+        <test-method status="PASS" signature="InformationIconDisponiBeltGraphTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="InformationIconDisponiBeltGraphTest" duration-ms="180" started-at="2019-10-28T15:17:16Z" finished-at="2019-10-28T15:17:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteKalenderTest -->
-      </class> <!-- com.mitthsb.qa.testcases.AdministrationPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- InformationIconDisponiBeltGraphTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="1080" started-at="2019-10-28T15:17:17Z" finished-at="2019-10-28T15:17:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="25882" started-at="2019-10-28T15:17:18Z" finished-at="2019-10-28T15:17:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.InformationIconCashFlowGraphTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="InformationIconCashFlowGraphTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="InformationIconCashFlowGraphTest" duration-ms="268" started-at="2019-10-28T15:17:44Z" finished-at="2019-10-28T15:17:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InformationIconCashFlowGraphTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="1076" started-at="2019-10-28T15:17:44Z" finished-at="2019-10-28T15:17:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mitthsb.qa.testcases.EkonomiPageTest -->
+    </test> <!-- MittHSBMittUppdragPages -->
+  </suite> <!-- MittHSB -->
 </testng-results>

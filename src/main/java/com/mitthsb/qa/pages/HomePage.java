@@ -17,6 +17,13 @@ public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//div[@class='visible']//div[@id='graph1']")
 	WebElement ekonomiskOversiktGraph;
+
+	@FindBy(xpath = "//span[@class='encircled text-center border border-primary rounded-circle'][contains(text(),'i')]")
+	WebElement informationIconLikvidaMedel;	
+	
+	@FindBy(xpath = "//div[@class='popover-body'][contains(text(),'Diagrammet')]")
+	WebElement informationIconLikvidaMedelIconText;	
+	
 	
 	@FindBy(xpath = "//div[@class='visible']//div[@class='card-body']//p[contains(text(),'7 dagarna')]")
 	WebElement senaste7Handelser;
@@ -35,6 +42,12 @@ public class HomePage extends TestBase {
 	
 	@FindBy(xpath = "//a[@class='link-secondary white preferences'][contains(text(),'in din lista')]")
 	WebElement stallDinListaLink;		
+	
+	@FindBy(xpath = "//button[@class='btn btn-primary large'][contains(text(),'Spara')]")
+	WebElement stallDinListaLinkSparaButton;
+	
+	@FindBy(xpath = "//input[@id='Överlåtelser']")
+	WebElement stallDinListaLinkOverlatelseCheckbox;
 	
 	@FindBy(xpath = "//div[@class='view-selector-component--desktop']//button[@class='view-selector-trigger'][contains(text(),'brf')]")
 	WebElement brf;
@@ -160,6 +173,32 @@ public class HomePage extends TestBase {
 	
 	public boolean validateStallInDinLista() {
 		return hsbNews.isDisplayed();
+	}
+	
+	public boolean validateInformationIcon() {
+		
+		informationIconLikvidaMedel.click();
+		return informationIconLikvidaMedelIconText.isDisplayed();
+	}
+	
+	public boolean stallInDinListaLinkTest() {
+		
+		try {
+			stallDinListaLink.click();		
+			driver.switchTo().activeElement();
+			Thread.sleep(2000);
+			stallDinListaLinkOverlatelseCheckbox.click();
+			Thread.sleep(2000);
+			stallDinListaLinkSparaButton.click();
+			hsbNews.isDisplayed();
+			
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+		
+		return true;
 	}
 	
 	public boolean validateEkonomicOversiktGraph() {

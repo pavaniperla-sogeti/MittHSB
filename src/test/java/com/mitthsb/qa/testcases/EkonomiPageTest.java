@@ -85,6 +85,41 @@ public class EkonomiPageTest extends TestBase {
 		
 	}
 	
+	@Test
+	public void likvidaMedelGraphEkonomiPageTest() {
+		boolean flag=ekonomiPage.validatesaldoRapport();
+		softAssert.assertTrue(flag);
+		
+	}
+	
+	@Test
+	public void disponibelGraphEkonomiPageTest() {
+		boolean flag=ekonomiPage.validateDisponibeltGraph();
+		softAssert.assertTrue(flag);
+		
+	}
+	
+	@Test
+	public void cashFlowGraphEkonomiPageTest() {
+		boolean flag=ekonomiPage.validateCashFlowGraph();
+		softAssert.assertTrue(flag);
+		
+	}
+	
+	@Test
+	public void accountsReceivablesGraphEkonomiPageTest() {
+		boolean flag=ekonomiPage.validateAccountsReceivableGraph();
+		softAssert.assertTrue(flag);
+		
+	}
+	
+	@Test
+	public void reportGenvagarDisplayTest() {
+		boolean flag=ekonomiPage.validateRapportGenvagar();
+		softAssert.assertTrue(flag);
+		
+	}
+	
 	
 	
 	@Test
@@ -107,6 +142,37 @@ public class EkonomiPageTest extends TestBase {
 		
 		
 	}
+	
+
+	@Test
+	public void  InformationIconLikvidaMedelGraphTest() {
+		softAssert.assertTrue(ekonomiPage.validateInformationIconLikvidaMedelGraph());
+		
+		
+	}
+	
+	@Test
+	public void  InformationIconRapportGenvagarFrameTest() {
+		softAssert.assertTrue(ekonomiPage.validateInformationIconRapportGenvagarFrame());
+		
+		
+	}
+	
+	@Test
+	public void  InformationIconDisponiBeltGraphTest() {
+		softAssert.assertTrue(ekonomiPage.validateInformationIconDisponiBeltGraph());
+		
+		
+	}
+	
+	@Test
+	public void  InformationIconCashFlowGraphTest() {
+		softAssert.assertTrue(ekonomiPage.validateInformationIconCashFlowGraph());
+		
+		
+	}
+	
+	
 	
 	
 	

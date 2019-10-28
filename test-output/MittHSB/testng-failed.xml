@@ -8,9 +8,8 @@
     <classes>
       <class name="com.mitthsb.qa.testcases.HomePageTest">
         <methods>
-          <include name="ekonomiTabTest"/>
+          <include name="stallIDinListaFunctionTest"/>
           <include name="tearDown"/>
-          <include name="ekonomiOversiktGraphTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->
