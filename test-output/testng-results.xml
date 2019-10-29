@@ -1,47 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="14" total="16" passed="2">
+<testng-results skipped="0" failed="0" ignored="17" total="18" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="MittHSB" duration-ms="52205" started-at="2019-10-29T12:36:10Z" finished-at="2019-10-29T12:37:02Z">
+  <suite name="MittHSB" duration-ms="27955" started-at="2019-10-29T13:47:48Z" finished-at="2019-10-29T13:48:16Z">
     <groups>
     </groups>
-    <test name="MittHSBMittUppdragPages" duration-ms="52205" started-at="2019-10-29T12:36:10Z" finished-at="2019-10-29T12:37:02Z">
+    <test name="MittHSBMittUppdragPages" duration-ms="27955" started-at="2019-10-29T13:47:48Z" finished-at="2019-10-29T13:48:16Z">
       <class name="com.mitthsb.qa.testcases.EkonomiPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="23957" started-at="2019-10-29T13:36:10Z" finished-at="2019-10-29T13:36:34Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="24407" started-at="2019-10-29T14:47:48Z" finished-at="2019-10-29T14:48:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.allaFakturorListItemTest()]]>
+                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.clickDigitalWebFakturaButtonTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="allaFakturorListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="allaFakturorListItemTest" duration-ms="738" started-at="2019-10-29T13:36:34Z" finished-at="2019-10-29T13:36:34Z">
+        <test-method status="PASS" signature="clickDigitalWebFakturaButtonTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="clickDigitalWebFakturaButtonTest" duration-ms="2662" started-at="2019-10-29T14:48:13Z" finished-at="2019-10-29T14:48:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- allaFakturorListItemTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="783" started-at="2019-10-29T13:36:34Z" finished-at="2019-10-29T13:36:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="23388" started-at="2019-10-29T13:36:35Z" finished-at="2019-10-29T13:36:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.finansiellaRapporterTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="finansiellaRapporterTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="finansiellaRapporterTest" duration-ms="2345" started-at="2019-10-29T13:36:59Z" finished-at="2019-10-29T13:37:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finansiellaRapporterTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="894" started-at="2019-10-29T13:37:01Z" finished-at="2019-10-29T13:37:02Z">
+        </test-method> <!-- clickDigitalWebFakturaButtonTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="789" started-at="2019-10-29T14:48:15Z" finished-at="2019-10-29T14:48:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

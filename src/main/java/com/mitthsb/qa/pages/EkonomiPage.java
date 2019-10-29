@@ -9,13 +9,18 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.mitthsb.qa.base.TestBase;
+import com.mitthsb.qa.util.TestUtil;
 
 public class EkonomiPage extends TestBase{
 	
-	@FindBy(xpath = "//div[contains(text(),'Alla Fakturor (WebbFaktura)')]")
+	@FindBy(xpath = "//ul[@id='first-level']//descendant::div[@class='list-group-item-container'][contains(text(),'Alla Fakturor (WebbFaktura)')]")
 	WebElement allaFakturorListItem;
+	
+	
+	@FindBy(xpath = "//a[@class='btn-primary'][contains(text(),'Digital WebbFaktura')]")
+	WebElement digitalWebFakturaButton;
 
-	@FindBy(xpath = "//div[contains(text(),'Finansiella rapporter')]")
+	@FindBy(xpath = "//ul[@id='first-level']//descendant::div[@class='list-group-item-container'][contains(text(),'Finansiella rapporter')]")
 	WebElement finansiellaRapportListItem;
 	
 	@FindBy(xpath = "//div[@class='visible']//div[@id='graph1']")
@@ -127,6 +132,25 @@ public boolean validatefinansiellaRapportListItem() {
 
 public boolean validatesaldoRapport() {
 	return saldoRapport.isDisplayed();	
+	
+	
+}
+
+public boolean clickGenvagar() {
+	 saldoRapport.click();
+	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
+	 return true;
+	
+	
+}
+//this is in sub category of alla fakturor list item
+public String validateDigitalWebFakturaButtonAllaFakturorListItem() {
+	allaFakturorListItem.click();
+	digitalWebFakturaButton.click();
+	String ChildwindowId=TestUtil.getNewChildWindowId();
+	driver.switchTo().window(ChildwindowId);
+	
+	 return driver.getTitle();
 	
 	
 }

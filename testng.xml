@@ -16,15 +16,16 @@
 			<class name="com.mitthsb.qa.testcases.EkonomiPageTest" >
 			
 
-				<!-- <methods>
+			<!--	<methods>
      				 			
-     				 			  <include name="allaFakturorListItemTest"/>
-     				 			  <include name="finansiellaRapporterTest"/>
+     				 			 
+     				 			  <include name="clickDigitalWebFakturaButtonTest"/>
+     				 			 
      				 			  
      				 			  
     			 </methods>	
     			
-    			 <class name="com.mitthsb.qa.testcases.AdministrationPageTest">	
+    			  <class name="com.mitthsb.qa.testcases.AdministrationPageTest">	
 			 <class name="com.mitthsb.qa.testcasegits.LoginPageTest" />
 			<class name="com.mitthsb.qa.testcases.HomePageTest" />
 			<class name="com.mitthsb.qa.testcases.EkonomiPageTest" />

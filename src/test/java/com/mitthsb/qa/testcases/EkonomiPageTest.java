@@ -78,12 +78,24 @@ public class EkonomiPageTest extends TestBase {
 		
 	}
 	
-	@Test
+	@Test//to see whether shortcut is displayed or not
 	public void validatesaldoRapportTest() {
-		boolean title=ekonomiPage.validatesaldoRapport();
-		softAssert.assertEquals(title, "&#214;versikt");
-		
+		boolean flag=ekonomiPage.validatesaldoRapport();
+		softAssert.assertTrue(flag);
 	}
+	
+	@Test//to see whether shortcut is properly redirecting to iframe or not
+	public void clicksaldoRapportGenvagarTest() {
+		boolean flag=ekonomiPage.clickGenvagar();
+		softAssert.assertTrue(flag);
+	}
+	
+	@Test//to see digitalwebfaktura button in allFakturor list item is properly redirecting to external webpage
+	public void clickDigitalWebFakturaButtonTest() {
+		String childTitle=ekonomiPage.validateDigitalWebFakturaButtonAllaFakturorListItem();
+		softAssert.assertEquals(childTitle, "Basware Login Failed");
+	}
+	
 	
 	@Test
 	public void likvidaMedelGraphEkonomiPageTest() {

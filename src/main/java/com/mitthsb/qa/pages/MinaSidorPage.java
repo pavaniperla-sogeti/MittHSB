@@ -11,7 +11,7 @@ import com.mitthsb.qa.base.TestBase;
 public class MinaSidorPage extends TestBase {
 	
 	//minasidor objects
-		@FindBy(linkText = "Brf Facklan")
+		@FindBy(partialLinkText = "Hsb Brf")
 		WebElement brfFacklanTab;
 		
 		@FindBy(xpath = "//a[contains(@class,'mn-btn')][contains(text(),'felanm')]")
