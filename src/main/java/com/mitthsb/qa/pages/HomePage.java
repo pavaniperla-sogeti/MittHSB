@@ -24,6 +24,8 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//div[@class='popover-body'][contains(text(),'Diagrammet')]")
 	WebElement informationIconLikvidaMedelIconText;	
 	
+	@FindBy(xpath = "//span[@class='create-shortcuts']")
+	WebElement skapaGenevägar;		
 	
 	@FindBy(xpath = "//div[@class='visible']//div[@class='card-body']//p[contains(text(),'7 dagarna')]")
 	WebElement senaste7Handelser;
@@ -49,14 +51,20 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//input[@id='Överlåtelser']")
 	WebElement stallDinListaLinkOverlatelseCheckbox;
 	
-	@FindBy(xpath = "//div[@class='view-selector-component--desktop']//button[@class='view-selector-trigger'][contains(text(),'brf')]")
+	@FindBy(xpath = "//div[@class='view-selector-component--desktop']//div[@class='view-selector-trigger-container view-selector-trigger-container--desktop']")
 	WebElement brf;
-	
+	////div[@class='view-selector-component--desktop']//descendant::button[@class='view-selector-trigger'][contains(text(),'Brf')]
 	@FindBy(xpath = "//a[@class='link-shortcuts'][contains(text(),'Redigera genväg')]")
 	WebElement redigeraGenvagar;
 	
 	@FindBy(xpath = "//label[contains(text(),'Ekonomisk översikt')]")
 	WebElement ekonomiShortcut;
+	
+	@FindBy(xpath = "//label[contains(text(),'Alla Fakturor (WebbFaktura)')]")
+	WebElement allaFakturorShortcut;
+	
+	@FindBy(xpath = "//label[contains(text(),'Placeringar')]")
+	WebElement placeringarShortcut;
 	
 	@FindBy(xpath = "//a[@class='link-primary'][contains(text(),'Klar')]")
 	WebElement genvagarKlarButton;
@@ -64,10 +72,10 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//div[contains(@class, 'col-12 col-md-5 centered-second')]")
 	WebElement hsbNews;
 
-	@FindBy(linkText = "Mitt uppdrag")
+	@FindBy(xpath = "//a[@class='navigation-link active'][contains(text(),'Mitt uppdrag')]")
 	WebElement mittUppdragLink;
 
-	@FindBy(linkText = "Mina sidor")
+	@FindBy(xpath = "//a[@class='navigation-link'][contains(text(),'Mina sidor')]")
 	WebElement minaSidorLink;
 
 	@FindBy(xpath = "//a[contains(text(),'Nytt') and @class='navigation-link']")
@@ -214,15 +222,31 @@ public class HomePage extends TestBase {
 	}
 
 	
-	
+	//to validate whether clicking on shortlink is taking to the respective page or not
 	public boolean validateGenvägar() {
 	
 		boolean flag = false;
 		int j = 1;
 		while (j == 1) {
+			List<WebElement> dropdown1 = driver.findElements(By.xpath("//a[@id='linkName-a']"));
+			if(dropdown1.size()==0)
+			{
+				try {
+					skapaGenevägar.click();
+					Thread.sleep(2000);
+					ekonomiShortcut.click();
+					Thread.sleep(2000);
+					genvagarKlarButton.click();
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 			List<WebElement> dropdown = driver.findElements(By.xpath("//a[@id='linkName-a']"));
 			for (int i = 0; i < dropdown.size(); i++) {
 				String drop_down_values = dropdown.get(i).getText();
+				System.out.println("shortcutvalue is"+dropdown.get(i));
 				if (drop_down_values.equals("Ekonomisk översikt")) {
 					dropdown.get(i).click();
 					wait.until(ExpectedConditions.visibilityOfElementLocated(
@@ -249,11 +273,30 @@ public class HomePage extends TestBase {
 		return flag;
 	}
 	
+	//this function is to see whether we can edit shortcuts
 	public boolean validateRedigeraGenvägar()  {
 
 		Boolean flag_before = false;
 		Boolean flag_after = false;
 		List<WebElement> dropdown = driver.findElements(By.xpath("//a[@id='linkName-a']"));
+		if(dropdown.size()==0)
+		{
+			try {
+				skapaGenevägar.click();
+				Thread.sleep(2000);
+				ekonomiShortcut.click();
+				Thread.sleep(2000);
+				allaFakturorShortcut.click();
+				Thread.sleep(2000);
+				placeringarShortcut.click();
+				Thread.sleep(2000);
+				genvagarKlarButton.click();
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		for (int i = 0; i < dropdown.size(); i++) {
 			String drop_down_values = dropdown.get(i).getText();
 			if (drop_down_values.equals("Ekonomisk översikt")) {

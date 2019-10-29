@@ -74,13 +74,13 @@ public class AdministrationPage extends TestBase{
 			Thread.sleep(1000);
 			CalenderStartDate.click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("//span[contains(text(),'"+day+"')]")).click();
+			driver.findElement(By.xpath("//span[@class='is-other-month']")).click();
 			Thread.sleep(1000);
 			CalenderStartTime.click();
 			Thread.sleep(1000);
 			CalenderEndDate.click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("//span[contains(text(),'"+day+"')]")).click();
+			driver.findElement(By.xpath("//span[@class='is-other-month']")).click();
 			Thread.sleep(1000);
 			CalenderEndTime.click();
 			Thread.sleep(1000);

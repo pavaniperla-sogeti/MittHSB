@@ -1,85 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="12" total="16" passed="4">
+<testng-results skipped="0" failed="0" ignored="14" total="16" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="MittHSB" duration-ms="112090" started-at="2019-10-28T14:15:53Z" finished-at="2019-10-28T14:17:45Z">
+  <suite name="MittHSB" duration-ms="52205" started-at="2019-10-29T12:36:10Z" finished-at="2019-10-29T12:37:02Z">
     <groups>
     </groups>
-    <test name="MittHSBMittUppdragPages" duration-ms="112090" started-at="2019-10-28T14:15:53Z" finished-at="2019-10-28T14:17:45Z">
+    <test name="MittHSBMittUppdragPages" duration-ms="52205" started-at="2019-10-29T12:36:10Z" finished-at="2019-10-29T12:37:02Z">
       <class name="com.mitthsb.qa.testcases.EkonomiPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="26207" started-at="2019-10-28T15:15:53Z" finished-at="2019-10-28T15:16:19Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="23957" started-at="2019-10-29T13:36:10Z" finished-at="2019-10-29T13:36:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.InformationIconLikvidaMedelGraphTest()]]>
+                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.allaFakturorListItemTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="InformationIconLikvidaMedelGraphTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="InformationIconLikvidaMedelGraphTest" duration-ms="332" started-at="2019-10-28T15:16:19Z" finished-at="2019-10-28T15:16:20Z">
+        <test-method status="PASS" signature="allaFakturorListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="allaFakturorListItemTest" duration-ms="738" started-at="2019-10-29T13:36:34Z" finished-at="2019-10-29T13:36:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InformationIconLikvidaMedelGraphTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="1108" started-at="2019-10-28T15:16:20Z" finished-at="2019-10-28T15:16:21Z">
+        </test-method> <!-- allaFakturorListItemTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="783" started-at="2019-10-29T13:36:34Z" finished-at="2019-10-29T13:36:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="26058" started-at="2019-10-28T15:16:21Z" finished-at="2019-10-28T15:16:47Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="23388" started-at="2019-10-29T13:36:35Z" finished-at="2019-10-29T13:36:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.InformationIconRapportGenvagarFrameTest()]]>
+                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.finansiellaRapporterTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="InformationIconRapportGenvagarFrameTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="InformationIconRapportGenvagarFrameTest" duration-ms="178" started-at="2019-10-28T15:16:47Z" finished-at="2019-10-28T15:16:47Z">
+        <test-method status="PASS" signature="finansiellaRapporterTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="finansiellaRapporterTest" duration-ms="2345" started-at="2019-10-29T13:36:59Z" finished-at="2019-10-29T13:37:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InformationIconRapportGenvagarFrameTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="1076" started-at="2019-10-28T15:16:47Z" finished-at="2019-10-28T15:16:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="28407" started-at="2019-10-28T15:16:48Z" finished-at="2019-10-28T15:17:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.InformationIconDisponiBeltGraphTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="InformationIconDisponiBeltGraphTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="InformationIconDisponiBeltGraphTest" duration-ms="180" started-at="2019-10-28T15:17:16Z" finished-at="2019-10-28T15:17:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InformationIconDisponiBeltGraphTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="1080" started-at="2019-10-28T15:17:17Z" finished-at="2019-10-28T15:17:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="25882" started-at="2019-10-28T15:17:18Z" finished-at="2019-10-28T15:17:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.InformationIconCashFlowGraphTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="InformationIconCashFlowGraphTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="InformationIconCashFlowGraphTest" duration-ms="268" started-at="2019-10-28T15:17:44Z" finished-at="2019-10-28T15:17:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InformationIconCashFlowGraphTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="1076" started-at="2019-10-28T15:17:44Z" finished-at="2019-10-28T15:17:45Z">
+        </test-method> <!-- finansiellaRapporterTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="894" started-at="2019-10-29T13:37:01Z" finished-at="2019-10-29T13:37:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

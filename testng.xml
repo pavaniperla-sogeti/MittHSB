@@ -11,18 +11,17 @@
 	<test name="MittHSBMittUppdragPages"  preserve-order="true" parallel="false">
 			<classes>
 
-			<class name="com.mitthsb.qa.testcases.HomePageTest" />
-			<class name="com.mitthsb.qa.testcases.EkonomiPageTest" />
-			<class name="com.mitthsb.qa.testcases.AdministrationPageTest" />
+			<class name="com.mitthsb.qa.testcases.HomePageTest" />			
+			<class name="com.mitthsb.qa.testcases.AdministrationPageTest" /> 
+			<class name="com.mitthsb.qa.testcases.EkonomiPageTest" >
 			
 
-		
-
 				<!-- <methods>
-     				 			  <include name="InformationIconLikvidaMedelGraphTest"/>
-     				 			  <include name="InformationIconRapportGenvagarFrameTest"/>
-     				 			  <include name="InformationIconDisponiBeltGraphTest"/>
-     				 			  <include name="InformationIconCashFlowGraphTest"/>
+     				 			
+     				 			  <include name="allaFakturorListItemTest"/>
+     				 			  <include name="finansiellaRapporterTest"/>
+     				 			  
+     				 			  
     			 </methods>	
     			
     			 <class name="com.mitthsb.qa.testcases.AdministrationPageTest">	
@@ -30,7 +29,7 @@
 			<class name="com.mitthsb.qa.testcases.HomePageTest" />
 			<class name="com.mitthsb.qa.testcases.EkonomiPageTest" />
 		 -->
-		  
+		  </class>
 		</classes>
 	</test>
 

@@ -8,8 +8,8 @@
     <classes>
       <class name="com.mitthsb.qa.testcases.HomePageTest">
         <methods>
-          <include name="stallIDinListaFunctionTest"/>
           <include name="tearDown"/>
+          <include name="brfDisplayTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->

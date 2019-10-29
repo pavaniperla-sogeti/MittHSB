@@ -203,6 +203,7 @@ public class HomePageTest extends TestBase{
 	}
 	
 	@Test//for validating ekonomi shortcut
+	//to validate whether clicking on ekonomi shortcutlink is taking to the respective page or not
 	public void EkonomiGenvagarLinkTest() {
 		if(prop.getProperty("role").equals("Grund"))
 			throw new SkipException("Skipping this exception");
