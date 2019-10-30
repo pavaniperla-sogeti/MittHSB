@@ -1,5 +1,3 @@
-//if you wnat to switch the frame before checking the xpath.
-
 package com.mitthsb.qa.pages;
 
 import java.util.List;
@@ -19,53 +17,53 @@ public class HomePage extends TestBase {
 	WebElement ekonomiskOversiktGraph;
 
 	@FindBy(xpath = "//span[@class='encircled text-center border border-primary rounded-circle'][contains(text(),'i')]")
-	WebElement informationIconLikvidaMedel;	
-	
+	WebElement informationIconLikvidaMedel;
+
 	@FindBy(xpath = "//div[@class='popover-body'][contains(text(),'Diagrammet')]")
-	WebElement informationIconLikvidaMedelIconText;	
-	
+	WebElement informationIconLikvidaMedelIconText;
+
 	@FindBy(xpath = "//span[@class='create-shortcuts']")
-	WebElement skapaGenevägar;		
-	
+	WebElement skapaGenevägar;
+
 	@FindBy(xpath = "//div[@class='visible']//div[@class='card-body']//p[contains(text(),'7 dagarna')]")
 	WebElement senaste7Handelser;
-	
+
 	@FindBy(xpath = "//div[@class='visible']//div[@class='card-body']//p[contains(text(),'äldre händelser')]")
 	WebElement senasteAldreHandelser;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'Se alla nyheter')]")
 	WebElement seAllaNyheter;
-	
+
 	@FindBy(xpath = "//body//latest-news//li[1]")
 	WebElement NyheterArticle;
-	
+
 	@FindBy(xpath = "//div[@class='menu-item menu-item--logo']//img")
 	WebElement hsbLogo;
-	
+
 	@FindBy(xpath = "//a[@class='link-secondary white preferences'][contains(text(),'in din lista')]")
-	WebElement stallDinListaLink;		
-	
+	WebElement stallDinListaLink;
+
 	@FindBy(xpath = "//button[@class='btn btn-primary large'][contains(text(),'Spara')]")
 	WebElement stallDinListaLinkSparaButton;
-	
+
 	@FindBy(xpath = "//input[@id='Överlåtelser']")
 	WebElement stallDinListaLinkOverlatelseCheckbox;
-	
+
 	@FindBy(xpath = "//div[@class='view-selector-component--desktop']//div[@class='view-selector-trigger-container view-selector-trigger-container--desktop']")
 	WebElement brf;
-	////div[@class='view-selector-component--desktop']//descendant::button[@class='view-selector-trigger'][contains(text(),'Brf')]
+	//// div[@class='view-selector-component--desktop']//descendant::button[@class='view-selector-trigger'][contains(text(),'Brf')]
 	@FindBy(xpath = "//a[@class='link-shortcuts'][contains(text(),'Redigera genväg')]")
 	WebElement redigeraGenvagar;
-	
+
 	@FindBy(xpath = "//label[contains(text(),'Ekonomisk översikt')]")
 	WebElement ekonomiShortcut;
-	
+
 	@FindBy(xpath = "//label[contains(text(),'Alla Fakturor (WebbFaktura)')]")
 	WebElement allaFakturorShortcut;
-	
+
 	@FindBy(xpath = "//label[contains(text(),'Placeringar')]")
 	WebElement placeringarShortcut;
-	
+
 	@FindBy(xpath = "//a[@class='link-primary'][contains(text(),'Klar')]")
 	WebElement genvagarKlarButton;
 
@@ -95,29 +93,29 @@ public class HomePage extends TestBase {
 
 	@FindBy(linkText = "Dokument")
 	WebElement dokumentTab;
-	
+
 	@FindBy(xpath = "//div[@class='view-selector-component--desktop']//a[@class='link-secondary'][contains(text(),'Logga ut')]")
 	WebElement logoutBtn;
-	
+
 	@FindBy(linkText = "Logga ut")
 	WebElement vivalya_MinaSidor;
-	
+
 	@FindBy(linkText = "Logga ut")
 	WebElement vivalya_NyttfranHsb;
-	
+
 	@FindBy(xpath = "//div[@class='view-selector-component--desktop']//button[@class='view-selector-trigger']")
 	WebElement vivalyaren;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'Gå till kalender')]")
-	WebElement goTillKalender;	
-	
+	WebElement goTillKalender;
+
 	@FindBy(xpath = "//div[@class='calendar-item-wrapper']//descendant::p[@class='bold'][contains(text(),'Automat')]")
 	WebElement calenderEventCheck;
-	
-	//minasidor objects
+
+	// minasidor objects
 	@FindBy(linkText = "Brf Facklan")
 	WebElement brfFacklanTab;
-	
+
 	@FindBy(xpath = "//a[contains(@class,'mn-btn')][contains(text(),'felanm')]")
 	WebElement arendenTab;
 
@@ -132,11 +130,9 @@ public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//button[@class='btn-primary'][contains(text(),'Skapa kalenderhändelse')]")
 	WebElement sokBostadTab;
-	
+
 	@FindBy(linkText = "Min profil")
 	WebElement minProfileTab;
-
-
 
 	public HomePage() {
 
@@ -145,7 +141,7 @@ public class HomePage extends TestBase {
 
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public boolean validateHSBLogoHomePage() {
 		return hsbLogo.isDisplayed();
 	}
@@ -158,9 +154,9 @@ public class HomePage extends TestBase {
 	public boolean validateMittUpdragLink() {
 		return mittUppdragLink.isDisplayed();
 	}
-	
+
 	public boolean validateBrfDisplay() {
-		return brf.isDisplayed();	
+		return brf.isDisplayed();
 	}
 
 	public boolean validateMinaSidorLink() {
@@ -168,7 +164,7 @@ public class HomePage extends TestBase {
 	}
 
 	public boolean validateNyttFranHsb() {
-			return nyttFranHsb.isDisplayed();
+		return nyttFranHsb.isDisplayed();
 	}
 
 	public boolean validateFakturorDisplay() {
@@ -178,59 +174,58 @@ public class HomePage extends TestBase {
 	public boolean validateHsbNews() {
 		return hsbNews.isDisplayed();
 	}
-	
+
 	public boolean validateStallInDinLista() {
 		return hsbNews.isDisplayed();
 	}
-	
+
 	public boolean validateInformationIcon() {
-		
+
 		informationIconLikvidaMedel.click();
 		return informationIconLikvidaMedelIconText.isDisplayed();
 	}
-	
+
 	public boolean stallInDinListaLinkTest() {
-		
+
 		try {
-			stallDinListaLink.click();		
+			stallDinListaLink.click();
 			driver.switchTo().activeElement();
 			Thread.sleep(2000);
 			stallDinListaLinkOverlatelseCheckbox.click();
 			Thread.sleep(2000);
 			stallDinListaLinkSparaButton.click();
 			hsbNews.isDisplayed();
-			
+
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return false;
 		}
-		
+
 		return true;
 	}
-	
+
 	public boolean validateEkonomicOversiktGraph() {
 		return ekonomiskOversiktGraph.isDisplayed();
 	}
-	
+
 	public boolean validateSenate7HandelserFrame() {
 		return senaste7Handelser.isDisplayed();
 	}
-	
+
 	public boolean validateSenateAldreHandelserFrame() {
 		return senasteAldreHandelser.isDisplayed();
 	}
 
-	
-	//to validate whether clicking on shortlink is taking to the respective page or not
+	// to validate whether clicking on shortlink is taking to the respective page or
+	// not
 	public boolean validateGenvägar() {
-	
+
 		boolean flag = false;
 		int j = 1;
 		while (j == 1) {
 			List<WebElement> dropdown1 = driver.findElements(By.xpath("//a[@id='linkName-a']"));
-			if(dropdown1.size()==0)
-			{
+			if (dropdown1.size() == 0) {
 				try {
 					skapaGenevägar.click();
 					Thread.sleep(2000);
@@ -246,7 +241,7 @@ public class HomePage extends TestBase {
 			List<WebElement> dropdown = driver.findElements(By.xpath("//a[@id='linkName-a']"));
 			for (int i = 0; i < dropdown.size(); i++) {
 				String drop_down_values = dropdown.get(i).getText();
-				System.out.println("shortcutvalue is"+dropdown.get(i));
+				System.out.println("shortcutvalue is" + dropdown.get(i));
 				if (drop_down_values.equals("Ekonomisk översikt")) {
 					dropdown.get(i).click();
 					wait.until(ExpectedConditions.visibilityOfElementLocated(
@@ -272,15 +267,14 @@ public class HomePage extends TestBase {
 		}
 		return flag;
 	}
-	
-	//this function is to see whether we can edit shortcuts
-	public boolean validateRedigeraGenvägar()  {
+
+	// this function is to see whether we can edit shortcuts
+	public boolean validateRedigeraGenvägar() {
 
 		Boolean flag_before = false;
 		Boolean flag_after = false;
 		List<WebElement> dropdown = driver.findElements(By.xpath("//a[@id='linkName-a']"));
-		if(dropdown.size()==0)
-		{
+		if (dropdown.size() == 0) {
 			try {
 				skapaGenevägar.click();
 				Thread.sleep(2000);
@@ -312,13 +306,13 @@ public class HomePage extends TestBase {
 			Thread.sleep(2000);
 			genvagarKlarButton.click();
 			Thread.sleep(2000);
-				} catch (InterruptedException e) {
+		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//refresh page and see whether shortcuts are properly added or deleted.
+		// refresh page and see whether shortcuts are properly added or deleted.
 
-		driver.navigate().refresh();	
+		driver.navigate().refresh();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("in din lista")));
 		List<WebElement> dropdownLatest = driver.findElements(By.xpath("//a[@id='linkName-a']"));
 		for (int j = 0; j < dropdownLatest.size(); j++) {
@@ -330,63 +324,62 @@ public class HomePage extends TestBase {
 		}
 		if (flag_before == flag_after)
 			return false;
-		else			
-		return true;
+		else
+			return true;
 	}
-	
-public boolean displayKalenderHäandelse() {
-		
+
+	public boolean displayKalenderHäandelse() {
+
 		return calenderEventCheck.isDisplayed();
 	}
-	
-	
+
 	public NyttFranHSBPage validateSeAllaNyheter() {
-		
+
 		seAllaNyheter.click();
-		
+
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1[contains(text(),'NYTT FRÅN HSB')]")));
-		
+
 		return new NyttFranHSBPage();
 	}
-	
+
 	public NyttFranHSBPage validateNyheterArticle() {
-		
+
 		js.executeScript("arguments[0].scrollIntoView(true);", NyheterArticle);
-		
+
 		NyheterArticle.click();
-		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@href='/nytt-fran-hsb/' and @class='link-dark']")));
-		
+
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//a[@href='/nytt-fran-hsb/' and @class='link-dark']")));
+
 		return new NyttFranHSBPage();
 	}
-	
+
 	public AdministrationPage goTillKalender() {
 
 		goTillKalender.click();
 
-		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='btn-primary']")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='btn-primary']")));
 
 		return new AdministrationPage();
 
 	}
 
-
 	public EkonomiPage ekonomiTab() {
-		
 
 		ekonomiTab.click();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h4[@class='bold-uppercase'][contains(text(),'Ekonomisk översikt')]")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//h4[@class='bold-uppercase'][contains(text(),'Ekonomisk översikt')]")));
 
 		return new EkonomiPage();
-		}
-
+	}
 
 	public AdministrationPage adminTab() {
 
 		adminTab.click();
 
-		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"content-first\"]/div[2]/div/button")));
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//*[@id=\"content-first\"]/div[2]/div/button")));
 
 		return new AdministrationPage();
 
@@ -396,7 +389,7 @@ public boolean displayKalenderHäandelse() {
 
 		FastightenTab.click();
 
-		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
 
 		return new FastighetenPage();
 
@@ -412,18 +405,17 @@ public boolean displayKalenderHäandelse() {
 
 	}
 	// define Actions for minasidor page
-	
+
 	public MinaSidorPage minaSidorLink() {
 
 		minaSidorLink.click();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='content no-max-width gradient-bg col-12']")));
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//div[@class='content no-max-width gradient-bg col-12']")));
 
 		return new MinaSidorPage();
 
 	}
-	
-	
 
 	public boolean validateBrfFacklan() {
 		return brfFacklanTab.isDisplayed();
@@ -434,7 +426,7 @@ public boolean displayKalenderHäandelse() {
 	}
 
 	public boolean validateMinBostadTab() {
-			return minBostadTab.isDisplayed();
+		return minBostadTab.isDisplayed();
 	}
 
 	public boolean validateBosparTab() {
@@ -444,7 +436,7 @@ public boolean displayKalenderHäandelse() {
 	public boolean validateMedlemskapTab() {
 		return medlemskapTab.isDisplayed();
 	}
-	
+
 	public boolean validateSokBostadTab() {
 		return sokBostadTab.isDisplayed();
 	}
@@ -454,15 +446,14 @@ public boolean displayKalenderHäandelse() {
 	}
 
 	public BrfFacklanPage BrfFacklanTab() {
-		
 
 		brfFacklanTab.click();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='content no-max-width gradient-bg col-12']")));
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//div[@class='content no-max-width gradient-bg col-12']")));
 
 		return new BrfFacklanPage();
-		}
-
+	}
 
 	public ArendenAndFelanmalanPage arendenAndFelanmalanTab() {
 
@@ -478,7 +469,7 @@ public boolean displayKalenderHäandelse() {
 
 		minBostadTab.click();
 
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
+		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
 
 		return new MinBostadPage();
 
@@ -493,12 +484,12 @@ public boolean displayKalenderHäandelse() {
 		return new BosparPage();
 
 	}
-	
+
 	public MedlemskapetPage MedlemskapetTab() {
 
 		medlemskapTab.click();
 
-		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//main[@id='main-gradient']")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//main[@id='main-gradient']")));
 
 		return new MedlemskapetPage();
 
@@ -508,7 +499,7 @@ public boolean displayKalenderHäandelse() {
 
 		sokBostadTab.click();
 
-		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
 
 		return new SokBostadPage();
 
@@ -523,18 +514,17 @@ public boolean displayKalenderHäandelse() {
 		return new MinProfilPage();
 
 	}
-	
+
 	public logoutPage logout() {
-		
+
 		vivalyaren.click();
-		
+
 		logoutBtn.click();
-		
+
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id='login_title']")));
-		
+
 		return new logoutPage();
-		
-		
+
 	}
 
 }

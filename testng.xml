@@ -3,34 +3,31 @@
 
 <suite name="MittHSB" preserve-order="true" verbose="10">
 
-<listeners>
-		<listener class-name="com.qa.ExtentReportListner.ExtentRerportListener" />
-		<!--<listener class-name="com.mitthsb.qa.util.TestNGEmailableReport2" />-->
-		</listeners>
+	<listeners>
+		<listener
+			class-name="com.qa.ExtentReportListner.ExtentRerportListener" />
+		<!--<listener class-name="com.mitthsb.qa.util.TestNGEmailableReport2" /> -->
+	</listeners>
 
-	<test name="MittHSBMittUppdragPages"  preserve-order="true" parallel="false">
-			<classes>
+	<test name="MittHSBMittUppdragPages" preserve-order="true"
+		parallel="false">
+		<classes>
 
-			<class name="com.mitthsb.qa.testcases.HomePageTest" />			
-			<class name="com.mitthsb.qa.testcases.AdministrationPageTest" /> 
-			<class name="com.mitthsb.qa.testcases.EkonomiPageTest" >
-			
+			<!--<class name="com.mitthsb.qa.testcases.HomePageTest" />
+			<class name="com.mitthsb.qa.testcases.AdministrationPageTest" />-->
+			<class name="com.mitthsb.qa.testcases.EkonomiPageTest"> 
 
-			<!--	<methods>
-     				 			
-     				 			 
-     				 			  <include name="clickDigitalWebFakturaButtonTest"/>
-     				 			 
-     				 			  
-     				 			  
-    			 </methods>	
-    			
-    			  <class name="com.mitthsb.qa.testcases.AdministrationPageTest">	
-			 <class name="com.mitthsb.qa.testcasegits.LoginPageTest" />
-			<class name="com.mitthsb.qa.testcases.HomePageTest" />
-			<class name="com.mitthsb.qa.testcases.EkonomiPageTest" />
-		 -->
-		  </class>
+
+				<methods>
+				 <include name="clickDigitalWebFakturaButtonTest"/>
+				 <include name="allaFakturorListItemTest"/>
+				 <include name="finansiellaRapporterTest"/>
+				 <include name="disponibelGraphEkonomiPageTest"/>
+				 </methods> 
+					
+
+
+			</class>
 		</classes>
 	</test>
 

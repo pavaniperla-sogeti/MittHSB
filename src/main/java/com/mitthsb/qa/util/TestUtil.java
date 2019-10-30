@@ -45,8 +45,7 @@ public class TestUtil extends TestBase {
 
 	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir")
 			+ "/src/main/java/com/mitthsb/qa/testdata/data.xlsx";
-	// "C:/Users/pperla/eclipse-workspace/MittHSBTest/src/main/java/com/mitthsb/qa/testdata/data.xlsx";
-
+	
 	static Workbook book;
 	static Sheet sheet;
 	static JavascriptExecutor js;
@@ -64,7 +63,7 @@ public class TestUtil extends TestBase {
 
 		Set<String> handler = driver.getWindowHandles();
 		Iterator<String> it = handler.iterator();
-		String ParentWindowId = it.next();// pointing to first value of window handle
+		it.next();// pointing to first value of window handle
 		// System.out.println("parent window id "+ ParentWindowId);
 		String ChildWindowId = it.next();// pointing to second value of window handle child window
 		return ChildWindowId;
@@ -149,15 +148,7 @@ public class TestUtil extends TestBase {
 
 	}
 
-//	public static String takeScreenshotAtEndOfTestExtentReport() throws IOException {
-//		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//		String currentDir = System.getProperty("user.dir");
-//		String screenshotPath=currentDir + "/screenshots/" + System.currentTimeMillis() + ".png";
-//		FileUtils.copyFile(scrFile, new File(screenshotPath));
-//		System.out.println("screenshotfilepath is"+screenshotPath);
-//		return screenshotPath;
-//	}
-//	
+
 	public static String getCurrentDateTime() {
 		Calendar currentDate = Calendar.getInstance();
 		SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yyyy-HH-mm-ss");
