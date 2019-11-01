@@ -48,6 +48,7 @@ public class HomePageTest extends TestBase {
 	MinaSidorPage MinaSidorPage;
 	NyttFranHSBPage NyttFranHSBPage;
 	SoftAssert softAssert = new SoftAssert();
+	String rolePrevilege;
 
 	public HomePageTest() {
 		super();
@@ -64,17 +65,20 @@ public class HomePageTest extends TestBase {
 
 		initialization();
 		System.out.println("class is" + this.getClass().getName() + "and method is" + method.getName());
+		String role=prop.getProperty("role");
+		rolePrevilege=TestUtil.retrieveRole(method.getName(),role);
+		System.out.println("roel is" + rolePrevilege);
 		loginPage = new Loginpage();
 		testUtil = new TestUtil();
-		homePage = loginPage.login(prop.getProperty("login"), prop.getProperty("pwd"), prop.getProperty("role"));
+		homePage = loginPage.login(prop.getProperty("login"), prop.getProperty("pwd"), role);
 
 	}
 
 	@Test(groups="Regression")
 	public void homePageTitleTest() {
 		String title = homePage.validateHomePageTitle();
-
-		softAssert.assertEquals(title, "&#214;versikt");
+		softAssert.assertEquals(title, "Översikt - NOT FOR COMMERCIAL USE");
+		softAssert.assertAll();
 		
 
 	}
@@ -84,6 +88,7 @@ public class HomePageTest extends TestBase {
 
 		boolean flag = homePage.validateHSBLogoHomePage();
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 		
 	}
@@ -91,16 +96,18 @@ public class HomePageTest extends TestBase {
 	@Test(groups="Regression")
 	public void stallIDinListaLinkDisplayTest() {
 
-		boolean flag = homePage.validateStallInDinLista();
+		boolean flag = homePage.validateStallInDinLista(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 			}
 
 	@Test(groups="Regression")
 	public void informationIconLikvidaMedelGraphTest() {
 
-		boolean flag = homePage.validateInformationIcon();
+		boolean flag = homePage.validateInformationIcon(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 		
 
@@ -111,6 +118,7 @@ public class HomePageTest extends TestBase {
 
 		boolean flag = homePage.stallInDinListaLinkTest();
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 		
 
@@ -121,24 +129,25 @@ public class HomePageTest extends TestBase {
 
 		boolean flag = homePage.validateBrfDisplay();
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 		
 
 	}
 
 	@Test(groups="Regression")
-	public void mittUpdragLinkTest() {
-		if (prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
-		boolean flag = homePage.validateMittUpdragLink();
+	public void mittUpdragLinkTest() {		
+		boolean flag = homePage.validateMittUpdragLink(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 	}
 
 	@Test(groups="Regression")
 	public void minaSidorlinkTest() {
-		boolean flag = homePage.validateMinaSidorLink();
+		boolean flag = homePage.validateMinaSidorLink(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 	}
 
@@ -146,15 +155,16 @@ public class HomePageTest extends TestBase {
 	public void nyttLinkTest() {
 		boolean flag = homePage.validateNyttFranHsb();
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 	}
 
 	@Test(groups="Regression")
 	public void fakturorDisplayTest() {
-		if (prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
-		boolean flag = homePage.validateFakturorDisplay();
+	
+		boolean flag = homePage.validateFakturorDisplay(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 	}
 
@@ -163,12 +173,14 @@ public class HomePageTest extends TestBase {
 		if (prop.getProperty("role").equals("Grund"))
 			throw new SkipException("Skipping this exception");
 		adminPage = homePage.goTillKalender();
+		softAssert.assertAll();
 
 	}
 
 	@Test(groups="Regression")
 	public void seAllaNyheterLinkTest() {
 		NyttFranHSBPage = homePage.validateSeAllaNyheter();
+		softAssert.assertAll();
 
 	}
 
@@ -177,13 +189,21 @@ public class HomePageTest extends TestBase {
 		NyttFranHSBPage = homePage.validateNyheterArticle();
 
 	}
+	
+	@Test(groups="Regression")
+	public void priorityNewsFrameTest() {
+		boolean flag = homePage.validateHsbNews(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+	}
+
 
 	@Test (groups="Regression")// for testing shortcuts functionalities to add or delete
 	public void genvagarLinkTest() {
-		if (prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
-		boolean flag = homePage.validateRedigeraGenvägar();
+			boolean flag = homePage.validateRedigeraGenvägar(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 	}
 
@@ -191,37 +211,34 @@ public class HomePageTest extends TestBase {
 	// to validate whether clicking on ekonomi shortcutlink is taking to the
 	// respective page or not
 	public void EkonomiGenvagarLinkTest() {
-		if (prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
-		boolean flag = homePage.validateGenvägar();
+	
+		boolean flag = homePage.validateGenvägar(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 	}
 
 	@Test (groups="Regression")// for validating ekonomi oversiktGraph
 	public void ekonomiOversiktGraphTest() {
-		if (prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
-		boolean flag = homePage.validateEkonomicOversiktGraph();
+				boolean flag = homePage.validateEkonomicOversiktGraph(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 	}
 
 	@Test (groups="Regression")// for validating senaste 7handelser frame display
 	public void senatste7HandelserFrameTest() {
-		if (prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
-		boolean flag = homePage.validateSenate7HandelserFrame();
+		boolean flag = homePage.validateSenate7HandelserFrame(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 	}
 
 	@Test(groups="Regression") // for validating senaste Aldre handelser frame display
 	public void senatsteAldreHandelserFrameTest() {
-		if (prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
-		boolean flag = homePage.validateSenateAldreHandelserFrame();
+		boolean flag = homePage.validateSenateAldreHandelserFrame(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 	}
 
@@ -361,7 +378,7 @@ public class HomePageTest extends TestBase {
 
 	@AfterMethod
 	public void tearDown() {
-
+		
 		System.out.println("this methiod is ended");
 		// driver.close();
 		driver.quit();

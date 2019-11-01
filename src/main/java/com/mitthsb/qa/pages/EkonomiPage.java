@@ -14,26 +14,26 @@ import com.mitthsb.qa.util.TestUtil;
 public class EkonomiPage extends TestBase{
 	
 	@FindBy(xpath = "//ul[@id='first-level']//descendant::div[@class='list-group-item-container'][contains(text(),'Alla Fakturor (WebbFaktura)')]")
-	WebElement allaFakturorListItem;
+	List<WebElement> allaFakturorListItem;
 	
 	
 	@FindBy(xpath = "//a[@class='btn-primary'][contains(text(),'Digital WebbFaktura')]")
 	WebElement digitalWebFakturaButton;
 
 	@FindBy(xpath = "//ul[@id='first-level']//descendant::div[@class='list-group-item-container'][contains(text(),'Finansiella rapporter')]")
-	WebElement finansiellaRapportListItem;
+	List<WebElement> finansiellaRapportListItem;
 	
 	@FindBy(xpath = "//div[@class='visible']//div[@id='graph1']")
 	WebElement likvidaMedelGraph;
 	
-	@FindBy(xpath = "//div[@class='cash-flow-graph']//descendant::div[@class='invisible visible']")
+	@FindBy(xpath = "//div[@class='cash-flow-graph']//descendant::div[@class='visible']")
 	WebElement cashFlowGraph;
 	
 	@FindBy(xpath = "//div[@class='disposable-and-bound-funds-graph']//descendant::div[@class='visible']")
 	WebElement disposableBoundFundsGraph;
 	
 	@FindBy(xpath = "//accounts-receivable-graph//descendant::div[@class='visible']")
-	WebElement accountsReceivableGraph;
+	List<WebElement> accountsReceivableGraph;
 
 	@FindBy(xpath = "//a[@id='linkName-a' and contains(text(), 'Saldo')]")
 	WebElement saldoRapport;
@@ -90,14 +90,14 @@ public String validateEkonomiPageTitle(){
 	
 }
 public AllaFakturorListItemPage clickAllaFakturorListItem() {
-	 allaFakturorListItem.click();
+	 allaFakturorListItem.get(0).click();
 	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='col-12 content standard-template']")));
 	 return new AllaFakturorListItemPage();
 	 //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
 }
 
 public FinansiellaRapporterPage clickfinansiellaRapportListItem() {
-	 finansiellaRapportListItem.click();
+	 finansiellaRapportListItem.get(0).click();
 	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
 	 return new FinansiellaRapporterPage();
 	
@@ -110,23 +110,36 @@ public SaldoRapportPage clicksaldoRapport() {
 	 //wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("fakturor att")));
 }
 
-public boolean validateAllaFakturorListItem() {
-	 return allaFakturorListItem.isDisplayed();
+public boolean validateAllaFakturorListItem(String rolePrevilege) {
+	
+	int ElementSize = allaFakturorListItem.size();
+	System.out.println("allaFakturorListItem element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	return flag;
+
 	
 	
 }
 
-public boolean validateAccountsReceivableGraph() {
-	 return accountsReceivableGraph.isDisplayed();
+public boolean validateAccountsReceivableGraph(String rolePrevilege) {
 	
+	int ElementSize = accountsReceivableGraph.size();
+	System.out.println("accountsReceivableGraph element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	return flag;
+
 	
 }
 
 
 
-public boolean validatefinansiellaRapportListItem() {
-	return finansiellaRapportListItem.isDisplayed();
-	 
+public boolean validatefinansiellaRapportListItem(String rolePrevilege) {
+	
+	int ElementSize = finansiellaRapportListItem.size();
+	System.out.println("finansiellaRapportListItem element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	return flag;
+	
 	// wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("fakturor att")));
 }
 
@@ -145,7 +158,7 @@ public boolean clickGenvagar() {
 }
 //this is in sub category of alla fakturor list item
 public String validateDigitalWebFakturaButtonAllaFakturorListItem() {
-	allaFakturorListItem.click();
+	allaFakturorListItem.get(0).click();
 	digitalWebFakturaButton.click();
 	String ChildwindowId=TestUtil.getNewChildWindowId();
 	driver.switchTo().window(ChildwindowId);

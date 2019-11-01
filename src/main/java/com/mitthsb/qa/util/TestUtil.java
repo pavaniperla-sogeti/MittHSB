@@ -46,6 +46,7 @@ public class TestUtil extends TestBase {
 	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir")
 			+ "/src/main/java/com/mitthsb/qa/testdata/data.xlsx";
 	
+		
 	static Workbook book;
 	static Sheet sheet;
 	static JavascriptExecutor js;
@@ -67,6 +68,102 @@ public class TestUtil extends TestBase {
 		// System.out.println("parent window id "+ ParentWindowId);
 		String ChildWindowId = it.next();// pointing to second value of window handle child window
 		return ChildWindowId;
+
+	}
+	
+	public static boolean getRoleResult(String rolePrevilege, int ElementSize ) {
+
+		boolean flag = false;
+
+		if (ElementSize > 0)
+			switch (rolePrevilege) {
+			case "x":
+				System.out.println("insideElementsize role x");
+				flag = true;
+				break;
+			case "no":
+				System.out.println("insideElementsize role no");
+				flag = false;
+				break;
+			}
+
+		else
+
+			switch (rolePrevilege) {
+			case "x":
+				System.out.println("outsideElementsize role x");
+				flag = false;
+				break;
+			case "no":
+				System.out.println("outsideElementsize role no");
+				flag = true;
+				break;
+			}
+		
+		return flag;
+
+	}
+	
+	public static String retrieveRole(String Method, String Role) {
+		System.out.println("method name" + Method);
+		String RolePrevilege = null;
+		FileInputStream file = null;
+		boolean flag = false;
+		int roleColumn=0;
+
+		try {
+			file = new FileInputStream(TESTDATA_SHEET_PATH);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			book = WorkbookFactory.create(file);
+		} catch (InvalidFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		sheet = book.getSheet("Roles");
+		
+		//to get the column of the user role
+		for (int j = 0; j < sheet.getRow(0).getLastCellNum(); j++) {
+			
+			if(sheet.getRow(0).getCell(j).toString().equals(Role))
+			{
+				roleColumn=j;
+				System.out.println("matching role col is"+roleColumn);
+		}
+		}
+		
+		for (int k = 0; k < sheet.getLastRowNum(); k++) {
+
+			String testCaseMethodName = sheet.getRow(k + 1).getCell(1).toString();			
+
+			if (testCaseMethodName.equals(Method)) {
+				RolePrevilege = sheet.getRow(k + 1).getCell(roleColumn).toString();
+				flag = true;
+				System.out.println("method matched");
+			}
+
+			if (flag)
+				break;
+
+		}
+
+		return RolePrevilege;
+
+	}
+	
+	public static void pause(long sleepTime) {
+
+		try {
+			Thread.sleep(sleepTime);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -190,7 +287,7 @@ public class TestUtil extends TestBase {
 		Thread.sleep(5000);
 	}
 
-	public static int BrokenLinks() {
+	public static int brokenLinks() {
 
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 

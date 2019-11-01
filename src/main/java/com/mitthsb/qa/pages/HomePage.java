@@ -14,10 +14,14 @@ import com.mitthsb.qa.util.TestUtil;
 public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//div[@class='visible']//div[@id='graph1']")
-	WebElement ekonomiskOversiktGraph;
+	List<WebElement> ekonomiskOversiktGraph;
+	
+	@FindBy(xpath = "//h4[@class='bold-uppercase'][contains(text(),'Ekonomisk översikt')]")
+	WebElement ekonomiPageElement;
+
 
 	@FindBy(xpath = "//span[@class='encircled text-center border border-primary rounded-circle'][contains(text(),'i')]")
-	WebElement informationIconLikvidaMedel;
+	List<WebElement>  informationIconLikvidaMedel;
 
 	@FindBy(xpath = "//div[@class='popover-body'][contains(text(),'Diagrammet')]")
 	WebElement informationIconLikvidaMedelIconText;
@@ -26,10 +30,10 @@ public class HomePage extends TestBase {
 	WebElement skapaGenevägar;
 
 	@FindBy(xpath = "//div[@class='visible']//div[@class='card-body']//p[contains(text(),'7 dagarna')]")
-	WebElement senaste7Handelser;
+	List<WebElement>  senaste7Handelser;
 
 	@FindBy(xpath = "//div[@class='visible']//div[@class='card-body']//p[contains(text(),'äldre händelser')]")
-	WebElement senasteAldreHandelser;
+	List<WebElement>  senasteAldreHandelser;
 
 	@FindBy(xpath = "//a[contains(text(),'Se alla nyheter')]")
 	WebElement seAllaNyheter;
@@ -41,7 +45,7 @@ public class HomePage extends TestBase {
 	WebElement hsbLogo;
 
 	@FindBy(xpath = "//a[@class='link-secondary white preferences'][contains(text(),'in din lista')]")
-	WebElement stallDinListaLink;
+	List<WebElement>  stallDinListaLink;
 
 	@FindBy(xpath = "//button[@class='btn btn-primary large'][contains(text(),'Spara')]")
 	WebElement stallDinListaLinkSparaButton;
@@ -67,20 +71,20 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//a[@class='link-primary'][contains(text(),'Klar')]")
 	WebElement genvagarKlarButton;
 
-	@FindBy(xpath = "//div[contains(@class, 'col-12 col-md-5 centered-second')]")
-	WebElement hsbNews;
+	@FindBy(xpath = "//div[contains(@class, 'priority-news')]")
+	List<WebElement>  hsbNews;
 
-	@FindBy(xpath = "//a[@class='navigation-link active'][contains(text(),'Mitt uppdrag')]")
-	WebElement mittUppdragLink;
+	@FindBy(xpath = "//a[contains(text(),'Mitt uppdrag')]")
+	List<WebElement> mittUppdragLink;
 
-	@FindBy(xpath = "//a[@class='navigation-link'][contains(text(),'Mina sidor')]")
-	WebElement minaSidorLink;
+	@FindBy(xpath = "//a[contains(text(),'Mina sidor')]")
+	List<WebElement>  minaSidorLink;
 
-	@FindBy(xpath = "//a[contains(text(),'Nytt') and @class='navigation-link']")
+	@FindBy(linkText = "Nytt från HSB")
 	WebElement nyttFranHsb;
 
 	@FindBy(xpath = "//a[contains(text(),'in din lista')]")
-	WebElement todoFakturorList;
+	List<WebElement> todoFakturorList;
 
 	@FindBy(linkText = "Ekonomi")
 	WebElement ekonomiTab;
@@ -110,7 +114,7 @@ public class HomePage extends TestBase {
 	WebElement goTillKalender;
 
 	@FindBy(xpath = "//div[@class='calendar-item-wrapper']//descendant::p[@class='bold'][contains(text(),'Automat')]")
-	WebElement calenderEventCheck;
+	List<WebElement> calenderEventCheck;
 
 	// minasidor objects
 	@FindBy(linkText = "Brf Facklan")
@@ -151,145 +155,184 @@ public class HomePage extends TestBase {
 
 	}
 
-	public boolean validateMittUpdragLink() {
-		return mittUppdragLink.isDisplayed();
+	public boolean validateMittUpdragLink(String rolePrevilege){
+		
+		int ElementSize = mittUppdragLink.size();
+		System.out.println("mkttupdrag size is"+ElementSize);
+		boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		return flag;
+		
 	}
 
 	public boolean validateBrfDisplay() {
 		return brf.isDisplayed();
 	}
 
-	public boolean validateMinaSidorLink() {
-		return minaSidorLink.isDisplayed();
+	public boolean validateMinaSidorLink(String rolePrevilege) {
+		
+		int ElementSize = minaSidorLink.size();
+		System.out.println("minasidor size is"+ElementSize);
+		boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		return flag;
+		
 	}
 
 	public boolean validateNyttFranHsb() {
 		return nyttFranHsb.isDisplayed();
 	}
 
-	public boolean validateFakturorDisplay() {
-		return todoFakturorList.isDisplayed();
+	public boolean validateFakturorDisplay(String rolePrevilege) {
+
+		int ElementSize = todoFakturorList.size();
+		boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		return flag;
+
 	}
 
-	public boolean validateHsbNews() {
-		return hsbNews.isDisplayed();
+	public boolean validateHsbNews(String rolePrevilege) {
+		
+		int ElementSize = hsbNews.size();
+		System.out.println("hsbNews element size is"+ElementSize);
+		boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		return flag;
+		
 	}
 
-	public boolean validateStallInDinLista() {
-		return hsbNews.isDisplayed();
+	public boolean validateStallInDinLista(String rolePrevilege) {	
+		
+		int ElementSize = stallDinListaLink.size();
+		System.out.println("stallDinListaLink element size is"+ElementSize);
+		boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		return flag;
+	
 	}
 
-	public boolean validateInformationIcon() {
+	public boolean validateInformationIcon(String rolePrevilege) {
 
-		informationIconLikvidaMedel.click();
+		int ElementSize = informationIconLikvidaMedel.size();
+		System.out.println("informationIconLikvidaMedel element size is"+ElementSize);
+		boolean flag=false;
+		 flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if(ElementSize>0) {
+			System.out.println("clicking on i button");
+		informationIconLikvidaMedel.get(0).click();
 		return informationIconLikvidaMedelIconText.isDisplayed();
+		}
+		return flag;
 	}
 
 	public boolean stallInDinListaLinkTest() {
 
-		try {
-			stallDinListaLink.click();
+	
+			stallDinListaLink.get(0).click();
 			driver.switchTo().activeElement();
-			Thread.sleep(2000);
+			TestUtil.pause(2000);
 			stallDinListaLinkOverlatelseCheckbox.click();
-			Thread.sleep(2000);
+			TestUtil.pause(2000);
 			stallDinListaLinkSparaButton.click();
-			hsbNews.isDisplayed();
+			stallDinListaLink.get(0).isDisplayed();
 
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			return false;
-		}
+		
 
 		return true;
 	}
 
-	public boolean validateEkonomicOversiktGraph() {
-		return ekonomiskOversiktGraph.isDisplayed();
+	public boolean validateEkonomicOversiktGraph(String rolePrevilege) {
+		
+		int ElementSize = ekonomiskOversiktGraph.size();
+		System.out.println("ekonomiskOversiktGraph element size is"+ElementSize);
+		boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		return flag;
+		
 	}
 
-	public boolean validateSenate7HandelserFrame() {
-		return senaste7Handelser.isDisplayed();
+	public boolean validateSenate7HandelserFrame(String rolePrevilege) {
+		
+		int ElementSize = senaste7Handelser.size();
+		System.out.println("senaste7Handelser element size is"+ElementSize);
+		boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		return flag;
+		
 	}
 
-	public boolean validateSenateAldreHandelserFrame() {
-		return senasteAldreHandelser.isDisplayed();
+	public boolean validateSenateAldreHandelserFrame(String rolePrevilege) {
+		
+		int ElementSize = senasteAldreHandelser.size();
+		System.out.println("senaste7Handelser element size is"+ElementSize);
+		boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		return flag;
+		
 	}
 
 	// to validate whether clicking on shortlink is taking to the respective page or
 	// not
-	public boolean validateGenvägar() {
+	public boolean validateGenvägar(String rolePrevilege) {
 
 		boolean flag = false;
 		int j = 1;
 		while (j == 1) {
 			List<WebElement> dropdown1 = driver.findElements(By.xpath("//a[@id='linkName-a']"));
 			if (dropdown1.size() == 0) {
-				try {
 					skapaGenevägar.click();
-					Thread.sleep(2000);
+					TestUtil.pause(2000);
 					ekonomiShortcut.click();
-					Thread.sleep(2000);
+					TestUtil.pause(2000);
 					genvagarKlarButton.click();
-					Thread.sleep(2000);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+					TestUtil.pause(2000);				
 			}
 			List<WebElement> dropdown = driver.findElements(By.xpath("//a[@id='linkName-a']"));
 			for (int i = 0; i < dropdown.size(); i++) {
 				String drop_down_values = dropdown.get(i).getText();
 				System.out.println("shortcutvalue is" + dropdown.get(i));
-				if (drop_down_values.equals("Ekonomisk översikt")) {
+				if (drop_down_values.equals("Ekonomisk översikt")) {					
 					dropdown.get(i).click();
-					wait.until(ExpectedConditions.visibilityOfElementLocated(
-							By.xpath("//h4[@class='bold-uppercase'][contains(text(),'Ekonomisk översikt')]")));
-					System.out.println("shortcut is present ");
+					wait.until(ExpectedConditions.visibilityOf(ekonomiPageElement));
 					flag = true;
+					System.out.println("shortcut is present so breaking the for loop");
+					break;
 				}
 			}
 			if (flag) {
 				j = 0;
-				System.out.println("shortcut is present, so breaking the loop ");
+				System.out.println("shortcut is present, so breaking the outer whileloop ");
 				break;
 			}
+			
 
 			else {
 				System.out.println("shortcut is not present, so adding it ");
 				redigeraGenvagar.click();
+				TestUtil.pause(2000);
 				ekonomiShortcut.click();
+				TestUtil.pause(2000);
 				genvagarKlarButton.click();
 
 			}
+			}
 
-		}
+				
 		return flag;
 	}
 
 	// this function is to see whether we can edit shortcuts
-	public boolean validateRedigeraGenvägar() {
+	public boolean validateRedigeraGenvägar(String rolePrevilege) {
 
 		Boolean flag_before = false;
 		Boolean flag_after = false;
 		List<WebElement> dropdown = driver.findElements(By.xpath("//a[@id='linkName-a']"));
 		if (dropdown.size() == 0) {
-			try {
+		
 				skapaGenevägar.click();
-				Thread.sleep(2000);
+				TestUtil.pause(2000);
 				ekonomiShortcut.click();
-				Thread.sleep(2000);
+				TestUtil.pause(2000);
 				allaFakturorShortcut.click();
-				Thread.sleep(2000);
+				TestUtil.pause(2000);;
 				placeringarShortcut.click();
-				Thread.sleep(2000);
+				TestUtil.pause(2000);
 				genvagarKlarButton.click();
-				Thread.sleep(2000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+				TestUtil.pause(2000);
+			
 		}
 		for (int i = 0; i < dropdown.size(); i++) {
 			String drop_down_values = dropdown.get(i).getText();
@@ -299,17 +342,14 @@ public class HomePage extends TestBase {
 			}
 		}
 
-		try {
+	
 			redigeraGenvagar.click();
-			Thread.sleep(2000);
+			TestUtil.pause(2000);
 			ekonomiShortcut.click();
-			Thread.sleep(2000);
+			TestUtil.pause(2000);
 			genvagarKlarButton.click();
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			TestUtil.pause(2000);
+		
 		// refresh page and see whether shortcuts are properly added or deleted.
 
 		driver.navigate().refresh();
@@ -328,10 +368,14 @@ public class HomePage extends TestBase {
 			return true;
 	}
 
-	public boolean displayKalenderHäandelse() {
+	public boolean displayKalenderHäandelse(String rolePrevilege) {
+		
+		int ElementSize = calenderEventCheck.size();
+		System.out.println("calenderEventCheck element size is"+ElementSize);
+		boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		return flag;
 
-		return calenderEventCheck.isDisplayed();
-	}
+			}
 
 	public NyttFranHSBPage validateSeAllaNyheter() {
 
@@ -408,7 +452,7 @@ public class HomePage extends TestBase {
 
 	public MinaSidorPage minaSidorLink() {
 
-		minaSidorLink.click();
+		minaSidorLink.get(0).click();
 
 		wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//div[@class='content no-max-width gradient-bg col-12']")));

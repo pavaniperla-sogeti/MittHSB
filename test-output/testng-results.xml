@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="17" total="18" passed="1">
+<testng-results skipped="0" failed="0" ignored="22" total="23" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="MittHSB" duration-ms="27955" started-at="2019-10-29T13:47:48Z" finished-at="2019-10-29T13:48:16Z">
+  <suite name="MittHSB" duration-ms="28407" started-at="2019-11-01T13:04:23Z" finished-at="2019-11-01T13:04:51Z">
     <groups>
+      <group name="Regression">
+        <method signature="HomePageTest.EkonomiGenvagarLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@290d210d]" name="EkonomiGenvagarLinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test name="MittHSBMittUppdragPages" duration-ms="27955" started-at="2019-10-29T13:47:48Z" finished-at="2019-10-29T13:48:16Z">
-      <class name="com.mitthsb.qa.testcases.EkonomiPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="24407" started-at="2019-10-29T14:47:48Z" finished-at="2019-10-29T14:48:13Z">
+    <test name="MittHSBMittUppdragPages" duration-ms="28407" started-at="2019-11-01T13:04:23Z" finished-at="2019-11-01T13:04:51Z">
+      <class name="com.mitthsb.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@290d210d]" name="setUp" is-config="true" duration-ms="19891" started-at="2019-11-01T14:04:23Z" finished-at="2019-11-01T14:04:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.clickDigitalWebFakturaButtonTest()]]>
+                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.EkonomiGenvagarLinkTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="clickDigitalWebFakturaButtonTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="clickDigitalWebFakturaButtonTest" duration-ms="2662" started-at="2019-10-29T14:48:13Z" finished-at="2019-10-29T14:48:15Z">
+        <test-method status="PASS" signature="EkonomiGenvagarLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@290d210d]" name="EkonomiGenvagarLinkTest" duration-ms="7233" started-at="2019-11-01T14:04:43Z" finished-at="2019-11-01T14:04:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickDigitalWebFakturaButtonTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="789" started-at="2019-10-29T14:48:15Z" finished-at="2019-10-29T14:48:16Z">
+        </test-method> <!-- EkonomiGenvagarLinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@290d210d]" name="tearDown" is-config="true" duration-ms="1156" started-at="2019-11-01T14:04:50Z" finished-at="2019-11-01T14:04:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.mitthsb.qa.testcases.EkonomiPageTest -->
+      </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->
     </test> <!-- MittHSBMittUppdragPages -->
   </suite> <!-- MittHSB -->
 </testng-results>

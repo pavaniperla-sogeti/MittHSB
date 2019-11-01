@@ -13,20 +13,11 @@
 		parallel="false">
 		<classes>
 
-			<!--<class name="com.mitthsb.qa.testcases.HomePageTest" />
-			<class name="com.mitthsb.qa.testcases.AdministrationPageTest" />-->
-			<class name="com.mitthsb.qa.testcases.EkonomiPageTest"> 
+			<!--<class name="com.mitthsb.qa.testcases.HomePageTest" /> <class name="com.mitthsb.qa.testcases.HomePageTest" 
+				/> <class name="com.mitthsb.qa.testcases.AdministrationPageTest" /> -->
+			<class name="com.mitthsb.qa.testcases.HomePageTest">
 
-
-				<methods>
-				 <include name="clickDigitalWebFakturaButtonTest"/>
-				 <include name="allaFakturorListItemTest"/>
-				 <include name="finansiellaRapporterTest"/>
-				 <include name="disponibelGraphEkonomiPageTest"/>
-				 </methods> 
-					
-
-
+			
 			</class>
 		</classes>
 	</test>

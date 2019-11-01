@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.WebDriverException;
 
 import com.mitthsb.qa.base.TestBase;
+import com.mitthsb.qa.util.TestUtil;
 
 public class Loginpage extends TestBase {
 
@@ -34,6 +35,16 @@ public class Loginpage extends TestBase {
 
 	@FindBy(xpath = "//p[contains(text(),'Information om GDPR')]")
 	WebElement infoGDPRLink;
+	
+	@FindBy(xpath = "//h5[@class='heading-icon'][contains(text(),'Mina händelser')]")
+	WebElement grundLadingElement;
+	
+	@FindBy(xpath = "//h3[@class='tenant-heading'][contains(text(),'HSB Bostadsrättsförening')]")
+	WebElement brfHavareGrundLandingElement;
+	
+			
+	@FindBy(partialLinkText = "in din lista")
+	WebElement adminLandingElement;
 
 	public Loginpage() {
 
@@ -64,36 +75,39 @@ public class Loginpage extends TestBase {
 
 	public HomePage login(String un, String pwd, String role) {
 
-		try {
 			username.sendKeys(un);			
-			Thread.sleep(2000);
+			TestUtil.pause(2000);
 			
 			password.sendKeys(pwd);
-			Thread.sleep(2000);
+			TestUtil.pause(2000);
 
 			loginBtn.click();
-			Thread.sleep(2000);
+			TestUtil.pause(2000);
+			System.out.println("roleis"+role);	
+
+		switch(role) {
+		
+		case "Grund":
+			wait.until(ExpectedConditions.visibilityOf(grundLadingElement));
+			break;
 			
-		} catch (InterruptedException | NoSuchElementException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		case "maklare":
+			wait.until(ExpectedConditions.visibilityOf(adminLandingElement));
+			break;
+			
+		case "brfHavare":
+			wait.until(ExpectedConditions.visibilityOf(brfHavareGrundLandingElement));
+			break;
+			
+		case "brfHavareAdmin":
+			wait.until(ExpectedConditions.visibilityOf(adminLandingElement));
+			break;
+			
+		case "admin":
+			wait.until(ExpectedConditions.visibilityOf(adminLandingElement));
+			break;
 		}
-
-		// try {
-		if (role.equals("Grund"))
-
-			wait.until(ExpectedConditions
-					.visibilityOfElementLocated(By.xpath("//div[@class='content no-max-width gradient-bg col-12']")));
-
-		else
-
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("in din lista")));
-		// wait.until(ExpectedConditions.
-//		} catch (TimeoutException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//	
+		
 
 		return new HomePage();
 	}

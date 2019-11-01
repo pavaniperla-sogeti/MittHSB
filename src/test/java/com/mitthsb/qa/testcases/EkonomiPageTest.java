@@ -35,6 +35,7 @@ public class EkonomiPageTest extends TestBase {
 	SaldoRapportPage SaldoRapportPage;
 	FinansiellaRapporterPage FinansiellaRapporterPage;
 	SoftAssert softAssert=new SoftAssert();
+	String rolePrevilege;
 	
 	public EkonomiPageTest() {
 		super();
@@ -48,6 +49,9 @@ public class EkonomiPageTest extends TestBase {
 
 		initialization();
 		System.out.println("class is"+this.getClass().getName()+"and method is"+method.getName());
+		String role=prop.getProperty("role");
+		rolePrevilege=TestUtil.retrieveRole(method.getName(),role);
+		System.out.println("roel is" + rolePrevilege);
 		loginPage = new Loginpage();
 		testUtil = new TestUtil();
 		homePage=loginPage.login(prop.getProperty("login"),prop.getProperty("pwd"),prop.getProperty("role"));
@@ -66,14 +70,14 @@ public class EkonomiPageTest extends TestBase {
 	
 	@Test
 	public void validateAllaFakturorListItemTest() {
-		boolean flag=ekonomiPage.validateAllaFakturorListItem();
+		boolean flag=ekonomiPage.validateAllaFakturorListItem(rolePrevilege);
 		softAssert.assertTrue(flag);
 		
 	}
 	
 	@Test
 	public void validateFinansiellaRapportListItemTest() {
-		boolean flag=ekonomiPage.validatefinansiellaRapportListItem();
+		boolean flag=ekonomiPage.validatefinansiellaRapportListItem(rolePrevilege);
 		softAssert.assertTrue(flag);
 		
 	}
@@ -120,7 +124,7 @@ public class EkonomiPageTest extends TestBase {
 	
 	@Test
 	public void accountsReceivablesGraphEkonomiPageTest() {
-		boolean flag=ekonomiPage.validateAccountsReceivableGraph();
+		boolean flag=ekonomiPage.validateAccountsReceivableGraph(rolePrevilege);
 		softAssert.assertTrue(flag);
 		
 	}

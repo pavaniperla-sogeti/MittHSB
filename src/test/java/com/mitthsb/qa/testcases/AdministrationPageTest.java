@@ -22,6 +22,7 @@ public class AdministrationPageTest extends TestBase {
 	AdministrationPage adminPage;
 	TestUtil testUtil;
 	SoftAssert softAssert=new SoftAssert();
+	String rolePrevilege;
 	
 	public AdministrationPageTest() {
 		super();
@@ -37,6 +38,9 @@ public class AdministrationPageTest extends TestBase {
 
 		initialization();
 		System.out.println("class is"+this.getClass().getName()+"and method is"+method.getName());
+		String role=prop.getProperty("role");
+		rolePrevilege=TestUtil.retrieveRole(method.getName(),role);
+		System.out.println("roel is" + rolePrevilege);
 		loginPage = new Loginpage();
 		testUtil = new TestUtil();
 		homePage=loginPage.login(prop.getProperty("login"),prop.getProperty("pwd"),prop.getProperty("role"));
@@ -70,7 +74,7 @@ public class AdministrationPageTest extends TestBase {
 	@Test(dependsOnMethods={"skapaKalenderTest"})
 	public void displayKalenderEventHomePageTest() {
 		
-				Boolean flag=homePage.displayKalenderHäandelse();
+				Boolean flag=homePage.displayKalenderHäandelse(rolePrevilege);
 				softAssert.assertTrue(flag);				
 		
 	}
