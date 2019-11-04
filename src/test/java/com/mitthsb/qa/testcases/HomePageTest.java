@@ -3,6 +3,7 @@ package com.mitthsb.qa.testcases;
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -252,32 +253,28 @@ public class HomePageTest extends TestBase {
 
 	@Test(groups="Regression")
 	public void ekonomiTabTest() {
-		if (prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
+		
 		ekonomiPage = homePage.ekonomiTab();
 
 	}
 
 	@Test(groups="Regression")
 	public void adminTabTest() {
-		if (prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
-		adminPage = homePage.adminTab();
+		
+			adminPage = homePage.adminTab();
 
 	}
 
 	@Test(groups="Regression")
 	public void fastighetenTabTest() {
-		if (prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
+		
 		fastiPage = homePage.fastightenTab();
 
 	}
 
 	@Test(groups="Regression")
 	public void dokumentTabTest() {
-		if (prop.getProperty("role").equals("Grund"))
-			throw new SkipException("Skipping this exception");
+	
 		dokumentPage = homePage.dokumentTab();
 
 	}

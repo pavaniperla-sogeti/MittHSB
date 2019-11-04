@@ -8,8 +8,20 @@
     <classes>
       <class name="com.mitthsb.qa.testcases.EkonomiPageTest">
         <methods>
-          <include name="ekonomiPageTitleTest"/>
+          <include name="clickDigitalWebFakturaButtonTest"/>
+          <include name="cashFlowGraphEkonomiPageTest"/>
+          <include name="validateFinansiellaRapportListItemTest"/>
+          <include name="validatesaldoRapportTest"/>
+          <include name="disponibelGraphEkonomiPageTest"/>
+          <include name="clicksaldoRapportGenvagarTest"/>
           <include name="setUp"/>
+          <include name="InformationIconLikvidaMedelGraphTest"/>
+          <include name="accountsReceivablesGraphEkonomiPageTest"/>
+          <include name="reportGenvagarDisplayTest"/>
+          <include name="InformationIconRapportGenvagarFrameTest"/>
+          <include name="ekonomiPageTitleTest"/>
+          <include name="likvidaMedelGraphEkonomiPageTest"/>
+          <include name="validateAllaFakturorListItemTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.mitthsb.qa.testcases.EkonomiPageTest -->

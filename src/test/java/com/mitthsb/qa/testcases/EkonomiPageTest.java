@@ -62,6 +62,7 @@ public class EkonomiPageTest extends TestBase {
 	@Test
 	public void ekonomiPageTitleTest() {
 		String title=ekonomiPage.validateEkonomiPageTitle();
+		System.out.println("title is"+title);
 		softAssert.assertEquals(title, "Ekonomisk översikt - NOT FOR COMMERCIAL USE");
 		softAssert.assertAll();
 		
@@ -101,6 +102,7 @@ public class EkonomiPageTest extends TestBase {
 	@Test//to see digitalwebfaktura button in allFakturor list item is properly redirecting to external webpage
 	public void clickDigitalWebFakturaButtonTest() {
 		String childTitle=ekonomiPage.validateDigitalWebFakturaButtonAllaFakturorListItem(rolePrevilege);
+		System.out.println("childtitle is "+childTitle);
 		softAssert.assertEquals(childTitle, "Basware Login Failed");
 		softAssert.assertAll();
 	}

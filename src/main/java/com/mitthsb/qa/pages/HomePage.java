@@ -28,10 +28,10 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//button[@class='btn-primary']")
 	WebElement adminPageElement;
 	
-	@FindBy(xpath = "//*[@id=\\\"main-gradient\\\"]")
+	@FindBy(xpath = "//main[@id='main-gradient']")
 	WebElement fastighetenPageElement;
 	
-	@FindBy(xpath = "//*[@id=\\\"main-gradient\\\"]")
+	@FindBy(xpath = "//main[@id='main-gradient']")
 	WebElement dokumentPageElement;
 	
 	@FindBy(xpath = "//h5[contains(text(),'Mina händelser')]")
@@ -473,105 +473,105 @@ public class HomePage extends TestBase {
 		return new MinaSidorPage();
 
 	}
-
-	public boolean validateBrfFacklan() {
-		return brfFacklanTab.isDisplayed();
-	}
-
-	public boolean validateArendenTab() {
-		return arendenTab.isDisplayed();
-	}
-
-	public boolean validateMinBostadTab() {
-		return minBostadTab.isDisplayed();
-	}
-
-	public boolean validateBosparTab() {
-		return bosparTab.isDisplayed();
-	}
-
-	public boolean validateMedlemskapTab() {
-		return medlemskapTab.isDisplayed();
-	}
-
-	public boolean validateSokBostadTab() {
-		return sokBostadTab.isDisplayed();
-	}
-
-	public boolean validateMinProfileTab() {
-		return minProfileTab.isDisplayed();
-	}
-
-	public BrfFacklanPage BrfFacklanTab() {
-
-		brfFacklanTab.click();
-
-		wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath("//div[@class='content no-max-width gradient-bg col-12']")));
-
-		return new BrfFacklanPage();
-	}
-
-	public ArendenAndFelanmalanPage arendenAndFelanmalanTab() {
-
-		arendenTab.click();
-
-		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
-
-		return new ArendenAndFelanmalanPage();
-
-	}
-
-	public MinBostadPage MinBostadTab() {
-
-		minBostadTab.click();
-
-		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
-
-		return new MinBostadPage();
-
-	}
-
-	public BosparPage BosparTab() {
-
-		bosparTab.click();
-
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//main[@id='main-gradient']")));
-
-		return new BosparPage();
-
-	}
-
-	public MedlemskapetPage MedlemskapetTab() {
-
-		medlemskapTab.click();
-
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//main[@id='main-gradient']")));
-
-		return new MedlemskapetPage();
-
-	}
-
-	public SokBostadPage SokBostadTab() {
-
-		sokBostadTab.click();
-
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
-
-		return new SokBostadPage();
-
-	}
-
-	public MinProfilPage MinProfilTab() {
-
-		minProfileTab.click();
-
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
-
-		return new MinProfilPage();
-
-	}
-
+//
+//	public boolean validateBrfFacklan() {
+//		return brfFacklanTab.isDisplayed();
+//	}
+//
+//	public boolean validateArendenTab() {
+//		return arendenTab.isDisplayed();
+//	}
+//
+//	public boolean validateMinBostadTab() {
+//		return minBostadTab.isDisplayed();
+//	}
+//
+//	public boolean validateBosparTab() {
+//		return bosparTab.isDisplayed();
+//	}
+//
+//	public boolean validateMedlemskapTab() {
+//		return medlemskapTab.isDisplayed();
+//	}
+//
+//	public boolean validateSokBostadTab() {
+//		return sokBostadTab.isDisplayed();
+//	}
+//
+//	public boolean validateMinProfileTab() {
+//		return minProfileTab.isDisplayed();
+//	}
+//
+//	public BrfFacklanPage BrfFacklanTab() {
+//
+//		brfFacklanTab.click();
+//
+//		wait.until(ExpectedConditions
+//				.visibilityOfElementLocated(By.xpath("//div[@class='content no-max-width gradient-bg col-12']")));
+//
+//		return new BrfFacklanPage();
+//	}
+//
+//	public ArendenAndFelanmalanPage arendenAndFelanmalanTab() {
+//
+//		arendenTab.click();
+//
+//		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
+//
+//		return new ArendenAndFelanmalanPage();
+//
+//	}
+//
+//	public MinBostadPage MinBostadTab() {
+//
+//		minBostadTab.click();
+//
+//		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
+//
+//		return new MinBostadPage();
+//
+//	}
+//
+//	public BosparPage BosparTab() {
+//
+//		bosparTab.click();
+//
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//main[@id='main-gradient']")));
+//
+//		return new BosparPage();
+//
+//	}
+//
+//	public MedlemskapetPage MedlemskapetTab() {
+//
+//		medlemskapTab.click();
+//
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//main[@id='main-gradient']")));
+//
+//		return new MedlemskapetPage();
+//
+//	}
+//
+//	public SokBostadPage SokBostadTab() {
+//
+//		sokBostadTab.click();
+//
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
+//
+//		return new SokBostadPage();
+//
+//	}
+//
+//	public MinProfilPage MinProfilTab() {
+//
+//		minProfileTab.click();
+//
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
+//
+//		return new MinProfilPage();
+//
+//	}
+//
 	public logoutPage logout() {
 
 		vivalyaren.click();

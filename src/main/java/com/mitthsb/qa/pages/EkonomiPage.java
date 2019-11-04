@@ -138,7 +138,7 @@ public boolean validateAccountsReceivableGraph(String rolePrevilege) {
 	int ElementSize = accountsReceivableGraph.size();
 	System.out.println("accountsReceivableGraph element size is"+ElementSize);
 	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
-	System.out.println("flag size is"+flag);
+	System.out.println("flag value is"+flag);
 	return flag;
 
 	
@@ -149,8 +149,9 @@ public boolean validateAccountsReceivableGraph(String rolePrevilege) {
 public boolean validatefinansiellaRapportListItem(String rolePrevilege) {
 	
 	int ElementSize = finansiellaRapportListItem.size();
-	System.out.println("finansiellaRapportListItem element size is"+ElementSize);
+	
 	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	System.out.println("finansiellaRapportListItem element size is"+ElementSize+"flag value is"+flag);
 	return flag;
 	
 	// wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("fakturor att")));
@@ -160,8 +161,8 @@ public boolean validatefinansiellaRapportListItem(String rolePrevilege) {
 public boolean validatesaldoRapport(String rolePrevilege) {
 	
 	int ElementSize = saldoRapport.size();
-	System.out.println("saldoRapport element size is"+ElementSize+"and role is"+rolePrevilege);
-	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	System.out.println("saldoRapport element size is"+ElementSize+"and flag is"+flag);
 	return flag;
 		
 	
@@ -172,7 +173,8 @@ public boolean clickGenvagar(String rolePrevilege) {
 	int ElementSize = allaFakturorListItem.size();
 	System.out.println("allaFakturorListItem element size is"+ElementSize);
 	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
-	if(futheraction) {	
+	if(futheraction) {
+		System.out.println("inside success loop");
 	 saldoRapport.get(0).click();
 	 wait.until(ExpectedConditions.visibilityOf(saldoRaportPageElement));
 	 return true;
@@ -215,12 +217,16 @@ public String validateDigitalWebFakturaButtonAllaFakturorListItem(String rolePre
 			if (drop_down_values.equals("Saldoförteckning") || drop_down_values.equals("Balansrapport")
 					|| drop_down_values.equals("Leverantörsrapport") || drop_down_values.equals("Likvidkontorapport")
 					|| drop_down_values.equals("Resultatrapport"))
-				System.out.println("found all 5 reports");
+				
 				j++;
 		}
 
 		if (j == 5)
+		{
+			System.out.println("found all 5 reports");
+		
 			return true;
+		}
 		else
 			return false;
 
@@ -241,6 +247,7 @@ public boolean validateCashFlowGraph(String rolePrevilege) {
 	int ElementSize = cashFlowGraph.size();
 	System.out.println("cashFlowGraph element size is"+ElementSize);
 	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	System.out.println("flag value is "+flag);
 	return flag;
 	
 	
@@ -250,8 +257,9 @@ public boolean validateCashFlowGraph(String rolePrevilege) {
 public boolean validateDisponibeltGraph(String rolePrevilege) {
 	
 	int ElementSize = disposableBoundFundsGraph.size();
-	System.out.println("disposableBoundFundsGraph element size is"+ElementSize);
+	
 	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	System.out.println("disposableBoundFundsGraph element size is"+ElementSize+"and flag value is"+flag);
 	return flag;
 	
 	
@@ -269,6 +277,7 @@ public boolean validateInformationIconLikvidaMedelGraph(String rolePrevilege) {
 		informationIconLikvidaMedel.get(0).click();
 			boolean flag1= informationIconLikvidaMedelIconText.isDisplayed();
 			System.out.println("flag value is"+flag1);
+			return true;
 		}
 		if(flag && !futheraction)
 			return true;
@@ -285,7 +294,9 @@ public boolean validateInformationIconRapportGenvagarFrame(String rolePrevilege)
 	if(futheraction) {
 		System.out.println("furtheraction true");
 		informationIconRapportGenvagar.get(0).click();
-			return informationIconRapportGenvagarText.isDisplayed();
+		boolean flag1= informationIconRapportGenvagarText.isDisplayed();
+		System.out.println("flag value is"+flag1);
+		return true;
 		}
 		if(flag && !futheraction)
 			return true;

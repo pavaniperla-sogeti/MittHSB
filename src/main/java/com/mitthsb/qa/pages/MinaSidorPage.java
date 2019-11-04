@@ -1,5 +1,7 @@
 package com.mitthsb.qa.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,30 +9,37 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.mitthsb.qa.base.TestBase;
+import com.mitthsb.qa.util.TestUtil;
 
 public class MinaSidorPage extends TestBase {
 	
 	//minasidor objects
 		@FindBy(partialLinkText = "Hsb Brf")
-		WebElement brfFacklanTab;
+		List<WebElement> brfFacklanTab;
+		
+		@FindBy(xpath = "//h5[contains(text(),'Mina händelser')]")
+		WebElement brfPageElement;
 		
 		@FindBy(xpath = "//a[contains(@class,'mn-btn')][contains(text(),'felanm')]")
-		WebElement arendenTab;
+		List<WebElement> arendenTab;
 
 		@FindBy(linkText = "Min Bostad")
-		WebElement minBostadTab;
+		List<WebElement> minBostadTab;
 
 		@FindBy(linkText = "Bospar")
-		WebElement bosparTab;
+		List<WebElement> bosparTab;
 
 		@FindBy(linkText = "Medlemskapet")
-		WebElement medlemskapTab;
+		List<WebElement> medlemskapTab;
+		
+		@FindBy(xpath = "//a[contains(text(),'Mina sidor')]")
+		WebElement minaSidorLink;
 
 		@FindBy(xpath = "//a[contains(@class,'mn-btn')][contains(text(),'Sök bostad')]")
-		WebElement sokBostadTab;
+		List<WebElement> sokBostadTab;
 		
 		@FindBy(linkText = "Min profil")
-		WebElement minProfileTab;
+		List<WebElement> minProfileTab;
 		
 		public MinaSidorPage() {
 
@@ -39,38 +48,124 @@ public class MinaSidorPage extends TestBase {
 			PageFactory.initElements(driver, this);
 		}
 		
-		public boolean validateBrfFacklan() {
-			return brfFacklanTab.isDisplayed();
+		public BrfFacklanPage validateBrfLandingTab(String rolePrevilege) {
+			
+								
+			int ElementSize = brfFacklanTab.size();
+			System.out.println("brfFacklanTab element size is" + ElementSize);
+			boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+			if (futheraction) {
+				brfFacklanTab.get(0).click();
+				wait.until(ExpectedConditions.visibilityOf(brfPageElement));
+				return new BrfFacklanPage();			
+				
+			}
+			
+			return null;
+			
 		}
 
-		public boolean validateArendenTab() {
-			return arendenTab.isDisplayed();
+		public boolean validateArendenTab(String rolePrevilege) {
+			
+			int ElementSize = arendenTab.size();
+			System.out.println("arendenTab element size is" + ElementSize);
+			boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+			if (futheraction)
+				return arendenTab.get(0).isDisplayed();
+
+			if (flag && !futheraction)
+				return true;
+
+			else
+				return false;
+			
 		}
 
-		public boolean validateMinBostadTab() {
-				return minBostadTab.isDisplayed();
+		public boolean validateMinBostadTab(String rolePrevilege) {
+			
+			int ElementSize = minBostadTab.size();
+			System.out.println("minBostadTab element size is" + ElementSize);
+			boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+			if (futheraction)
+				return minBostadTab.get(0).isDisplayed();
+
+			if (flag && !futheraction)
+				return true;
+
+			else
+				return false;
+			
 		}
 
-		public boolean validateBosparTab() {
-			return bosparTab.isDisplayed();
+		public boolean validateBosparTab(String rolePrevilege) {
+			int ElementSize = bosparTab.size();
+			System.out.println("bosparTab element size is" + ElementSize);
+			boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+			if (futheraction)
+				return bosparTab.get(0).isDisplayed();
+
+			if (flag && !futheraction)
+				return true;
+
+			else
+				return false;
+			
+			
 		}
 
-		public boolean validateMedlemskapTab() {
-			return medlemskapTab.isDisplayed();
+		public boolean validateMedlemskapTab(String rolePrevilege) {
+			
+			int ElementSize = medlemskapTab.size();
+			System.out.println("medlemskapTab element size is" + ElementSize);
+			boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+			if (futheraction)
+				return medlemskapTab.get(0).isDisplayed();
+
+			if (flag && !futheraction)
+				return true;
+
+			else
+				return false;
+			
 		}
 		
-		public boolean validateSokBostadTab() {
-			return sokBostadTab.isDisplayed();
+		public boolean validateSokBostadTab(String rolePrevilege) {
+			
+			int ElementSize = sokBostadTab.size();
+			System.out.println("sokBostadTab element size is" + ElementSize);
+			boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+			if (futheraction)
+				return sokBostadTab.get(0).isDisplayed();
+
+			if (flag && !futheraction)
+				return true;
+
+			else
+				return false;
+			
+		
 		}
 
-		public boolean validateMinProfileTab() {
-			return minProfileTab.isDisplayed();
+		public boolean validateMinProfileTab(String rolePrevilege) {
+			
+			int ElementSize = minProfileTab.size();
+			System.out.println("minProfileTab element size is" + ElementSize);
+			boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+			if (futheraction)
+				return minProfileTab.get(0).isDisplayed();
+
+			if (flag && !futheraction)
+				return true;
+
+			else
+				return false;
+			
 		}
 
 		public BrfFacklanPage BrfFacklanTab() {
 			
 
-			brfFacklanTab.click();
+			brfFacklanTab.get(0).click();
 
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='content no-max-width gradient-bg col-12']")));
 
@@ -80,7 +175,7 @@ public class MinaSidorPage extends TestBase {
 
 		public ArendenAndFelanmalanPage arendenAndFelanmalanTab() {
 
-			arendenTab.click();
+			arendenTab.get(0).click();
 
 			// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
 
@@ -90,7 +185,7 @@ public class MinaSidorPage extends TestBase {
 
 		public MinBostadPage MinBostadTab() {
 
-			minBostadTab.click();
+			minBostadTab.get(0).click();
 
 			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
 
@@ -100,7 +195,7 @@ public class MinaSidorPage extends TestBase {
 
 		public BosparPage BosparTab() {
 
-			bosparTab.click();
+			bosparTab.get(0).click();
 
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//main[@id='main-gradient']")));
 
@@ -110,7 +205,7 @@ public class MinaSidorPage extends TestBase {
 		
 		public MedlemskapetPage MedlemskapetTab() {
 
-			medlemskapTab.click();
+			medlemskapTab.get(0).click();
 
 			 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//main[@id='main-gradient']")));
 
@@ -120,7 +215,7 @@ public class MinaSidorPage extends TestBase {
 
 		public SokBostadPage SokBostadTab() {
 
-			sokBostadTab.click();
+			sokBostadTab.get(0).click();
 
 			 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
 
@@ -130,7 +225,7 @@ public class MinaSidorPage extends TestBase {
 
 		public MinProfilPage MinProfilTab() {
 
-			minProfileTab.click();
+			minProfileTab.get(0).click();
 
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
 
