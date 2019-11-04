@@ -13,17 +13,10 @@
 		parallel="false">
 		<classes>
 
-			<!--<class name="com.mitthsb.qa.testcases.HomePageTest" /> 
+			<class name="com.mitthsb.qa.testcases.HomePageTest" /> 
 			<class name="com.mitthsb.qa.testcases.AdministrationPageTest" />
-			<class name="com.mitthsb.qa.testcases.EkonomiPageTest"> -->
-			<class name="com.mitthsb.qa.testcases.HomePageTest">
-			
-			<methods>
-      	 	 <include name="dokumentTabTest" />
-       	 	<include name="fastighetenTabTest" />
-       		
-			
-</methods>
+			<class name="com.mitthsb.qa.testcases.EkonomiPageTest"> 
+		
 				
 
 			</class>

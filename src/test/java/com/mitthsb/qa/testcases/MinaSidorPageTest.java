@@ -79,7 +79,7 @@ public class MinaSidorPageTest extends TestBase {
 	@Test(groups="Regression")
 	public void brfLandingTabTest() {
 	
-		BrfFacklanPage= MinaSidorPage.validateBrfLandingTab(rolePrevilege);
+		boolean flag= MinaSidorPage.validateBrfLandingTab(rolePrevilege);
 		
 
 	}
@@ -87,7 +87,7 @@ public class MinaSidorPageTest extends TestBase {
 	@Test(groups="Regression")
 	public void arendenTabTest() {
 	
-		ArendenAndFelanmalanPage= MinaSidorPage.validateBrfLandingTab(rolePrevilege);
+		boolean flag= MinaSidorPage.validateBrfLandingTab(rolePrevilege);
 		
 
 	}

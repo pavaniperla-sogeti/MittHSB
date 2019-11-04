@@ -48,7 +48,23 @@ public class MinaSidorPage extends TestBase {
 			PageFactory.initElements(driver, this);
 		}
 		
-		public BrfFacklanPage validateBrfLandingTab(String rolePrevilege) {
+		public boolean validateBrfLandingTab(String rolePrevilege) {
+			
+			int ElementSize = brfFacklanTab.size();
+			System.out.println("brfFacklanTab element size is" + ElementSize);
+			boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+			if (futheraction)
+				return brfFacklanTab.get(0).isDisplayed();
+
+			if (flag && !futheraction)
+				return true;
+
+			else
+				return false;
+			
+		}
+		
+		public BrfFacklanPage clickBrfLandingTab(String rolePrevilege) {
 			
 								
 			int ElementSize = brfFacklanTab.size();
