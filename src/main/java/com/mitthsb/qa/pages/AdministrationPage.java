@@ -1,5 +1,7 @@
 package com.mitthsb.qa.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,7 +13,7 @@ import com.mitthsb.qa.util.TestUtil;
 public class AdministrationPage extends TestBase{
 	
 	@FindBy(xpath = "//button[@class='btn-primary'][contains(text(),'Skapa kalender')]")
-	WebElement skapaKalenderButton;
+	List<WebElement> skapaKalenderButton;
 	
 	@FindBy(xpath = "//input[@id='resident']")
 	WebElement calenderBoendeCheckbox;
@@ -38,10 +40,10 @@ public class AdministrationPage extends TestBase{
 	WebElement skapaKalenderButtonInsideModal;
 	
 	@FindBy(xpath = "//p[contains(text(),'Automat')]")
-	WebElement calenderCreationCheck;
+	List<WebElement> calenderCreationCheck;
 
 	@FindBy(xpath = "//a[@class='link-secondary delete-calendar-item']")
-	WebElement deleteCalenderButton;
+	List<WebElement> deleteCalenderButton;
 	
 	@FindBy(xpath = "//span[@class='btn btn-primary large'][contains(text(),'Ja, radera')]")
 	WebElement deleteCalenderRaderaButton;
@@ -54,59 +56,93 @@ public class AdministrationPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String validateAdminPageTitle() {
+	public String validateAdminPageTitle() {		
+		
 		return driver.getTitle();
 
 	}
 	
-	public boolean validateMittUpdragLink() {
-		return skapaKalenderButton.isDisplayed();
+	public boolean validateSkapaKalenderButton(String rolePrevilege) {
+
+		int ElementSize = skapaKalenderButton.size();
+		System.out.println("allaFakturorListItem element size is" + ElementSize);
+		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if (futheraction)
+			return skapaKalenderButton.get(0).isDisplayed();
+
+		if (flag && !futheraction)
+			return true;
+
+		else
+			return false;
+
 	}
 	
-	public boolean createKalenderHäandelseAdminProfeesionalPage() {
+	public boolean createKalenderHäandelseAdminProfeesionalPage(String rolePrevilege) {
 		
-		try {
-			skapaKalenderButton.click();
+		int ElementSize = skapaKalenderButton.size();
+		System.out.println("allaFakturorListItem element size is"+ElementSize);
+		boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if(futheraction) {	
+		
+			skapaKalenderButton.get(0).click();
 			driver.switchTo().activeElement();
-			Thread.sleep(1000);
+			TestUtil.pause(1000);
 			String day=TestUtil.getTomorrowDate();
 			calenderTitle.sendKeys("Automation");
-			Thread.sleep(1000);
+			TestUtil.pause(1000);
 			CalenderStartDate.click();
-			Thread.sleep(1000);
+			TestUtil.pause(1000);
 			driver.findElement(By.xpath("//span[@class='is-other-month']")).click();
-			Thread.sleep(1000);
+			TestUtil.pause(1000);
 			CalenderStartTime.click();
-			Thread.sleep(1000);
+			TestUtil.pause(1000);
 			CalenderEndDate.click();
-			Thread.sleep(1000);
+			TestUtil.pause(1000);
 			driver.findElement(By.xpath("//span[@class='is-other-month']")).click();
-			Thread.sleep(1000);
+			TestUtil.pause(1000);
 			CalenderEndTime.click();
-			Thread.sleep(1000);
+			TestUtil.pause(1000);
 			CalenderPlace.sendKeys("WorkPlace");
-			Thread.sleep(1000);
+			TestUtil.pause(1000);
 			skapaKalenderButtonInsideModal.click();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+						
+		
+		return calenderCreationCheck.get(0).isDisplayed();
 		}
+		if(flag && !futheraction)
+			return true;
 		
-		return calenderCreationCheck.isDisplayed();
+		else
+			return false;
+		
 	}
 	
-public boolean deleteKalenderHäandelse() {
+public boolean deleteKalenderHäandelse(String rolePrevilege) {
 	
-	deleteCalenderButton.click();
+	int ElementSize = deleteCalenderButton.size();
+	System.out.println("allaFakturorListItem element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	if(futheraction) {	
+	
+	deleteCalenderButton.get(0).click();
 	deleteCalenderRaderaButton.click();	
-	try {
-		Thread.sleep(2000);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+	
+		TestUtil.pause(2000);		
+		int calenderSize= calenderCreationCheck.size();
+		if(calenderSize==0)
+		return true;
+		else
+			return false;
 		
-		return calenderCreationCheck.isDisplayed();
+	}
+	
+	if(flag && !futheraction)
+		return true;
+	
+	else
+		return false;
+	
 	}
 	
 	

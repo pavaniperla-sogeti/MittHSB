@@ -14,29 +14,40 @@ import com.mitthsb.qa.util.TestUtil;
 public class EkonomiPage extends TestBase{
 	
 	@FindBy(xpath = "//ul[@id='first-level']//descendant::div[@class='list-group-item-container'][contains(text(),'Alla Fakturor (WebbFaktura)')]")
-	List<WebElement> allaFakturorListItem;
+	List<WebElement> allaFakturorListItem;	
 	
+	@FindBy(xpath = "//li[@class='list-group-item shortcut-item econmical-reports-item']")
+	List<WebElement> rapportGenvagar;
 	
 	@FindBy(xpath = "//a[@class='btn-primary'][contains(text(),'Digital WebbFaktura')]")
 	WebElement digitalWebFakturaButton;
+	
+	@FindBy(xpath = "//h4[contains(text(),'Alla Fakturor (WebbFaktura')]")
+	WebElement allFakturorListItemPageElement;
+	
+	@FindBy(xpath = "//iframe[@id='iFrameResizer0']")
+	WebElement finansiellRaportListItemPageElement;
+	
+	@FindBy(xpath = "//main[@class='main gradient-bg']")
+	WebElement saldoRaportPageElement;
 
 	@FindBy(xpath = "//ul[@id='first-level']//descendant::div[@class='list-group-item-container'][contains(text(),'Finansiella rapporter')]")
 	List<WebElement> finansiellaRapportListItem;
 	
 	@FindBy(xpath = "//div[@class='visible']//div[@id='graph1']")
-	WebElement likvidaMedelGraph;
+	List<WebElement> likvidaMedelGraph;
 	
 	@FindBy(xpath = "//div[@class='cash-flow-graph']//descendant::div[@class='visible']")
-	WebElement cashFlowGraph;
+	List<WebElement> cashFlowGraph;
 	
 	@FindBy(xpath = "//div[@class='disposable-and-bound-funds-graph']//descendant::div[@class='visible']")
-	WebElement disposableBoundFundsGraph;
+	List<WebElement> disposableBoundFundsGraph;
 	
 	@FindBy(xpath = "//accounts-receivable-graph//descendant::div[@class='visible']")
 	List<WebElement> accountsReceivableGraph;
 
 	@FindBy(xpath = "//a[@id='linkName-a' and contains(text(), 'Saldo')]")
-	WebElement saldoRapport;
+	List<WebElement>  saldoRapport;
 
 	@FindBy(partialLinkText = "Balansrapport")
 	WebElement balansRapport;
@@ -51,27 +62,27 @@ public class EkonomiPage extends TestBase{
 	WebElement resultRapport;
 	
 	@FindBy(xpath = "//h5[contains(text(),'Likvida medel & skulder')]//span[@class='encircled text-center border border-primary rounded-circle'][contains(text(),'i')]")
-	WebElement informationIconLikvidaMedel;	
+	List<WebElement> informationIconLikvidaMedel;	
 	
 	@FindBy(xpath = "//div[@class='popover-body'][contains(text(),'Diagrammet')]")
 	WebElement informationIconLikvidaMedelIconText;	
 	
 	@FindBy(xpath = "//h5[contains(text(),'Rapportgenvägar')]//span[@class='encircled text-center border border-primary rounded-circle'][contains(text(),'i')]")
-	WebElement informationIconRapportGenvagar;	
+	List<WebElement> informationIconRapportGenvagar;	
 	
 	@FindBy(xpath = "//div[@class='popover-body'][contains(text(),'ekonomiska rapporter')]")
 	WebElement informationIconRapportGenvagarText;	
 	
 	@FindBy(xpath = "//h5[contains(text(),'Disponibelt- och bundet kapital')]//span[@class='encircled text-center border border-primary rounded-circle'][contains(text(),'i')]")
-	WebElement informationIconDisponibelt;	
+	List<WebElement> informationIconDisponibelt;	
 	
 	@FindBy(xpath = "//div[@class='popover-body'][contains(text(),'disponibelt kapital')]")
 	WebElement informationIconDisponibeltText;	
 	
 	@FindBy(xpath = "//h5[contains(text(),'Kapitalflöde')]//span[@class='encircled text-center border border-primary rounded-circle'][contains(text(),'i')]")
-	WebElement informationIconCashFlow;	
+	List<WebElement> informationIconCashFlow;	
 	
-	@FindBy(xpath = "//div[@class='popover-body'][contains(text(),'föreningens')]")
+	@FindBy(xpath = "//div[@class='popover-body'][contains(text(),'inklusive bankkonton och bundna placeringar')]")
 	WebElement informationIconCashFlowText;	
 	
 
@@ -91,21 +102,21 @@ public String validateEkonomiPageTitle(){
 }
 public AllaFakturorListItemPage clickAllaFakturorListItem() {
 	 allaFakturorListItem.get(0).click();
-	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='col-12 content standard-template']")));
+	 wait.until(ExpectedConditions.visibilityOf(allFakturorListItemPageElement));
 	 return new AllaFakturorListItemPage();
 	 //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
 }
 
 public FinansiellaRapporterPage clickfinansiellaRapportListItem() {
 	 finansiellaRapportListItem.get(0).click();
-	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
+	 wait.until(ExpectedConditions.visibilityOf(finansiellRaportListItemPageElement));
 	 return new FinansiellaRapporterPage();
 	
 }
 
 public SaldoRapportPage clicksaldoRapport() {
-	 saldoRapport.click();
-	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//main[@class='main gradient-bg']")));
+	 saldoRapport.get(0).click();
+	 wait.until(ExpectedConditions.visibilityOf(saldoRaportPageElement));
 	 return new SaldoRapportPage();
 	 //wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("fakturor att")));
 }
@@ -115,6 +126,7 @@ public boolean validateAllaFakturorListItem(String rolePrevilege) {
 	int ElementSize = allaFakturorListItem.size();
 	System.out.println("allaFakturorListItem element size is"+ElementSize);
 	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	System.out.println("flag size is"+flag);
 	return flag;
 
 	
@@ -126,6 +138,7 @@ public boolean validateAccountsReceivableGraph(String rolePrevilege) {
 	int ElementSize = accountsReceivableGraph.size();
 	System.out.println("accountsReceivableGraph element size is"+ElementSize);
 	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	System.out.println("flag size is"+flag);
 	return flag;
 
 	
@@ -143,91 +156,188 @@ public boolean validatefinansiellaRapportListItem(String rolePrevilege) {
 	// wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("fakturor att")));
 }
 
-public boolean validatesaldoRapport() {
-	return saldoRapport.isDisplayed();	
+//display of saldo rapport
+public boolean validatesaldoRapport(String rolePrevilege) {
 	
-	
-}
-
-public boolean clickGenvagar() {
-	 saldoRapport.click();
-	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@id='iFrameResizer0']")));
-	 return true;
-	
-	
-}
-//this is in sub category of alla fakturor list item
-public String validateDigitalWebFakturaButtonAllaFakturorListItem() {
-	allaFakturorListItem.get(0).click();
-	digitalWebFakturaButton.click();
-	String ChildwindowId=TestUtil.getNewChildWindowId();
-	driver.switchTo().window(ChildwindowId);
-	
-	 return driver.getTitle();
-	
-	
-}
-
-public boolean validateRapportGenvagar() {
-	
-	List<WebElement> rapportGenvagar=driver.findElements(By.xpath("//li[@class='list-group-item shortcut-item econmical-reports-item']"));
-	int j=0;
-	
- for(int i=0;i<rapportGenvagar.size();i++){
-		 
-		 String drop_down_values=rapportGenvagar.get(i).getText();
-		 if(drop_down_values.equals("Saldoförteckning") || drop_down_values.equals("Balansrapport") || drop_down_values.equals("Leverantörsrapport") || drop_down_values.equals("Likvidkontorapport") || drop_down_values.equals("Resultatrapport"))
-			 j++;
- }
+	int ElementSize = saldoRapport.size();
+	System.out.println("saldoRapport element size is"+ElementSize+"and role is"+rolePrevilege);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	return flag;
 		
-	if(j==5)
+	
+	
+}
+
+public boolean clickGenvagar(String rolePrevilege) {
+	int ElementSize = allaFakturorListItem.size();
+	System.out.println("allaFakturorListItem element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	if(futheraction) {	
+	 saldoRapport.get(0).click();
+	 wait.until(ExpectedConditions.visibilityOf(saldoRaportPageElement));
+	 return true;
+	}
+	if(flag && !futheraction)
 		return true;
+	
 	else
 		return false;
 	
 	
-}
-
-public boolean validateLikvidaMedelGraph() {
-	return likvidaMedelGraph.isDisplayed();	
-	
 	
 }
-
-public boolean validateDisponibeltGraph() {
-	return cashFlowGraph.isDisplayed();	
+//this is in sub category of alla fakturor list item
+public String validateDigitalWebFakturaButtonAllaFakturorListItem(String rolePrevilege) {
+	
+	int ElementSize = allaFakturorListItem.size();
+	System.out.println("allaFakturorListItem element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	if(futheraction) {		
+	allaFakturorListItem.get(0).click();
+	digitalWebFakturaButton.click();
+	String ChildwindowId=TestUtil.getNewChildWindowId();
+	driver.switchTo().window(ChildwindowId);
+		 return driver.getTitle();
+	}
+	
+	return null;
 	
 	
 }
 
-public boolean validateCashFlowGraph() {
-	return disposableBoundFundsGraph.isDisplayed();	
+	public boolean validateRapportGenvagar(String rolePrevilege) {
+
+		int j = 0;
+
+		for (int i = 0; i < rapportGenvagar.size(); i++) {
+
+			String drop_down_values = rapportGenvagar.get(i).getText();
+			if (drop_down_values.equals("Saldoförteckning") || drop_down_values.equals("Balansrapport")
+					|| drop_down_values.equals("Leverantörsrapport") || drop_down_values.equals("Likvidkontorapport")
+					|| drop_down_values.equals("Resultatrapport"))
+				System.out.println("found all 5 reports");
+				j++;
+		}
+
+		if (j == 5)
+			return true;
+		else
+			return false;
+
+	}
+
+public boolean validateLikvidaMedelGraph(String rolePrevilege) {
+	
+	int ElementSize = likvidaMedelGraph.size();
+	System.out.println("likvidaMedelGraph element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	return flag;
 	
 	
 }
 
-public boolean validateInformationIconLikvidaMedelGraph() {
+public boolean validateCashFlowGraph(String rolePrevilege) {
 	
-	informationIconLikvidaMedel.click();
-	return informationIconLikvidaMedelIconText.isDisplayed();
+	int ElementSize = cashFlowGraph.size();
+	System.out.println("cashFlowGraph element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	return flag;
+	
+	
+	
 }
 
-public boolean validateInformationIconRapportGenvagarFrame() {
+public boolean validateDisponibeltGraph(String rolePrevilege) {
 	
-	informationIconRapportGenvagar.click();
-	return informationIconRapportGenvagarText.isDisplayed();
+	int ElementSize = disposableBoundFundsGraph.size();
+	System.out.println("disposableBoundFundsGraph element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	return flag;
+	
+	
+	
 }
 
-public boolean validateInformationIconDisponiBeltGraph() {
+public boolean validateInformationIconLikvidaMedelGraph(String rolePrevilege) {
 	
-	informationIconDisponibelt.click();
-	return informationIconDisponibeltText.isDisplayed();
+	int ElementSize = informationIconLikvidaMedel.size();
+	System.out.println("likvidaMedelGraph element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	
+	if(futheraction) {
+		System.out.println("furtheraction true");
+		informationIconLikvidaMedel.get(0).click();
+			boolean flag1= informationIconLikvidaMedelIconText.isDisplayed();
+			System.out.println("flag value is"+flag1);
+		}
+		if(flag && !futheraction)
+			return true;
+		
+		else
+			return false;
+	}
+
+public boolean validateInformationIconRapportGenvagarFrame(String rolePrevilege) {
+	
+	int ElementSize = informationIconRapportGenvagar.size();
+	System.out.println("rapportGenvagar element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	if(futheraction) {
+		System.out.println("furtheraction true");
+		informationIconRapportGenvagar.get(0).click();
+			return informationIconRapportGenvagarText.isDisplayed();
+		}
+		if(flag && !futheraction)
+			return true;
+		
+		else
+			return false;
+	
 }
 
-public boolean validateInformationIconCashFlowGraph() {
+public boolean validateInformationIconDisponiBeltGraph(String rolePrevilege) {
 	
-	informationIconCashFlow.click();
-	return informationIconCashFlowText.isDisplayed();
+	int ElementSize = informationIconDisponibelt.size();
+	System.out.println("informationIconDisponibelt element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	
+	if(futheraction) {
+		System.out.println("furtheraction true");
+		informationIconDisponibelt.get(0).click();
+			return informationIconDisponibeltText.isDisplayed();
+		}
+		if(flag && !futheraction)
+			return true;
+		
+		else
+			return false;
+	
+	
+}
+
+public boolean validateInformationIconCashFlowGraph(String rolePrevilege) {
+	
+		
+	int ElementSize = informationIconCashFlow.size();
+	System.out.println("informationIconCashFlow element size is"+ElementSize);
+	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+	System.out.println("flag value is true");
+	if(futheraction) {
+		System.out.println("furtheraction true");
+		informationIconCashFlow.get(0).click();
+		return(informationIconCashFlowText.isDisplayed());
+		
+	}
+	if(flag && !futheraction) {
+		System.out.println("furtheraction flase");
+		return true;
+	}
+		
+	
+	else
+		return false;
+	
+
 }
 
 //public void clickbalansRapport() {

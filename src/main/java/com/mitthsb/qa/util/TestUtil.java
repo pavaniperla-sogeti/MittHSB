@@ -42,6 +42,7 @@ public class TestUtil extends TestBase {
 	// public static long PAGE_LOAD_TIMEOUT = 20;
 	// public static long PAGE_LOAD_TIMEOUT=20;
 	public static long IMPLICIT_WAIT = 20;
+	
 
 	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir")
 			+ "/src/main/java/com/mitthsb/qa/testdata/data.xlsx";
@@ -80,6 +81,8 @@ public class TestUtil extends TestBase {
 			case "x":
 				System.out.println("insideElementsize role x");
 				flag = true;
+				futheraction=true;
+				
 				break;
 			case "no":
 				System.out.println("insideElementsize role no");
@@ -97,6 +100,7 @@ public class TestUtil extends TestBase {
 			case "no":
 				System.out.println("outsideElementsize role no");
 				flag = true;
+				futheraction=false;
 				break;
 			}
 		

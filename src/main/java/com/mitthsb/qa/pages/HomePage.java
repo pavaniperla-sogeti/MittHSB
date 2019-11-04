@@ -18,6 +18,24 @@ public class HomePage extends TestBase {
 	
 	@FindBy(xpath = "//h4[@class='bold-uppercase'][contains(text(),'Ekonomisk översikt')]")
 	WebElement ekonomiPageElement;
+	
+	@FindBy(xpath = "//h1[contains(text(),'NYTT FRÅN HSB')]")
+	WebElement nyheterPageElement;
+	
+	@FindBy(xpath = "//a[@href='/nytt-fran-hsb/' and @class='link-dark']")
+	WebElement nyheterArticlePageElement;
+	
+	@FindBy(xpath = "//button[@class='btn-primary']")
+	WebElement adminPageElement;
+	
+	@FindBy(xpath = "//*[@id=\\\"main-gradient\\\"]")
+	WebElement fastighetenPageElement;
+	
+	@FindBy(xpath = "//*[@id=\\\"main-gradient\\\"]")
+	WebElement dokumentPageElement;
+	
+	@FindBy(xpath = "//h5[contains(text(),'Mina händelser')]")
+	WebElement minaSidorPageBrfElement;
 
 
 	@FindBy(xpath = "//span[@class='encircled text-center border border-primary rounded-circle'][contains(text(),'i')]")
@@ -381,7 +399,7 @@ public class HomePage extends TestBase {
 
 		seAllaNyheter.click();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1[contains(text(),'NYTT FRÅN HSB')]")));
+		wait.until(ExpectedConditions.visibilityOf(nyheterPageElement));
 
 		return new NyttFranHSBPage();
 	}
@@ -392,8 +410,7 @@ public class HomePage extends TestBase {
 
 		NyheterArticle.click();
 
-		wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath("//a[@href='/nytt-fran-hsb/' and @class='link-dark']")));
+		wait.until(ExpectedConditions.visibilityOf(nyheterArticlePageElement));
 
 		return new NyttFranHSBPage();
 	}
@@ -402,7 +419,7 @@ public class HomePage extends TestBase {
 
 		goTillKalender.click();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='btn-primary']")));
+		wait.until(ExpectedConditions.visibilityOf(adminPageElement));
 
 		return new AdministrationPage();
 
@@ -412,8 +429,7 @@ public class HomePage extends TestBase {
 
 		ekonomiTab.click();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(
-				By.xpath("//h4[@class='bold-uppercase'][contains(text(),'Ekonomisk översikt')]")));
+		wait.until(ExpectedConditions.visibilityOf(ekonomiPageElement));
 
 		return new EkonomiPage();
 	}
@@ -422,9 +438,7 @@ public class HomePage extends TestBase {
 
 		adminTab.click();
 
-		wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath("//*[@id=\"content-first\"]/div[2]/div/button")));
-
+		wait.until(ExpectedConditions.visibilityOf(adminPageElement));
 		return new AdministrationPage();
 
 	}
@@ -433,7 +447,7 @@ public class HomePage extends TestBase {
 
 		FastightenTab.click();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
+		wait.until(ExpectedConditions.visibilityOf(fastighetenPageElement));
 
 		return new FastighetenPage();
 
@@ -443,7 +457,7 @@ public class HomePage extends TestBase {
 
 		dokumentTab.click();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"main-gradient\"]")));
+		wait.until(ExpectedConditions.visibilityOf(dokumentPageElement));
 
 		return new DokumentPage();
 
@@ -454,8 +468,7 @@ public class HomePage extends TestBase {
 
 		minaSidorLink.get(0).click();
 
-		wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath("//div[@class='content no-max-width gradient-bg col-12']")));
+		wait.until(ExpectedConditions.visibilityOf(minaSidorPageBrfElement));
 
 		return new MinaSidorPage();
 

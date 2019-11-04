@@ -62,7 +62,8 @@ public class EkonomiPageTest extends TestBase {
 	@Test
 	public void ekonomiPageTitleTest() {
 		String title=ekonomiPage.validateEkonomiPageTitle();
-		softAssert.assertEquals(title, "Ekonomisk &#246;versikt");
+		softAssert.assertEquals(title, "Ekonomisk översikt - NOT FOR COMMERCIAL USE");
+		softAssert.assertAll();
 		
 		//softAssert.assertTrue(homePage.validateHomePageTitle(), "&#214;versikt");
 		
@@ -72,6 +73,7 @@ public class EkonomiPageTest extends TestBase {
 	public void validateAllaFakturorListItemTest() {
 		boolean flag=ekonomiPage.validateAllaFakturorListItem(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 		
 	}
 	
@@ -79,46 +81,52 @@ public class EkonomiPageTest extends TestBase {
 	public void validateFinansiellaRapportListItemTest() {
 		boolean flag=ekonomiPage.validatefinansiellaRapportListItem(rolePrevilege);
 		softAssert.assertTrue(flag);
-		
+		softAssert.assertAll();
 	}
 	
 	@Test//to see whether shortcut is displayed or not
 	public void validatesaldoRapportTest() {
-		boolean flag=ekonomiPage.validatesaldoRapport();
+		boolean flag=ekonomiPage.validatesaldoRapport(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 	}
 	
 	@Test//to see whether shortcut is properly redirecting to iframe or not
 	public void clicksaldoRapportGenvagarTest() {
-		boolean flag=ekonomiPage.clickGenvagar();
+		boolean flag=ekonomiPage.clickGenvagar(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 	}
 	
 	@Test//to see digitalwebfaktura button in allFakturor list item is properly redirecting to external webpage
 	public void clickDigitalWebFakturaButtonTest() {
-		String childTitle=ekonomiPage.validateDigitalWebFakturaButtonAllaFakturorListItem();
+		String childTitle=ekonomiPage.validateDigitalWebFakturaButtonAllaFakturorListItem(rolePrevilege);
 		softAssert.assertEquals(childTitle, "Basware Login Failed");
+		softAssert.assertAll();
 	}
 	
 	
 	@Test
 	public void likvidaMedelGraphEkonomiPageTest() {
-		boolean flag=ekonomiPage.validatesaldoRapport();
+		boolean flag=ekonomiPage.validatesaldoRapport(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 		
 	}
 	
 	@Test
 	public void disponibelGraphEkonomiPageTest() {
-		boolean flag=ekonomiPage.validateDisponibeltGraph();
+		boolean flag=ekonomiPage.validateDisponibeltGraph(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 		
 	}
 	
 	@Test
 	public void cashFlowGraphEkonomiPageTest() {
-		boolean flag=ekonomiPage.validateCashFlowGraph();
+		boolean flag=ekonomiPage.validateCashFlowGraph(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 		
 	}
 	
@@ -126,13 +134,15 @@ public class EkonomiPageTest extends TestBase {
 	public void accountsReceivablesGraphEkonomiPageTest() {
 		boolean flag=ekonomiPage.validateAccountsReceivableGraph(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 		
 	}
 	
 	@Test
 	public void reportGenvagarDisplayTest() {
-		boolean flag=ekonomiPage.validateRapportGenvagar();
+		boolean flag=ekonomiPage.validateRapportGenvagar(rolePrevilege);
 		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 		
 	}
 	
@@ -162,28 +172,32 @@ public class EkonomiPageTest extends TestBase {
 
 	@Test
 	public void  InformationIconLikvidaMedelGraphTest() {
-		softAssert.assertTrue(ekonomiPage.validateInformationIconLikvidaMedelGraph());
+		softAssert.assertTrue(ekonomiPage.validateInformationIconLikvidaMedelGraph(rolePrevilege));
+		softAssert.assertAll();
 		
 		
 	}
 	
 	@Test
 	public void  InformationIconRapportGenvagarFrameTest() {
-		softAssert.assertTrue(ekonomiPage.validateInformationIconRapportGenvagarFrame());
+		softAssert.assertTrue(ekonomiPage.validateInformationIconRapportGenvagarFrame(rolePrevilege));
+		softAssert.assertAll();
 		
 		
 	}
 	
 	@Test
 	public void  InformationIconDisponiBeltGraphTest() {
-		softAssert.assertTrue(ekonomiPage.validateInformationIconDisponiBeltGraph());
+		softAssert.assertTrue(ekonomiPage.validateInformationIconDisponiBeltGraph(rolePrevilege));
+		softAssert.assertAll();
 		
 		
 	}
 	
 	@Test
 	public void  InformationIconCashFlowGraphTest() {
-		softAssert.assertTrue(ekonomiPage.validateInformationIconCashFlowGraph());
+		softAssert.assertTrue(ekonomiPage.validateInformationIconCashFlowGraph(rolePrevilege));
+		softAssert.assertAll();
 		
 		
 	}
