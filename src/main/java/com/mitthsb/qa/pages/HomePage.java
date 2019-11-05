@@ -25,7 +25,7 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//a[@href='/nytt-fran-hsb/' and @class='link-dark']")
 	WebElement nyheterArticlePageElement;
 	
-	@FindBy(xpath = "//button[@class='btn-primary']")
+	@FindBy(xpath = "//button[contains(text(),'Skapa kalenderhändelse')]")
 	WebElement adminPageElement;
 	
 	@FindBy(xpath = "//main[@id='main-gradient']")

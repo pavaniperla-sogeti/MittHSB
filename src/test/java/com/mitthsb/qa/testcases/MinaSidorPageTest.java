@@ -199,38 +199,77 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 	
-//	@Test(groups="Regression")
-//	public void seAllaNyheterLinkTest() {
-//		NyttFranHSBPage = homePage.validateSeAllaNyheter();
-//		softAssert.assertAll();
-//
-//	}	
-//	
-//	@Test(groups="Regression")
-//	public void nyheterArticleTest() {
-//		NyttFranHSBPage = homePage.validateNyheterArticle();
-//
-//	}
-//	
-//	@Test(groups="Regression")
-//	public void priorityNewsFrameTest() {
-//		boolean flag = homePage.validateHsbNews(rolePrevilege);
-//		softAssert.assertTrue(flag);
-//		softAssert.assertAll();
-//
-//	}
-//	
-//	public kalenderMinasidor goTillKalenderMinaSidorPageTest() {
-//
-//		goTillKalender.click();
-//
-//		wait.until(ExpectedConditions.visibilityOf(adminPageElement));
-//
-//		return new AdministrationPage();
-//
-//	}
+	@Test(groups="Regression",description="Verify whether seAllaNyheter link in Minasidor page is redirecting to the nyttfranHSB page based on the role previlege")
+	public void seAllaNyheterLinkTestMinaSidorPage() {
+		NyttFranHSBPage = homePage.validateSeAllaNyheter(rolePrevilege);
+		softAssert.assertAll();
 
-	@AfterMethod
+	}	
+	
+	@Test(groups="Regression",description="Verify whether a news article is redirecting to the nyttfranHSB page based on the role previlege")
+	public void nyheterArticleTest() {
+		NyttFranHSBPage = homePage.validateNyheterArticle(rolePrevilege);
+
+	}
+	
+	@Test(groups="Regression",description="Verify whether news articles frame is displayed in Minasidor Page")
+	public void priorityNewsFrameTest() {
+		boolean flag = homePage.validateHsbNews(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+	}
+	
+	@Test(groups="Regression",description="verify whether go till kalender is properly redirecting to kalender page and verify the functionality of skapa kalender button")
+	public void goTillKalenderAndCreateKalenderEvent() {
+		boolean flag = MinaSidorPage.goTillKalenderMinaSidorPageTest(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+	}
+	
+	
+	@Test(groups="Regression",description="verify whether go till kalender is properly redirecting to kalender page and verify the functionality of skapa kalender button")
+	public void deleteKalenderHandelseMinaSidorPage() {
+		Boolean flag1 = AdministrationPage.deleteKalenderHäandelse(rolePrevilege);;
+		softAssert.assertTrue(flag1);
+		softAssert.assertAll();
+
+	}
+	
+	
+	
+	
+	@Test(groups="Regression",description="verify whether Mina Handelser frame is displayed or not")
+	public void minaHandelseFrameDisplayTest() {
+		boolean flag = MinaSidorPage.minaHandelserFrameDisplay(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+	}
+	
+	@Test (groups="Regression",description="Verify whether adding one of the Genvagar in private page is redirecting to correct page based on the role")// for validating ekonomi shortcut
+	// to validate whether clicking on ekonomi shortcutlink is taking to the
+	// respective page or not
+	public void minaUppgifterGenvagarLinkTest() {
+	
+		boolean flag = MinaSidorPage.validateGenvägar(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+	}
+	
+	@Test (groups="Regression",description="Verify whether Genvagar can be added or modified correctly")// for testing shortcuts functionalities to add or delete
+	public void genvagarLinkMinaSidorTest() {
+			boolean flag = MinaSidorPage.validateRedigeraGenvägar(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+	}
+	
+	
+	
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 
 		System.out.println("this methiod is ended");

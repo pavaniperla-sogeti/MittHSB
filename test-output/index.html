@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-MittHSB">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.MinaSidorPageTest" hash-for-method="clickMinProfileTabTest">clickMinProfileTabTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-MittHSB" title="com.mitthsb.qa.testcases.MinaSidorPageTest" hash-for-method="genvagarLinkMinaSidorTest">genvagarLinkMinaSidorTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MittHSB -->
@@ -125,11 +125,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickMinProfileTabTest">
-                  </a> <!-- clickMinProfileTabTest -->
-                  <span class="method-name">clickMinProfileTabTest</span>
+                  <a name="genvagarLinkMinaSidorTest">
+                  </a> <!-- genvagarLinkMinaSidorTest -->
+                  <span class="method-name">genvagarLinkMinaSidorTest</span>
                   <em>
-(Verify whether MinProfile Tab is redirecting to the rifht page based on the role previlege)                  </em>
+(Verify whether Genvagar can be added or modified correctly)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,7 +143,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot; name=&quot;MittHSB&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot; name=&quot;MittHSB&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.ExtentReportListner.ExtentRerportListener&quot;/&gt;
   &lt;/listeners&gt;
@@ -151,7 +151,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.mitthsb.qa.testcases.MinaSidorPageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;clickMinProfileTabTest&quot;/&gt;
+          &lt;include name=&quot;genvagarLinkMinaSidorTest&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.mitthsb.qa.testcases.MinaSidorPageTest --&gt;
     &lt;/classes&gt;
@@ -181,7 +181,7 @@
               <span class="test-group-name">Regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">clickMinProfileTabTest</span>
+                <span class="method-in-group-name">genvagarLinkMinaSidorTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -203,14 +203,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickMinProfileTabTest')
+data.setCell(0, 1, 'genvagarLinkMinaSidorTest')
 data.setCell(0, 2, 'com.mitthsb.qa.testcases.MinaSidorPageTest')
-data.setCell(0, 3, 743);
+data.setCell(0, 3, 16531);
 window.suiteTableData['MittHSB']= { tableData: data, tableDiv: 'times-div-MittHSB'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 743 ms</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-MittHSB">
               </div> <!-- times-div-MittHSB -->
             </div> <!-- times-div -->
@@ -225,7 +225,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-MittHSB" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">14 ignored methods</span>
+            <span class="header-content">22 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -237,23 +237,39 @@ return data;
                 <br/>
                 <span class="ignored-method-name">medelemskapTabDisplayTest</span>
                 <br/>
-                <span class="ignored-method-name">brfLandingTabDisplayTest</span>
+                <span class="ignored-method-name">minaUppgifterGenvagarLinkTest</span>
                 <br/>
                 <span class="ignored-method-name">clickMedlemskapTabTest</span>
                 <br/>
+                <span class="ignored-method-name">brfLandingTabDisplayTest</span>
+                <br/>
                 <span class="ignored-method-name">minBostadTabDisplayTest</span>
                 <br/>
+                <span class="ignored-method-name">goTillKalenderAndCreateKalenderEvent</span>
+                <br/>
+                <span class="ignored-method-name">nyheterArticleTest</span>
+                <br/>
+                <span class="ignored-method-name">minaHandelseFrameDisplayTest</span>
+                <br/>
                 <span class="ignored-method-name">sokBostadTabDisplayTest</span>
+                <br/>
+                <span class="ignored-method-name">seAllaNyheterLinkTestMinaSidorPage</span>
+                <br/>
+                <span class="ignored-method-name">clickMinProfileTabTest</span>
+                <br/>
+                <span class="ignored-method-name">deleteKalenderHandelseMinaSidorPage</span>
                 <br/>
                 <span class="ignored-method-name">bosparTabDisplayTest</span>
                 <br/>
                 <span class="ignored-method-name">clickBosparTabTest</span>
                 <br/>
-                <span class="ignored-method-name">clickMinBostadTabTest</span>
-                <br/>
                 <span class="ignored-method-name">minProfileTabDisplayTest</span>
                 <br/>
+                <span class="ignored-method-name">clickMinBostadTabTest</span>
+                <br/>
                 <span class="ignored-method-name">clickbrfLandingTabTest</span>
+                <br/>
+                <span class="ignored-method-name">priorityNewsFrameTest</span>
                 <br/>
                 <span class="ignored-method-name">arendenTabDisplayTest</span>
                 <br/>
@@ -271,16 +287,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.mitthsb.qa.testcases.MinaSidorPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.MinaSidorPageTest.clickMinProfileTabTest())</span>
+                <span class="method-name">setUp(public void com.mitthsb.qa.testcases.MinaSidorPageTest.genvagarLinkMinaSidorTest())</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">clickMinProfileTabTest</span>
-                <span class="method-start">23583 ms</span>
+                <span class="method-name">genvagarLinkMinaSidorTest</span>
+                <span class="method-start">31558 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24335 ms</span>
+                <span class="method-start">48097 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [MittHSB]">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [MittHSB]">
   <listeners>
     <listener class-name="com.qa.ExtentReportListner.ExtentRerportListener"/>
   </listeners>
@@ -9,8 +9,8 @@
       <class name="com.mitthsb.qa.testcases.MinaSidorPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="minaUppgifterGenvagarLinkTest"/>
           <include name="setUp"/>
-          <include name="clickMinProfileTabTest"/>
         </methods>
       </class> <!-- com.mitthsb.qa.testcases.MinaSidorPageTest -->
     </classes>

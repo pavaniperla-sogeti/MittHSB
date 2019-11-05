@@ -88,7 +88,7 @@ public static JavascriptExecutor js;
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		wait=new WebDriverWait(driver, 10);
+		wait=new WebDriverWait(driver, 20);
 		
 		
 

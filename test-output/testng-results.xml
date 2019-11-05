@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="14" total="15" passed="1">
+<testng-results skipped="0" failed="0" ignored="22" total="23" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="MittHSB" duration-ms="25241" started-at="2019-11-05T08:47:48Z" finished-at="2019-11-05T08:48:14Z">
+  <suite name="MittHSB" duration-ms="48954" started-at="2019-11-05T13:44:17Z" finished-at="2019-11-05T13:45:06Z">
     <groups>
       <group name="Regression">
-        <method signature="MinaSidorPageTest.clickMinProfileTabTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ea37dbf]" name="clickMinProfileTabTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.genvagarLinkMinaSidorTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ea37dbf]" name="genvagarLinkMinaSidorTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="MittHSBMittUppdragPages" duration-ms="25241" started-at="2019-11-05T08:47:48Z" finished-at="2019-11-05T08:48:14Z">
+    <test name="MittHSBMittUppdragPages" duration-ms="48954" started-at="2019-11-05T13:44:17Z" finished-at="2019-11-05T13:45:06Z">
       <class name="com.mitthsb.qa.testcases.MinaSidorPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="23508" started-at="2019-11-05T09:47:48Z" finished-at="2019-11-05T09:48:12Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="31469" started-at="2019-11-05T14:44:17Z" finished-at="2019-11-05T14:44:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.clickMinProfileTabTest()]]>
+                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.genvagarLinkMinaSidorTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="clickMinProfileTabTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ea37dbf]" name="clickMinProfileTabTest" duration-ms="743" started-at="2019-11-05T09:48:12Z" description="Verify whether MinProfile Tab is redirecting to the rifht page based on the role previlege" finished-at="2019-11-05T09:48:13Z">
+        <test-method status="PASS" signature="genvagarLinkMinaSidorTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ea37dbf]" name="genvagarLinkMinaSidorTest" duration-ms="16531" started-at="2019-11-05T14:44:48Z" description="Verify whether Genvagar can be added or modified correctly" finished-at="2019-11-05T14:45:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickMinProfileTabTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="877" started-at="2019-11-05T09:48:13Z" finished-at="2019-11-05T09:48:14Z">
+        </test-method> <!-- genvagarLinkMinaSidorTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="829" started-at="2019-11-05T14:45:05Z" finished-at="2019-11-05T14:45:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

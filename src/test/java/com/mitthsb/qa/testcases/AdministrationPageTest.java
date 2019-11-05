@@ -46,7 +46,7 @@ public class AdministrationPageTest extends TestBase {
 
 	}
 
-	@Test
+	@Test(description="Verify the title of Admin page is Styrelsekalender - NOT FOR COMMERCIAL USE")
 	public void adminPageTitleTest() {
 		
 		adminPage = homePage.adminTab(rolePrevilege);
@@ -60,7 +60,7 @@ public class AdministrationPageTest extends TestBase {
 			softAssert.assertTrue(true);
 	}
 
-	@Test
+	@Test(description="Verify whether SkapaKalender button functionality is proper or not based on the role")
 	public void skapaKalenderTest() {
 		adminPage = homePage.adminTab(rolePrevilege);
 
@@ -70,7 +70,7 @@ public class AdministrationPageTest extends TestBase {
 
 	}
 
-	@Test(dependsOnMethods = { "skapaKalenderTest" })
+	@Test(dependsOnMethods = { "skapaKalenderTest" },description="verify whether created kalender event is getting displayed in Home page")
 	public void displayKalenderEventHomePageTest() {
 
 		Boolean flag = homePage.displayKalenderHäandelse(rolePrevilege);
@@ -79,7 +79,7 @@ public class AdministrationPageTest extends TestBase {
 
 	}
 
-	@Test(dependsOnMethods = { "skapaKalenderTest", "displayKalenderEventHomePageTest" })
+	@Test(dependsOnMethods = { "skapaKalenderTest", "displayKalenderEventHomePageTest" },description="verify that delete kalender functionality is working and removing the calender event")
 	public void deleteKalenderTest() {
 
 		adminPage = homePage.adminTab(rolePrevilege);
@@ -90,7 +90,7 @@ public class AdministrationPageTest extends TestBase {
 
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 
 		System.out.println("this methiod is ended");

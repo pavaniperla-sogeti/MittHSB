@@ -13,39 +13,50 @@ import com.mitthsb.qa.util.TestUtil;
 public class AdministrationPage extends TestBase{
 	
 	@FindBy(xpath = "//button[@class='btn-primary'][contains(text(),'Skapa kalender')]")
+	static
 	List<WebElement> skapaKalenderButton;
 	
 	@FindBy(xpath = "//input[@id='resident']")
 	WebElement calenderBoendeCheckbox;
 	
 	@FindBy(xpath = "//input[@id='title']")
+	static
 	WebElement calenderTitle;
 	
 	@FindBy(xpath = "//input[@id='start-date']")
+	static
 	WebElement CalenderStartDate;
 	
 	@FindBy(xpath = "//select[@id='start-time']//option[contains(text(),'01:00')]")
+	static
 	WebElement CalenderStartTime;
 	
 	@FindBy(xpath = "//input[@id='end-date']")
+	static
 	WebElement CalenderEndDate;	
 	
 	@FindBy(xpath = "//select[@id='end-time']//option[contains(text(),'02:00')]")
+	static
 	WebElement CalenderEndTime;
 		
 	@FindBy(xpath = "//input[@id='place']")
+	static
 	WebElement CalenderPlace;	
 	
 	@FindBy(xpath = "//button[@class='btn btn-primary large'][contains(text(),'Skapa kal')]")
+	static
 	WebElement skapaKalenderButtonInsideModal;
 	
 	@FindBy(xpath = "//p[contains(text(),'Automat')]")
+	static
 	List<WebElement> calenderCreationCheck;
 
 	@FindBy(xpath = "//a[@class='link-secondary delete-calendar-item']")
+	static
 	List<WebElement> deleteCalenderButton;
 	
 	@FindBy(xpath = "//span[@class='btn btn-primary large'][contains(text(),'Ja, radera')]")
+	static
 	WebElement deleteCalenderRaderaButton;
 	
 	public AdministrationPage() {
@@ -78,8 +89,10 @@ public class AdministrationPage extends TestBase{
 
 	}
 	
-	public boolean createKalenderHäandelseAdminProfeesionalPage(String rolePrevilege) {
+	public  static  boolean createKalenderHäandelseAdminProfeesionalPage(String rolePrevilege) {
 		
+		PageFactory.initElements(driver, AdministrationPage.class);
+		System.out.println("entered into function");
 		int ElementSize = skapaKalenderButton.size();
 		System.out.println("allaFakturorListItem element size is"+ElementSize);
 		boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
@@ -118,7 +131,9 @@ public class AdministrationPage extends TestBase{
 		
 	}
 	
-public boolean deleteKalenderHäandelse(String rolePrevilege) {
+public static boolean deleteKalenderHäandelse(String rolePrevilege) {
+	
+	PageFactory.initElements(driver, AdministrationPage.class);
 	
 	int ElementSize = deleteCalenderButton.size();
 	System.out.println("allaFakturorListItem element size is"+ElementSize);
@@ -126,6 +141,7 @@ public boolean deleteKalenderHäandelse(String rolePrevilege) {
 	if(futheraction) {	
 	
 	deleteCalenderButton.get(0).click();
+	TestUtil.pause(2000);	
 	deleteCalenderRaderaButton.click();	
 	
 		TestUtil.pause(2000);		
