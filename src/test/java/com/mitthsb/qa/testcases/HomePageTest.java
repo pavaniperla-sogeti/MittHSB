@@ -117,7 +117,7 @@ public class HomePageTest extends TestBase {
 	@Test(groups="Regression")
 	public void stallIDinListaFunctionTest() {
 
-		boolean flag = homePage.stallInDinListaLinkTest();
+		boolean flag = homePage.stallInDinListaLinkTest(rolePrevilege);
 		softAssert.assertTrue(flag);
 		softAssert.assertAll();
 
@@ -173,21 +173,21 @@ public class HomePageTest extends TestBase {
 	public void goTillKalenderLinkTest() {
 		if (prop.getProperty("role").equals("Grund"))
 			throw new SkipException("Skipping this exception");
-		adminPage = homePage.goTillKalender();
+		adminPage = homePage.goTillKalender(rolePrevilege);
 		softAssert.assertAll();
 
 	}
 
 	@Test(groups="Regression")
 	public void seAllaNyheterLinkTest() {
-		NyttFranHSBPage = homePage.validateSeAllaNyheter();
+		NyttFranHSBPage = homePage.validateSeAllaNyheter(rolePrevilege);
 		softAssert.assertAll();
 
 	}
 
 	@Test(groups="Regression")
 	public void nyheterArticleTest() {
-		NyttFranHSBPage = homePage.validateNyheterArticle();
+		NyttFranHSBPage = homePage.validateNyheterArticle(rolePrevilege);
 
 	}
 	
@@ -254,28 +254,28 @@ public class HomePageTest extends TestBase {
 	@Test(groups="Regression")
 	public void ekonomiTabTest() {
 		
-		ekonomiPage = homePage.ekonomiTab();
+		ekonomiPage = homePage.ekonomiTab(rolePrevilege);
 
 	}
 
 	@Test(groups="Regression")
 	public void adminTabTest() {
 		
-			adminPage = homePage.adminTab();
+			adminPage = homePage.adminTab(rolePrevilege);
 
 	}
 
 	@Test(groups="Regression")
 	public void fastighetenTabTest() {
 		
-		fastiPage = homePage.fastightenTab();
+		fastiPage = homePage.fastightenTab(rolePrevilege);
 
 	}
 
 	@Test(groups="Regression")
 	public void dokumentTabTest() {
 	
-		dokumentPage = homePage.dokumentTab();
+		dokumentPage = homePage.dokumentTab(rolePrevilege);
 
 	}
 

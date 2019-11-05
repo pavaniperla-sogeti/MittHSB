@@ -3,15 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.mitthsb.qa.testcases.AdministrationPageTest">
+      <class name="com.mitthsb.qa.testcases.MinaSidorPageTest">
         <methods>
-          <include name="displayKalenderEventHomePageTest"/>
-          <include name="deleteKalenderTest"/>
           <include name="tearDown"/>
-          <include name="skapaKalenderTest"/>
+          <include name="minaSidorTitleTest"/>
+          <include name="medelemskapTabDisplayTest"/>
+          <include name="sokBostadTabDisplayTest"/>
+          <include name="brfLandingTabDisplayTest"/>
           <include name="setUp"/>
+          <include name="minBostadTabDisplayTest"/>
+          <include name="bosparTabDisplayTest"/>
+          <include name="minProfileTabDisplayTest"/>
+          <include name="arendenTabDisplayTest"/>
         </methods>
-      </class> <!-- com.mitthsb.qa.testcases.AdministrationPageTest -->
+      </class> <!-- com.mitthsb.qa.testcases.MinaSidorPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

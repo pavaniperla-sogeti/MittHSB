@@ -49,7 +49,7 @@ public class AdministrationPageTest extends TestBase {
 	@Test
 	public void adminPageTitleTest() {
 		
-		adminPage = homePage.adminTab();
+		adminPage = homePage.adminTab(rolePrevilege);
 		String title = adminPage.validateAdminPageTitle();
 		if (rolePrevilege.equals("x")) {
 
@@ -62,7 +62,7 @@ public class AdministrationPageTest extends TestBase {
 
 	@Test
 	public void skapaKalenderTest() {
-		adminPage = homePage.adminTab();
+		adminPage = homePage.adminTab(rolePrevilege);
 
 		Boolean flag = adminPage.createKalenderHäandelseAdminProfeesionalPage(rolePrevilege);
 		softAssert.assertTrue(flag);
@@ -82,7 +82,7 @@ public class AdministrationPageTest extends TestBase {
 	@Test(dependsOnMethods = { "skapaKalenderTest", "displayKalenderEventHomePageTest" })
 	public void deleteKalenderTest() {
 
-		adminPage = homePage.adminTab();
+		adminPage = homePage.adminTab(rolePrevilege);
 
 		Boolean flag = adminPage.deleteKalenderHäandelse(rolePrevilege);
 		softAssert.assertTrue(flag);

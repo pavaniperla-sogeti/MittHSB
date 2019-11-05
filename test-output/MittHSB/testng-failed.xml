@@ -6,25 +6,13 @@
   </listeners>
   <test name="MittHSBMittUppdragPages(failed)">
     <classes>
-      <class name="com.mitthsb.qa.testcases.EkonomiPageTest">
+      <class name="com.mitthsb.qa.testcases.MinaSidorPageTest">
         <methods>
-          <include name="clickDigitalWebFakturaButtonTest"/>
-          <include name="cashFlowGraphEkonomiPageTest"/>
-          <include name="validateFinansiellaRapportListItemTest"/>
-          <include name="validatesaldoRapportTest"/>
-          <include name="disponibelGraphEkonomiPageTest"/>
-          <include name="clicksaldoRapportGenvagarTest"/>
-          <include name="setUp"/>
-          <include name="InformationIconLikvidaMedelGraphTest"/>
-          <include name="accountsReceivablesGraphEkonomiPageTest"/>
-          <include name="reportGenvagarDisplayTest"/>
-          <include name="InformationIconRapportGenvagarFrameTest"/>
-          <include name="ekonomiPageTitleTest"/>
-          <include name="likvidaMedelGraphEkonomiPageTest"/>
-          <include name="validateAllaFakturorListItemTest"/>
           <include name="tearDown"/>
+          <include name="minaSidorTitleTest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.mitthsb.qa.testcases.EkonomiPageTest -->
+      </class> <!-- com.mitthsb.qa.testcases.MinaSidorPageTest -->
     </classes>
   </test> <!-- MittHSBMittUppdragPages(failed) -->
 </suite> <!-- Failed suite [MittHSB] -->

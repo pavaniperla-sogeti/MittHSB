@@ -55,7 +55,7 @@ public class EkonomiPageTest extends TestBase {
 		loginPage = new Loginpage();
 		testUtil = new TestUtil();
 		homePage=loginPage.login(prop.getProperty("login"),prop.getProperty("pwd"),prop.getProperty("role"));
-		ekonomiPage=homePage.ekonomiTab();
+		ekonomiPage=homePage.ekonomiTab(rolePrevilege);
 
 	}
 	

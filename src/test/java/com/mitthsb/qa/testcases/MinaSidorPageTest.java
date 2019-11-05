@@ -3,6 +3,7 @@ package com.mitthsb.qa.testcases;
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,6 +20,7 @@ import com.mitthsb.qa.pages.MedlemskapetPage;
 import com.mitthsb.qa.pages.MinBostadPage;
 import com.mitthsb.qa.pages.MinProfilPage;
 import com.mitthsb.qa.pages.MinaSidorPage;
+import com.mitthsb.qa.pages.NyttFranHSBPage;
 import com.mitthsb.qa.pages.SokBostadPage;
 import com.mitthsb.qa.util.TestUtil;
 
@@ -37,7 +39,8 @@ public class MinaSidorPageTest extends TestBase {
 	MedlemskapetPage MedlemskapetPage;
 	SokBostadPage SokBostadPage;
 	MinProfilPage MinProfilPage;
-	com.mitthsb.qa.pages.BrfFacklanPage ArendenAndFelanmalanPage;
+	ArendenAndFelanmalanPage ArendenAndFelanmalanPage;
+	NyttFranHSBPage NyttFranHSBPage;
 	
 
 	public MinaSidorPageTest() {
@@ -66,7 +69,7 @@ public class MinaSidorPageTest extends TestBase {
 	@Test
 	public void minaSidorTitleTest() {
 	
-		String title = adminPage.validateAdminPageTitle();
+		String title = MinaSidorPage.validateMinaSidorPageTitle();
 		if (rolePrevilege.equals("x")) {
 
 			softAssert.assertEquals(title, "Översikt - NOT FOR COMMERCIAL USE");
@@ -76,46 +79,157 @@ public class MinaSidorPageTest extends TestBase {
 			softAssert.assertTrue(true);
 	}
 	
-	@Test(groups="Regression")
-	public void brfLandingTabTest() {
-	
-		boolean flag= MinaSidorPage.validateBrfLandingTab(rolePrevilege);
+	@Test(groups = "Regression")
+	public void brfLandingTabDisplayTest() {
+
+		boolean flag = MinaSidorPage.validateBrfLandingTab(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 		
 
 	}
 	
-	@Test(groups="Regression")
-	public void arendenTabTest() {
-	
-		boolean flag= MinaSidorPage.validateBrfLandingTab(rolePrevilege);
+	@Test(groups = "Regression")
+	public void clickbrfLandingTabTest() {
 		
+		BrfFacklanPage = MinaSidorPage.clickBrfLandingTab(rolePrevilege);			
+
+	}
+
+	@Test(groups = "Regression")
+	public void arendenTabDisplayTest() {
+
+		boolean flag = MinaSidorPage.validateArendenTab(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
 
 	}
 	
-	@Test(groups="Regression")
-	public void minBostadTabTest() {
-	
-		//boolean flag = MinaSidorPage.validateBrfLandingTab(rolePrevilege);
+	@Test(groups = "Regression")
+	public void clickArendenTabTest() {
 		
+		ArendenAndFelanmalanPage = MinaSidorPage.clickArendenTab(rolePrevilege);			
 
 	}
 	
-	@Test(groups="Regression")
-	public void bosparTabTest() {
 	
-		//boolean flag = MinaSidorPage.validateBrfLandingTab(rolePrevilege);
-		
+
+	@Test(groups = "Regression")
+	public void minBostadTabDisplayTest() {
+
+		boolean flag = MinaSidorPage.validateMinBostadTab(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
 
 	}
 	
-	@Test(groups="Regression")
-	public void medelemskapTabTest() {
-	
-		//boolean flag = MinaSidorPage.validateBrfLandingTab(rolePrevilege);
+	@Test(groups = "Regression")
+	public void clickMinBostadTabTest() {
 		
+		MinBostadPage = MinaSidorPage.clickMinBostadTab(rolePrevilege);			
+
+	}
+
+	@Test(groups = "Regression")
+	public void bosparTabDisplayTest() {
+
+		boolean flag = MinaSidorPage.validateBosparTab(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
 
 	}
 	
+	@Test(groups = "Regression")
+	public void clickBosparTabTest() {
+		
+		BosparPage = MinaSidorPage.clickBosparTab(rolePrevilege);			
+
+	}
+
+	@Test(groups = "Regression")
+	public void medelemskapTabDisplayTest() {
+
+		boolean flag = MinaSidorPage.validateMedlemskapTab(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+
+	}
+	
+	@Test(groups = "Regression")
+	public void clickMedlemskapTabTest() {
+		
+		MedlemskapetPage = MinaSidorPage.clickMedlemskapTab(rolePrevilege);			
+
+	}
+	
+	@Test(groups = "Regression")
+	public void sokBostadTabDisplayTest() {
+
+		boolean flag = MinaSidorPage.validateSokBostadTab(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+
+	}
+	
+	@Test(groups = "Regression")
+	public void clickSokBostadTabTest() {
+		
+		SokBostadPage = MinaSidorPage.clickSokBostadTab(rolePrevilege);			
+
+	}
+	
+	@Test(groups = "Regression")
+	public void minProfileTabDisplayTest() {
+
+		boolean flag = MinaSidorPage.validateMinProfileTab(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+
+	}
+	
+	@Test(groups = "Regression")
+	public void clickMinProfileTabTest() {
+		
+		MinProfilPage = MinaSidorPage.clickMinProfileTab(rolePrevilege);			
+
+	}
+	
+//	@Test(groups="Regression")
+//	public void seAllaNyheterLinkTest() {
+//		NyttFranHSBPage = homePage.validateSeAllaNyheter();
+//		softAssert.assertAll();
+//
+//	}	
+//	
+//	@Test(groups="Regression")
+//	public void nyheterArticleTest() {
+//		NyttFranHSBPage = homePage.validateNyheterArticle();
+//
+//	}
+//	
+//	@Test(groups="Regression")
+//	public void priorityNewsFrameTest() {
+//		boolean flag = homePage.validateHsbNews(rolePrevilege);
+//		softAssert.assertTrue(flag);
+//		softAssert.assertAll();
+//
+//	}
+//	
+//	public kalenderMinasidor goTillKalenderMinaSidorPageTest() {
+//
+//		goTillKalender.click();
+//
+//		wait.until(ExpectedConditions.visibilityOf(adminPageElement));
+//
+//		return new AdministrationPage();
+//
+//	}
+
 	@AfterMethod
 	public void tearDown() {
 

@@ -54,10 +54,10 @@ public class HomePage extends TestBase {
 	List<WebElement>  senasteAldreHandelser;
 
 	@FindBy(xpath = "//a[contains(text(),'Se alla nyheter')]")
-	WebElement seAllaNyheter;
+	List<WebElement> seAllaNyheter;
 
 	@FindBy(xpath = "//body//latest-news//li[1]")
-	WebElement NyheterArticle;
+	List<WebElement> NyheterArticle;
 
 	@FindBy(xpath = "//div[@class='menu-item menu-item--logo']//img")
 	WebElement hsbLogo;
@@ -105,16 +105,16 @@ public class HomePage extends TestBase {
 	List<WebElement> todoFakturorList;
 
 	@FindBy(linkText = "Ekonomi")
-	WebElement ekonomiTab;
+	List<WebElement> ekonomiTab;
 
 	@FindBy(linkText = "Administration")
-	WebElement adminTab;
+	List<WebElement> adminTab;
 
 	@FindBy(linkText = "Fastigheten")
-	WebElement FastightenTab;
+	List<WebElement> FastightenTab;
 
 	@FindBy(linkText = "Dokument")
-	WebElement dokumentTab;
+	List<WebElement> dokumentTab;
 
 	@FindBy(xpath = "//div[@class='view-selector-component--desktop']//a[@class='link-secondary'][contains(text(),'Logga ut')]")
 	WebElement logoutBtn;
@@ -129,7 +129,7 @@ public class HomePage extends TestBase {
 	WebElement vivalyaren;
 
 	@FindBy(xpath = "//a[contains(text(),'Gå till kalender')]")
-	WebElement goTillKalender;
+	List<WebElement> goTillKalender;
 
 	@FindBy(xpath = "//div[@class='calendar-item-wrapper']//descendant::p[@class='bold'][contains(text(),'Automat')]")
 	List<WebElement> calenderEventCheck;
@@ -239,20 +239,30 @@ public class HomePage extends TestBase {
 		return flag;
 	}
 
-	public boolean stallInDinListaLinkTest() {
+	public boolean stallInDinListaLinkTest(String rolePrevilege) {
 
-	
+		int ElementSize = stallDinListaLink.size();
+		System.out.println("stallDinListaLink element size is"+ElementSize);
+		boolean flag=false;
+		 flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		 if (futheraction) {
+		
 			stallDinListaLink.get(0).click();
 			driver.switchTo().activeElement();
 			TestUtil.pause(2000);
 			stallDinListaLinkOverlatelseCheckbox.click();
 			TestUtil.pause(2000);
 			stallDinListaLinkSparaButton.click();
-			stallDinListaLink.get(0).isDisplayed();
+			return stallDinListaLink.get(0).isDisplayed();
+		 }
+		 if (flag && !futheraction)
+				return true;
 
+			else
+				return false;
 		
 
-		return true;
+		
 	}
 
 	public boolean validateEkonomicOversiktGraph(String rolePrevilege) {
@@ -345,7 +355,7 @@ public class HomePage extends TestBase {
 				ekonomiShortcut.click();
 				TestUtil.pause(2000);
 				allaFakturorShortcut.click();
-				TestUtil.pause(2000);;
+				TestUtil.pause(2000);
 				placeringarShortcut.click();
 				TestUtil.pause(2000);
 				genvagarKlarButton.click();
@@ -395,71 +405,149 @@ public class HomePage extends TestBase {
 
 			}
 
-	public NyttFranHSBPage validateSeAllaNyheter() {
+	
+	
+	
+	public NyttFranHSBPage validateSeAllaNyheter(String rolePrevilege) {
+		
+		
+		int ElementSize = seAllaNyheter.size();
+		System.out.println("seAllaNyheter element size is" + ElementSize);
+		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if (futheraction) {
+			seAllaNyheter.get(0).click();
+			wait.until(ExpectedConditions.visibilityOf(nyheterPageElement));
+			return new NyttFranHSBPage();
 
-		seAllaNyheter.click();
+		}
+		if (flag && !futheraction)
+			return new NyttFranHSBPage();
 
-		wait.until(ExpectedConditions.visibilityOf(nyheterPageElement));
-
-		return new NyttFranHSBPage();
-	}
-
-	public NyttFranHSBPage validateNyheterArticle() {
-
-		js.executeScript("arguments[0].scrollIntoView(true);", NyheterArticle);
-
-		NyheterArticle.click();
-
-		wait.until(ExpectedConditions.visibilityOf(nyheterArticlePageElement));
-
-		return new NyttFranHSBPage();
-	}
-
-	public AdministrationPage goTillKalender() {
-
-		goTillKalender.click();
-
-		wait.until(ExpectedConditions.visibilityOf(adminPageElement));
-
-		return new AdministrationPage();
+		else
+			return null;
 
 	}
+	
+	//irrespestive of roles they would be present
 
-	public EkonomiPage ekonomiTab() {
+	public NyttFranHSBPage validateNyheterArticle(String rolePrevilege) {
+		
+		int ElementSize = NyheterArticle.size();
+		System.out.println("NyheterArticle element size is" + ElementSize);
+		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if (futheraction) {
+			NyheterArticle.get(0).click();
+			wait.until(ExpectedConditions.visibilityOf(nyheterArticlePageElement));
+			return new NyttFranHSBPage();
 
-		ekonomiTab.click();
+		}
+		if (flag && !futheraction)
+			return new NyttFranHSBPage();
 
-		wait.until(ExpectedConditions.visibilityOf(ekonomiPageElement));
-
-		return new EkonomiPage();
+		else
+			return null;
+		
+				
 	}
 
-	public AdministrationPage adminTab() {
+	public AdministrationPage goTillKalender(String rolePrevilege) {
+		
+		int ElementSize = goTillKalender.size();
+		System.out.println("goTillKalender element size is" + ElementSize);
+		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if (futheraction) {
+			goTillKalender.get(0).click();
+			wait.until(ExpectedConditions.visibilityOf(adminPageElement));
+			return new AdministrationPage();
 
-		adminTab.click();
+		}
+		if (flag && !futheraction)
+			return new AdministrationPage();
 
-		wait.until(ExpectedConditions.visibilityOf(adminPageElement));
-		return new AdministrationPage();
+		else
+			return null;
+
+		}
+
+	public EkonomiPage ekonomiTab(String rolePrevilege) {
+		
+		int ElementSize = ekonomiTab.size();
+		System.out.println("ekonomiTab element size is" + ElementSize);
+		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if (futheraction) {
+			ekonomiTab.get(0).click();
+			wait.until(ExpectedConditions.visibilityOf(ekonomiPageElement));
+			return new EkonomiPage();
+
+		}
+		if (flag && !futheraction)
+			return new EkonomiPage();
+
+		else
+			return null;
+
+		
+	}
+
+	public AdministrationPage adminTab(String rolePrevilege) {
+		
+		int ElementSize = adminTab.size();
+		System.out.println("adminTab element size is" + ElementSize);
+		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if (futheraction) {
+			adminTab.get(0).click();
+			wait.until(ExpectedConditions.visibilityOf(adminPageElement));
+			return new AdministrationPage();
+
+		}
+		if (flag && !futheraction)
+			return new AdministrationPage();
+
+		else
+			return null;
+
+	
+	}
+
+	public FastighetenPage fastightenTab(String rolePrevilege) {
+		
+		int ElementSize = FastightenTab.size();
+		System.out.println("FastightenTab element size is" + ElementSize);
+		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if (futheraction) {
+			FastightenTab.get(0).click();
+			wait.until(ExpectedConditions.visibilityOf(fastighetenPageElement));
+			return new FastighetenPage();
+
+		}
+		if (flag && !futheraction)
+			return new FastighetenPage();
+
+		else
+			return null;
+
+	
 
 	}
 
-	public FastighetenPage fastightenTab() {
+	public DokumentPage dokumentTab(String rolePrevilege) {
+		
+		int ElementSize = dokumentTab.size();
+		System.out.println("dokumentTab element size is" + ElementSize);
+		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if (futheraction) {
+			dokumentTab.get(0).click();
+			wait.until(ExpectedConditions.visibilityOf(dokumentPageElement));
+			return new DokumentPage();
 
-		FastightenTab.click();
+		}
+		if (flag && !futheraction)
+			return new DokumentPage();
 
-		wait.until(ExpectedConditions.visibilityOf(fastighetenPageElement));
+		else
+			return null;
 
-		return new FastighetenPage();
-
-	}
-
-	public DokumentPage dokumentTab() {
-
-		dokumentTab.click();
-
-		wait.until(ExpectedConditions.visibilityOf(dokumentPageElement));
-
-		return new DokumentPage();
+	
 
 	}
 	// define Actions for minasidor page
