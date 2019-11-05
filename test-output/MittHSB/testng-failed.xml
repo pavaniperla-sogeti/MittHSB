@@ -9,8 +9,8 @@
       <class name="com.mitthsb.qa.testcases.MinaSidorPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="minaSidorTitleTest"/>
           <include name="setUp"/>
+          <include name="clickMinProfileTabTest"/>
         </methods>
       </class> <!-- com.mitthsb.qa.testcases.MinaSidorPageTest -->
     </classes>

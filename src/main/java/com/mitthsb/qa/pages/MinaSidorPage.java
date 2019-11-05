@@ -53,7 +53,7 @@ public class MinaSidorPage extends TestBase {
 	@FindBy(linkText = "Min profil")
 	List<WebElement> minProfileTab;
 
-	@FindBy(xpath = "///h4[contains(text(),'Mina uppgifter')]")
+	@FindBy(xpath = "//h4[contains(text(),'Mina uppgifter')]")
 	WebElement minProfilePageElement;
 
 	
@@ -88,15 +88,23 @@ public class MinaSidorPage extends TestBase {
 
 	}
 
-	public BrfFacklanPage clickBrfLandingTab(String role) {
-
-		if (role.equals("x")) {
+	public BrfFacklanPage clickBrfLandingTab(String rolePrevilege) {
+		
+		int ElementSize = brfFacklanTab.size();
+		System.out.println("brfFacklanTab element size is" + ElementSize);
+		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if (futheraction) {
 			brfFacklanTab.get(0).click();
 			wait.until(ExpectedConditions.visibilityOf(brfPageElement));
 			return new BrfFacklanPage();
 
 		}
-		return null;
+		if (flag && !futheraction)
+			return new BrfFacklanPage();
+
+		else
+			return null;
+
 
 	}
 
@@ -121,8 +129,8 @@ public class MinaSidorPage extends TestBase {
 
 	public ArendenAndFelanmalanPage clickArendenTab(String rolePrevilege) {
 
-		int ElementSize = minBostadTab.size();
-		System.out.println("minBostadTab element size is" + ElementSize);
+		int ElementSize = arendenTab.size();
+		System.out.println("arendenTab element size is" + ElementSize);
 		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
 		if (futheraction) {
 			arendenTab.get(0).click();
@@ -200,7 +208,7 @@ public class MinaSidorPage extends TestBase {
 		System.out.println("bosparTab element size is" + ElementSize);
 		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
 		if (futheraction) {
-			minBostadTab.get(0).click();
+			bosparTab.get(0).click();
 			wait.until(ExpectedConditions.visibilityOf(bosparPageElement));
 			return new BosparPage();
 
@@ -239,7 +247,7 @@ public class MinaSidorPage extends TestBase {
 		System.out.println("medlemskapTab element size is" + ElementSize);
 		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
 		if (futheraction) {
-			minBostadTab.get(0).click();
+			medlemskapTab.get(0).click();
 			wait.until(ExpectedConditions.visibilityOf(medlemskapPageElement));
 			return new MedlemskapetPage();
 
@@ -277,7 +285,7 @@ public class MinaSidorPage extends TestBase {
 		System.out.println("sokBostadTab element size is" + ElementSize);
 		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
 		if (futheraction) {
-			minBostadTab.get(0).click();
+			sokBostadTab.get(0).click();
 			wait.until(ExpectedConditions.visibilityOf(sokBostadPageElement));
 			return new SokBostadPage();
 
@@ -314,7 +322,7 @@ public class MinaSidorPage extends TestBase {
 		System.out.println("minProfileTab element size is" + ElementSize);
 		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
 		if (futheraction) {
-			minBostadTab.get(0).click();
+			minProfileTab.get(0).click();
 			wait.until(ExpectedConditions.visibilityOf(minProfilePageElement));
 			return new MinProfilPage();
 

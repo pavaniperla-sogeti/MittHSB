@@ -66,7 +66,7 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 	
-	@Test
+	@Test(description="Verify the title of Minasidor Page as Översikt - NOT FOR COMMERCIAL USE")
 	public void minaSidorTitleTest() {
 	
 		String title = MinaSidorPage.validateMinaSidorPageTitle();
@@ -79,7 +79,7 @@ public class MinaSidorPageTest extends TestBase {
 			softAssert.assertTrue(true);
 	}
 	
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether Brf landing page is visible based on the role previlege")
 	public void brfLandingTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateBrfLandingTab(rolePrevilege);
@@ -89,14 +89,14 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 	
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether Brf landing Tab is redirecting to the rifht page based on the role previlege")
 	public void clickbrfLandingTabTest() {
 		
 		BrfFacklanPage = MinaSidorPage.clickBrfLandingTab(rolePrevilege);			
 
 	}
 
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether ArendenTab is visible based on the role previlege")
 	public void arendenTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateArendenTab(rolePrevilege);
@@ -105,7 +105,7 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 	
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether Arenden Tab is redirecting to the rifht page based on the role previlege")
 	public void clickArendenTabTest() {
 		
 		ArendenAndFelanmalanPage = MinaSidorPage.clickArendenTab(rolePrevilege);			
@@ -114,7 +114,7 @@ public class MinaSidorPageTest extends TestBase {
 	
 	
 
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether MinBostad Tab is visible based on the role previlege")
 	public void minBostadTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateMinBostadTab(rolePrevilege);
@@ -124,14 +124,14 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 	
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether MinBostad Tab is redirecting to the rifht page based on the role previlege")
 	public void clickMinBostadTabTest() {
 		
 		MinBostadPage = MinaSidorPage.clickMinBostadTab(rolePrevilege);			
 
 	}
 
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether Bospar Tab is visible based on the role previlege")
 	public void bosparTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateBosparTab(rolePrevilege);
@@ -141,14 +141,14 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 	
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether Bospar Tab is redirecting to the rifht page based on the role previlege")
 	public void clickBosparTabTest() {
 		
 		BosparPage = MinaSidorPage.clickBosparTab(rolePrevilege);			
 
 	}
 
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether Medlemskap Tab is visible based on the role previlege")
 	public void medelemskapTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateMedlemskapTab(rolePrevilege);
@@ -158,14 +158,14 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 	
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether MedlemSkap Tab is redirecting to the rifht page based on the role previlege")
 	public void clickMedlemskapTabTest() {
 		
 		MedlemskapetPage = MinaSidorPage.clickMedlemskapTab(rolePrevilege);			
 
 	}
 	
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether SokBostad tab is visible based on the role previlege")
 	public void sokBostadTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateSokBostadTab(rolePrevilege);
@@ -175,14 +175,14 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 	
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether Sok Bostad Tab is redirecting to the rifht page based on the role previlege")
 	public void clickSokBostadTabTest() {
 		
 		SokBostadPage = MinaSidorPage.clickSokBostadTab(rolePrevilege);			
 
 	}
 	
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether Minprofile tab is visible based on the role previlege")
 	public void minProfileTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateMinProfileTab(rolePrevilege);
@@ -192,7 +192,7 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 	
-	@Test(groups = "Regression")
+	@Test(groups = "Regression",description="Verify whether MinProfile Tab is redirecting to the rifht page based on the role previlege")
 	public void clickMinProfileTabTest() {
 		
 		MinProfilPage = MinaSidorPage.clickMinProfileTab(rolePrevilege);			

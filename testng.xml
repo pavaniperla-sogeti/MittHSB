@@ -18,18 +18,7 @@
 			<class name="com.mitthsb.qa.testcases.EkonomiPageTest">  
 			<class name="com.mitthsb.qa.testcases.MinaSidorPageTest">
 			
-			<!--<methods>
-      	 	 <include name="brfLandingTabDisplayTest" />
-       	 	<include name="arendenTabDisplayTest" />
-       	 	 <include name="minBostadTabDisplayTest" />
-       	 	<include name="bosparTabDisplayTest" />
-       	 	 <include name="medelemskapTabDisplayTest" />
-       	 	<include name="sokBostadTabDisplayTest" />
-       	 	 <include name="minProfileTabDisplayTest" />
-       	 	<include name="minaSidorTitleTest" />
-       		
-			
-</methods>-->
+		
 				
 
 			</class>

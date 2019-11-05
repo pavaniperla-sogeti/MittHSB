@@ -61,9 +61,14 @@ public class ExtentRerportListener extends TestUtil implements IReporter {
 
 				test.setStartedTime(getTime(result.getStartMillis()));
 				test.setEndedTime(getTime(result.getEndMillis()));
+				
+				test.setDescription(result.getMethod().getDescription());
 
 				for (String group : result.getMethod().getGroups())
 					test.assignCategory(group);
+				
+					//	for (String description : result.getMethod().getDescription())
+				//test.assignCategory(description);
 
 				if (result.getThrowable() != null) {
 					test.log(status, result.getThrowable());
