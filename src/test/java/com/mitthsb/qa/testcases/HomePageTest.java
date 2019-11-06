@@ -48,7 +48,7 @@ public class HomePageTest extends TestBase {
 	ArendenAndFelanmalanPage ArendenAndFelanmalanPage;
 	MinaSidorPage MinaSidorPage;
 	NyttFranHSBPage NyttFranHSBPage;
-	SoftAssert softAssert = new SoftAssert();
+	SoftAssert softAssert;
 	String rolePrevilege;
 
 	public HomePageTest() {
@@ -72,6 +72,7 @@ public class HomePageTest extends TestBase {
 		loginPage = new Loginpage();
 		testUtil = new TestUtil();
 		homePage = loginPage.login(prop.getProperty("login"), prop.getProperty("pwd"), role);
+		 softAssert = new SoftAssert();
 
 	}
 

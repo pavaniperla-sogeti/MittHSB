@@ -6,13 +6,13 @@
   </listeners>
   <test name="MittHSBMittUppdragPages(failed)">
     <classes>
-      <class name="com.mitthsb.qa.testcases.MinaSidorPageTest">
+      <class name="com.mitthsb.qa.testcases.EkonomiPageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="minaUppgifterGenvagarLinkTest"/>
+          <include name="validateAllaFakturorListItemTest"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.mitthsb.qa.testcases.MinaSidorPageTest -->
+      </class> <!-- com.mitthsb.qa.testcases.EkonomiPageTest -->
     </classes>
   </test> <!-- MittHSBMittUppdragPages(failed) -->
 </suite> <!-- Failed suite [MittHSB] -->

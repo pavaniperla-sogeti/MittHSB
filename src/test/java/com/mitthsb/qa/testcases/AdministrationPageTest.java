@@ -21,7 +21,7 @@ public class AdministrationPageTest extends TestBase {
 	HomePage homePage;
 	AdministrationPage adminPage;
 	TestUtil testUtil;
-	SoftAssert softAssert = new SoftAssert();
+	SoftAssert softAssert;
 	String rolePrevilege;
 
 	public AdministrationPageTest() {
@@ -43,6 +43,7 @@ public class AdministrationPageTest extends TestBase {
 		loginPage = new Loginpage();
 		testUtil = new TestUtil();
 		homePage = loginPage.login(prop.getProperty("login"), prop.getProperty("pwd"), prop.getProperty("role"));
+		 softAssert = new SoftAssert();
 
 	}
 

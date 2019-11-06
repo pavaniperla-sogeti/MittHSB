@@ -30,7 +30,7 @@ public class MinaSidorPageTest extends TestBase {
 	AdministrationPage adminPage;
 	MinaSidorPage MinaSidorPage;
 	TestUtil testUtil;
-	SoftAssert softAssert = new SoftAssert();
+	SoftAssert softAssert;
 	String rolePrevilege;
 	String role;
 	BrfFacklanPage BrfFacklanPage;
@@ -63,6 +63,7 @@ public class MinaSidorPageTest extends TestBase {
 		testUtil = new TestUtil();
 		homePage = loginPage.login(prop.getProperty("login"), prop.getProperty("pwd"), prop.getProperty("role"));
 		MinaSidorPage=homePage.minaSidorLink();
+		softAssert = new SoftAssert();
 
 	}
 	
@@ -229,9 +230,9 @@ public class MinaSidorPageTest extends TestBase {
 	}
 	
 	
-	@Test(groups="Regression",description="verify whether go till kalender is properly redirecting to kalender page and verify the functionality of skapa kalender button")
+	@Test(groups="Regression",dependsOnMethods="goTillKalenderAndCreateKalenderEvent",description="verify whether go till kalender is properly redirecting to kalender page and verify the functionality of skapa kalender button")
 	public void deleteKalenderHandelseMinaSidorPage() {
-		Boolean flag1 = AdministrationPage.deleteKalenderHäandelse(rolePrevilege);;
+		Boolean flag1 = MinaSidorPage.deleteKalenderMinaSidorPageTest(rolePrevilege);;
 		softAssert.assertTrue(flag1);
 		softAssert.assertAll();
 

@@ -315,7 +315,9 @@ public boolean validateInformationIconDisponiBeltGraph(String rolePrevilege) {
 	if(futheraction) {
 		System.out.println("furtheraction true");
 		informationIconDisponibelt.get(0).click();
-			return informationIconDisponibeltText.isDisplayed();
+			boolean flag1=informationIconDisponibeltText.isDisplayed()	;
+			System.out.println("flag value of text is"+flag1);
+			return flag1;
 		}
 		if(flag && !futheraction)
 			return true;
@@ -336,7 +338,9 @@ public boolean validateInformationIconCashFlowGraph(String rolePrevilege) {
 	if(futheraction) {
 		System.out.println("furtheraction true");
 		informationIconCashFlow.get(0).click();
-		return(informationIconCashFlowText.isDisplayed());
+		boolean flag1=informationIconCashFlowText.isDisplayed()	;
+		System.out.println("flag value of text is"+flag1);
+		return flag1;
 		
 	}
 	if(flag && !futheraction) {

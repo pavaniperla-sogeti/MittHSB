@@ -374,6 +374,27 @@ public class MinaSidorPage extends TestBase {
 			return false;
 
 	}
+	
+	
+	public boolean deleteKalenderMinaSidorPageTest(String rolePrevilege) {
+
+		int ElementSize = goTillKalenderLink.size();
+		System.out.println("goTillKalender element size is" + ElementSize);
+		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if (futheraction) {
+			goTillKalenderLink.get(0).click();
+			wait.until(ExpectedConditions.visibilityOf(kalenderElement));
+			Boolean flag1 = AdministrationPage.deleteKalenderHäandelse(rolePrevilege);
+			return flag1;
+
+		}
+		if (flag && !futheraction)
+			return true;
+
+		else
+			return false;
+
+	}
 
 	public boolean minaHandelserFrameDisplay(String rolePrevilege) {
 

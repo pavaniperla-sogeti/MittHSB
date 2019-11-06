@@ -23,6 +23,10 @@ public class AdministrationPage extends TestBase{
 	static
 	WebElement calenderTitle;
 	
+	@FindBy(xpath = "//input[@id='resident']")
+	static
+	WebElement calenderBoende;
+	
 	@FindBy(xpath = "//input[@id='start-date']")
 	static
 	WebElement CalenderStartDate;
@@ -100,6 +104,8 @@ public class AdministrationPage extends TestBase{
 		
 			skapaKalenderButton.get(0).click();
 			driver.switchTo().activeElement();
+			TestUtil.pause(5000);
+			calenderBoende.click();
 			TestUtil.pause(1000);
 			String day=TestUtil.getTomorrowDate();
 			calenderTitle.sendKeys("Automation");
@@ -135,8 +141,10 @@ public static boolean deleteKalenderHäandelse(String rolePrevilege) {
 	
 	PageFactory.initElements(driver, AdministrationPage.class);
 	
+	int calenderSizeBefore= calenderCreationCheck.size();
+	
 	int ElementSize = deleteCalenderButton.size();
-	System.out.println("allaFakturorListItem element size is"+ElementSize);
+	System.out.println("deleteCalenderButton element size is"+ElementSize);
 	boolean flag=TestUtil.getRoleResult(rolePrevilege, ElementSize);
 	if(futheraction) {	
 	
@@ -145,8 +153,8 @@ public static boolean deleteKalenderHäandelse(String rolePrevilege) {
 	deleteCalenderRaderaButton.click();	
 	
 		TestUtil.pause(2000);		
-		int calenderSize= calenderCreationCheck.size();
-		if(calenderSize==0)
+		int calenderSizeAfterDelte= calenderCreationCheck.size();
+		if(calenderSizeBefore>calenderSizeAfterDelte)
 		return true;
 		else
 			return false;
