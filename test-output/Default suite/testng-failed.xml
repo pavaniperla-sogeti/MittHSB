@@ -6,15 +6,27 @@
       <class name="com.mitthsb.qa.testcases.MinaSidorPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="clickSokBostadTabTest"/>
           <include name="minaSidorTitleTest"/>
           <include name="medelemskapTabDisplayTest"/>
-          <include name="sokBostadTabDisplayTest"/>
+          <include name="minaUppgifterGenvagarLinkTest"/>
           <include name="brfLandingTabDisplayTest"/>
-          <include name="setUp"/>
+          <include name="clickMedlemskapTabTest"/>
+          <include name="goTillKalenderAndCreateKalenderEvent"/>
           <include name="minBostadTabDisplayTest"/>
-          <include name="bosparTabDisplayTest"/>
+          <include name="nyheterArticleTest"/>
+          <include name="minaHandelseFrameDisplayTest"/>
+          <include name="seAllaNyheterLinkTestMinaSidorPage"/>
+          <include name="sokBostadTabDisplayTest"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="deleteKalenderHandelseMinaSidorPage"/>
+          <include name="clickMinBostadTabTest"/>
           <include name="minProfileTabDisplayTest"/>
+          <include name="clickbrfLandingTabTest"/>
           <include name="arendenTabDisplayTest"/>
+          <include name="priorityNewsFrameTest"/>
+          <include name="clickArendenTabTest"/>
         </methods>
       </class> <!-- com.mitthsb.qa.testcases.MinaSidorPageTest -->
     </classes>

@@ -1,6 +1,7 @@
 C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\pages\HomePage.java
 C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\pages\BrfFacklanPage.java
 C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\pages\FastighetenPage.java
+C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\pages\logoutPage.java
 C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\pages\MinBostadPage.java
 C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\pages\ArendenAndFelanmalanPage.java
 C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\pages\Loginpage.java
@@ -19,6 +20,7 @@ C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\qa\ExtentReportL
 C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\util\ScreenshotExtentReportTest.java
 C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\pages\FragorOchSvarPage.java
 C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\testdata\UserHashMap.java
+C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\pages\NyttFranHSBPage.java
 C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\pages\MinaSidorPage.java
 C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\pages\AllaFakturorListItemPage.java
 C:\Users\pperla\eclipse-workspace\MittHSBTest\src\main\java\com\mitthsb\qa\pages\SaldoRapportPage.java

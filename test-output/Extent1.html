@@ -43,7 +43,7 @@
 			</div>
 			<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 				<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
-					<li class='analysis waves-effect'><a href='#!' class='exceptions-view' onclick="_updateCurrentStage(2)"><i class='mdi-action-bug-report'></i>Exceptions</a></li>
+					<li class='analysis waves-effect'><a href='#!' class='categories-view' onclick="_updateCurrentStage(1)"><i class='mdi-maps-local-offer'></i>Categories</a></li>
 				<li class='analysis waves-effect'>
 					<a href='#!' onclick="_updateCurrentStage(-1)" class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a>
 				</li>
@@ -54,7 +54,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2019-11-06 11:02:05</span>
+					<span class='suite-started-time'>2019-11-07 15:02:23</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -84,25 +84,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 9m 15s+682ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 4m 0s+674ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 9m 15s+682ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 4m 0s+674ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2019-11-06 10:52:50</span> 
+							<span class='panel-lead suite-started-time'>2019-11-07 14:58:23</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2019-11-06 11:02:05</span> 
+							<span class='panel-lead suite-ended-time'>2019-11-07 15:02:23</span> 
 						</div> 
 					</div>
 				</div>
@@ -188,6 +188,32 @@
 						</div>
 					</div>
 				</div>
+					<div class='category-summary-view'>
+						<div class='col l4 m6 s12'>
+							<div class='card-panel'>
+								<span class='label info outline right'>Categories</span>
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+										</tr>
+									</thead>
+									<tbody>
+											<tr>
+												<td>
+													Regression
+												</td>
+											</tr>
+											<tr>
+												<td>
+													smokeTest
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
 			</div>
 			<!-- /dashboard -->
 			
@@ -211,6 +237,17 @@
 									<li class='clear'><a href='#!'>Clear Filters</a></li>
 								</ul>
 							</div>
+								<div>
+									<a class='dropdown-button btn-floating btn-small waves-effect waves-light grey category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+										<i class='mdi-maps-local-offer'></i>
+									</a>
+									<ul id='category-toggle' class='dropdown-content'>
+											<li class='Regression'><a href='#!'>Regression</a></li>
+											<li class='smokeTest'><a href='#!'>smokeTest</a></li>
+										<li class='divider'></li>
+										<li class='clear'><a href='#!'>Clear Filters</a></li>
+									</ul>
+								</div>
 							<div>
 								<a class='btn-floating btn-small waves-effect waves-light grey' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
 									<i class='mdi-navigation-close'></i>
@@ -238,649 +275,24 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active pass ' extentid='904f2424-0c6e-49d8-ba54-86d4384e18a0'>
-											<div class='test-head'>
-												<span class='test-name'>clickDigitalWebFakturaButtonTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:56:06</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:56:08</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+115ms</span>
-												</div>
-												<div class='test-desc'>Verify that DigitalWebFakturor button is redirecting to the right page</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:56:08</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='57fd3a32-b03b-44a0-8845-069ea9523af3'>
-											<div class='test-head'>
-												<span class='test-name'>ekonomiPageTitleTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:57:40</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:57:40</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+15ms</span>
-												</div>
-												<div class='test-desc'>Verify the title of ekonomiPage as Ekonomisk översikt - NOT FOR COMMERCIAL USE</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:57:40</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='2483e28d-58e3-4904-8bcb-f249083548ee'>
-											<div class='test-head'>
-												<span class='test-name'>validatesaldoRapportTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 11:02:03</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 11:02:03</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+24ms</span>
-												</div>
-												<div class='test-desc'>Verify that saldo Rapport Genvagar is displayed or not</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>11:02:03</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='4fef097a-127c-4763-a8b0-287a2636769d'>
-											<div class='test-head'>
-												<span class='test-name'>saldoRapportLinkTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 11:00:03</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 11:00:06</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+792ms</span>
-												</div>
-												<div class='test-desc'>Verify whether click on any Genvagar is redirecting to the right rapport page</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>11:00:06</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='352f5bec-b1ab-425d-9c17-e9e1d99f0150'>
-											<div class='test-head'>
-												<span class='test-name'>validateFinansiellaRapportListItemTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 11:01:33</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 11:01:33</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+29ms</span>
-												</div>
-												<div class='test-desc'>Verify the list item Finansiella Rappport is displayed or not</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>11:01:33</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='b3b2bc2e-3e7b-4e39-a24d-d8c7aa9c713e'>
-											<div class='test-head'>
-												<span class='test-name'>InformationIconLikvidaMedelGraphTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:53:40</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:53:41</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+221ms</span>
-												</div>
-												<div class='test-desc'>Verify the information icon on LikvidaMedel graph is showing the right informatio </div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:53:41</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='de953aa3-01f2-4299-8af5-dbe7371898fb'>
-											<div class='test-head'>
-												<span class='test-name'>InformationIconCashFlowGraphTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:52:50</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:52:50</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+289ms</span>
-												</div>
-												<div class='test-desc'>Verify the information icon on Cashflow graph is showing the right information</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:52:50</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='a9e8178c-cfb5-4fe4-99ff-5e16aa17d3a2'>
-											<div class='test-head'>
-												<span class='test-name'>InformationIconDisponiBeltGraphTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:53:15</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:53:15</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+241ms</span>
-												</div>
-												<div class='test-desc'>Verify the information icon on DisponiBelt graph is showing the right informatio </div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:53:15</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='2595046a-7497-4cf2-9feb-2854dbbd16f0'>
-											<div class='test-head'>
-												<span class='test-name'>InformationIconRapportGenvagarFrameTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:54:07</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:54:07</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+222ms</span>
-												</div>
-												<div class='test-desc'>Verify the information icon on RapportGenvagar graph is showing the right informatio </div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:54:07</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='339d459d-30cd-4cb1-bba4-3d77c4dc80e5'>
-											<div class='test-head'>
-												<span class='test-name'>clicksaldoRapportGenvagarTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:56:40</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:56:44</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+81ms</span>
-												</div>
-												<div class='test-desc'>Verify that Saldo Genvagar link is redirecting ot the right page</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:56:44</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='60f90655-618d-46d1-a585-d7740b2644f1'>
-											<div class='test-head'>
-												<span class='test-name'>disponibelGraphEkonomiPageTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:57:13</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:57:13</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+39ms</span>
-												</div>
-												<div class='test-desc'>Verify that Disponible graph is displayed or not</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:57:13</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='22441f04-872e-4fd9-9acf-a7df053c236e'>
-											<div class='test-head'>
-												<span class='test-name'>likvidaMedelGraphEkonomiPageTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:59:07</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:59:07</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+25ms</span>
-												</div>
-												<div class='test-desc'>Verify that likvida Medel graph is displayed or not</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:59:07</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='980af17d-d54c-4018-8ca1-9cf70b959ad9'>
-											<div class='test-head'>
-												<span class='test-name'>reportGenvagarDisplayTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:59:35</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:59:36</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+381ms</span>
-												</div>
-												<div class='test-desc'>Verify the display of 5 genvagars in ekonomi page</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:59:36</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='de6a4b6d-accb-4de7-a107-a343819f4741'>
-											<div class='test-head'>
-												<span class='test-name'>allaFakturorListItemTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:55:08</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:55:14</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+623ms</span>
-												</div>
-												<div class='test-desc'>Verify the list item AllaFakturor is redirecting to proper page or not</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:55:14</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='96c16cd9-0713-404e-86ec-b1bf8ed8bcea'>
-											<div class='test-head'>
-												<span class='test-name'>cashFlowGraphEkonomiPageTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:55:40</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:55:40</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+40ms</span>
-												</div>
-												<div class='test-desc'>Verify that CashFlow graph is displayed or not</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:55:40</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='d5b962bd-aaa6-46cb-8922-3e9d4af32736'>
-											<div class='test-head'>
-												<span class='test-name'>accountsReceivablesGraphEkonomiPageTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:54:32</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:54:32</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+18ms</span>
-												</div>
-												<div class='test-desc'>Verify that Ekonomi graph is displayed or not</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:54:32</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='9fe8014e-8b26-45e6-b734-82a9e1a9ddcd'>
-											<div class='test-head'>
-												<span class='test-name'>finansiellaRapporterTest </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 10:58:18</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 10:58:26</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+316ms</span>
-												</div>
-												<div class='test-desc'>Verify the list item FinansiellaRapport is redirecting to proper page or not</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:58:26</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active skip ' extentid='950511a6-0cff-41f6-bbaf-d0860a183d96'>
+										<li class='collection-item test displayed active pass ' extentid='418ff473-28b3-4532-b581-c9907e30b123'>
 											<div class='test-head'>
 												<span class='test-name'>validateAllaFakturorListItemTest </span>
-												<span class='test-status label right outline capitalize skip'>skip</span>
-												<span class='category-assigned hide '></span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-06 11:01:08</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-06 11:01:08</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+0ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 14:58:29</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 14:58:29</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+18ms</span>
 												</div>
 												<div class='test-desc'>Verify the list item AllFaktuor is displayed or not</div>
 												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
 												</div>
 												<div class='test-steps'>
 													<table class='bordered table-results'>
@@ -893,95 +305,829 @@
 														</thead>
 														<tbody>
 																<tr>
-																	<td class='status skip' title='skip' alt='skip'><i class='mdi-content-redo'></i></td>
-																	<td class='timestamp'>11:01:08</td>
-																	<td class='step-details'><textarea>org.openqa.selenium.WebDriverException: chrome not reachable
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'LNOR070828', ip: '10.225.99.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F37C53+1473619]
-	Ordinal0 [0x00EBAD71+961905]
-	Ordinal0 [0x00E4415C+475484]
-	Ordinal0 [0x00E3D997+448919]
-	Ordinal0 [0x00DDF007+61447]
-	Ordinal0 [0x00DDBC77+48247]
-	Ordinal0 [0x00DF9149+168265]
-	Ordinal0 [0x00DF8D1D+167197]
-	Ordinal0 [0x00DF742B+160811]
-	Ordinal0 [0x00DE0AE6+68326]
-	Ordinal0 [0x00DE1BF0+72688]
-	Ordinal0 [0x00DE1B89+72585]
-	Ordinal0 [0x00ED4B37+1067831]
-	GetHandleVerifier [0x00FD6845+506677]
-	GetHandleVerifier [0x00FD65E0+506064]
-	GetHandleVerifier [0x00FDD188+533624]
-	GetHandleVerifier [0x00FD701A+508682]
-	Ordinal0 [0x00ECC226+1032742]
-	Ordinal0 [0x00ECC09F+1032351]
-	Ordinal0 [0x00ED6A4B+1075787]
-	Ordinal0 [0x00ED6BB3+1076147]
-	Ordinal0 [0x00ED5B65+1071973]
-	BaseThreadInitThunk [0x771F0419+25]
-	RtlGetAppContainerNamedObjectPath [0x775B662D+237]
-	RtlGetAppContainerNamedObjectPath [0x775B65FD+189]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at com.mitthsb.qa.base.TestBase.initialization(TestBase.java:63)
-	at com.mitthsb.qa.testcases.EkonomiPageTest.setUp(EkonomiPageTest.java:52)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</textarea></td>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>14:58:29</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='d32a58a6-eff1-495d-bd3d-9427f3f25494'>
+											<div class='test-head'>
+												<span class='test-name'>adminTabTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:00:16</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:00:19</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+824ms</span>
+												</div>
+												<div class='test-desc'>Verify whether Admin tab in professional page is redirecting to the right page</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:00:19</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='2a9952fd-5c5f-4a40-92f5-4759d9777011'>
+											<div class='test-head'>
+												<span class='test-name'>sokBostadTabDisplayTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:02:22</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:02:22</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+42ms</span>
+												</div>
+												<div class='test-desc'>Verify whether SokBostad tab is visible based on the role previlege</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:02:22</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='d335fd20-37d4-4b76-825e-c57864d24090'>
+											<div class='test-head'>
+												<span class='test-name'>minBostadTabDisplayTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:02:02</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:02:02</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+139ms</span>
+												</div>
+												<div class='test-desc'>Verify whether MinBostad Tab is visible based on the role previlege</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:02:02</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='85db3652-dd12-4ec7-a44c-376fcc9b707c'>
+											<div class='test-head'>
+												<span class='test-name'>minaSidorTitleTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:02:15</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:02:15</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+8ms</span>
+												</div>
+												<div class='test-desc'>Verify the title of Minasidor Page as Översikt - NOT FOR COMMERCIAL USE</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:02:15</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='4a710648-450a-4a43-9e17-152749229230'>
+											<div class='test-head'>
+												<span class='test-name'>validateFinansiellaRapportListItemTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 14:58:35</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 14:58:35</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+19ms</span>
+												</div>
+												<div class='test-desc'>Verify the list item Finansiella Rappport is displayed or not</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>14:58:35</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='e073659d-f282-47c5-9a9f-54109fc18aa9'>
+											<div class='test-head'>
+												<span class='test-name'>dokumentTabTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:00:31</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:00:32</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+770ms</span>
+												</div>
+												<div class='test-desc'>Verify whether Dokument tab in professional page is redirecting to the right page</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:00:32</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='7287b015-30bf-442e-8d8c-4469b1e882f3'>
+											<div class='test-head'>
+												<span class='test-name'>hsbLogoTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 14:59:30</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 14:59:30</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+30ms</span>
+												</div>
+												<div class='test-desc'>Verify whether HSB logo is present in the top center of the page</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>14:59:30</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='10742e2a-b12b-4951-92f4-0c75afbfe3db'>
+											<div class='test-head'>
+												<span class='test-name'>fastighetenTabTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:01:04</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:01:05</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+604ms</span>
+												</div>
+												<div class='test-desc'>Verify whether Fastigheten tab in professional page is redirecting to the right page</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:01:05</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='aa45bdc7-7522-425d-b8f6-0bb35622dd45'>
+											<div class='test-head'>
+												<span class='test-name'>bosparTabDisplayTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:01:42</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:01:42</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+131ms</span>
+												</div>
+												<div class='test-desc'>Verify whether Bospar Tab is visible based on the role previlege</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:01:42</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='a6ca70ac-3167-4466-be8d-cb61eb617395'>
+											<div class='test-head'>
+												<span class='test-name'>brfDisplayTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 14:59:07</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 14:59:07</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+41ms</span>
+												</div>
+												<div class='test-desc'>Verify that Brf Listbox  is displayed</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>14:59:07</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='5e5d95c1-c5a8-4d72-b82a-4170a68ae595'>
+											<div class='test-head'>
+												<span class='test-name'>mittUpdragLinkTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 14:59:53</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 14:59:53</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+9ms</span>
+												</div>
+												<div class='test-desc'>Verify that MittUppdrag link is displayed</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>14:59:53</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='71f5aee2-c952-4f70-b851-aaa5f160d07d'>
+											<div class='test-head'>
+												<span class='test-name'>arendenTabDisplayTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:01:35</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:01:35</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+43ms</span>
+												</div>
+												<div class='test-desc'>Verify whether ArendenTab is visible based on the role previlege</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:01:35</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='d43a27f0-68e0-45f5-bea0-b474628aa972'>
+											<div class='test-head'>
+												<span class='test-name'>ekonomiTabTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:00:45</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:00:48</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+249ms</span>
+												</div>
+												<div class='test-desc'>Verify whether Ekonomi tab in professional page is redirecting to the right page</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:00:48</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='a24b13c1-6b35-47dd-b84e-94c20354ab5b'>
+											<div class='test-head'>
+												<span class='test-name'>brfLandingTabDisplayTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:01:48</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:01:48</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+105ms</span>
+												</div>
+												<div class='test-desc'>Verify whether Brf landing page is visible based on the role previlege</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:01:48</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='005b8545-bb66-4f3a-990e-522dc3adcaf0'>
+											<div class='test-head'>
+												<span class='test-name'>medelemskapTabDisplayTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:01:55</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:01:55</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+95ms</span>
+												</div>
+												<div class='test-desc'>Verify whether Medlemskap Tab is visible based on the role previlege</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:01:55</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='e43830c3-840c-480e-a777-53f05d49fc37'>
+											<div class='test-head'>
+												<span class='test-name'>minProfileTabDisplayTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:02:09</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:02:09</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+92ms</span>
+												</div>
+												<div class='test-desc'>Verify whether Minprofile tab is visible based on the role previlege</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:02:09</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='bd86fa36-ba24-4698-b1e3-088c26e06f99'>
+											<div class='test-head'>
+												<span class='test-name'>minaSidorlinkTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 14:59:41</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 14:59:41</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+16ms</span>
+												</div>
+												<div class='test-desc'>Verify that MinaSidor link in top menu is displayed</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>14:59:41</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='454da697-0945-47f8-838d-ba5bb40fc7bf'>
+											<div class='test-head'>
+												<span class='test-name'>nyttLinkTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 15:00:04</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 15:00:04</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+35ms</span>
+												</div>
+												<div class='test-desc'>Verify that NyttLinkfranHSB link is displayed</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>15:00:04</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='359a322c-0a19-4bbf-8563-264dd3757934'>
+											<div class='test-head'>
+												<span class='test-name'>homePageTitleTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 14:59:18</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 14:59:18</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+10ms</span>
+												</div>
+												<div class='test-desc'>Verify the title of MittUpdrag Page is Översikt - NOT FOR COMMERCIAL USE</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>14:59:18</td>
+																	<td class='step-details'>Test passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='d63d5b36-f3ff-4a0c-b004-dd27b4ec3b9a'>
+											<div class='test-head'>
+												<span class='test-name'>ekonomiPageTitleTest </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  regression smoketest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-11-07 14:58:23</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-11-07 14:58:23</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+48ms</span>
+												</div>
+												<div class='test-desc'>Verify the title of ekonomiPage as Ekonomisk översikt - NOT FOR COMMERCIAL USE</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression</span>
+																<span class='category text-white'>smokeTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>14:58:23</td>
+																	<td class='step-details'>Test passed</td>
 																</tr>
 														</tbody>
 													</table>
@@ -1018,19 +1164,16 @@ remote stacktrace: Backtrace:
 			<!-- /tests -->
 			
 			<!-- categories -->
-			<!-- /categories -->
-			
-			<!-- exceptions -->
-				<div id='exceptions-view' class='row _addedTable hide'>
+				<div id='categories-view' class='row _addedTable hide'>
 					<div class='col _addedCell1'>
 						<div class='contents'>
 							<div class='card-panel heading'>
-								<h5>Defects</h5>
+								<h5>Categories</h5>
 							</div>
 							<div class='card-panel filters'>
 								<div class='search' alt='Search tests' title='Search tests'>
 									<div class='input-field left'>
-										<input id='searchTests' type='text' class='validate' placeholder='Search tests...'>
+										<input id='searchTests' type='text' class='validate' placeholder='Search...'>
 									</div>
 									<a href="#" class='btn-floating btn-small waves-effect waves-light blue lighten-1'>
 										<i class='mdi-action-search'></i>
@@ -1039,117 +1182,273 @@ remote stacktrace: Backtrace:
 							</div>
 							<div class='card-panel no-padding-h no-padding-v'>
 								<div class='wrapper'>
-									<ul id='exception-collection' class='exception-collection'>
-											<li class='exception-item displayed'>
-												<div class='exception-head'>
-													<span class='exception-name'>org.openqa.selenium.WebDriverException</span>
+									<ul id='cat-collection' class='cat-collection'>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>Regression</span>
 												</div>
-												<div class='exception-test-count'>
-													<span class='fail label'>1</span>
+												<div class='category-status-counts'>
+														<span class='pass label dot'>Pass: 21</span>
 												</div>
-												<div class='exception-body'>
-													<div class='exception-tests'>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>21</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
 														<table class='bordered'>
 															<thead>
 																<tr>
 																	<th>RunDate</th>
 																	<th>Test Name</th>
-																	<th>Exception</th>
+																	<th>Status</th>
 																</tr>
 															</thead>
 															<tbody>
-                                                                   <tr class='skip'>
-                                                                       <td>2019-11-06 11:01:08</td>
-                                                                       <td><span class='exception-link linked' extentid='950511a6-0cff-41f6-bbaf-d0860a183d96'>validateAllaFakturorListItemTest</span></td>
-                                                                       <td><pre class='exception-message'>org.openqa.selenium.WebDriverException: chrome not reachable
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'LNOR070828', ip: '10.225.99.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00F37C53+1473619]
-	Ordinal0 [0x00EBAD71+961905]
-	Ordinal0 [0x00E4415C+475484]
-	Ordinal0 [0x00E3D997+448919]
-	Ordinal0 [0x00DDF007+61447]
-	Ordinal0 [0x00DDBC77+48247]
-	Ordinal0 [0x00DF9149+168265]
-	Ordinal0 [0x00DF8D1D+167197]
-	Ordinal0 [0x00DF742B+160811]
-	Ordinal0 [0x00DE0AE6+68326]
-	Ordinal0 [0x00DE1BF0+72688]
-	Ordinal0 [0x00DE1B89+72585]
-	Ordinal0 [0x00ED4B37+1067831]
-	GetHandleVerifier [0x00FD6845+506677]
-	GetHandleVerifier [0x00FD65E0+506064]
-	GetHandleVerifier [0x00FDD188+533624]
-	GetHandleVerifier [0x00FD701A+508682]
-	Ordinal0 [0x00ECC226+1032742]
-	Ordinal0 [0x00ECC09F+1032351]
-	Ordinal0 [0x00ED6A4B+1075787]
-	Ordinal0 [0x00ED6BB3+1076147]
-	Ordinal0 [0x00ED5B65+1071973]
-	BaseThreadInitThunk [0x771F0419+25]
-	RtlGetAppContainerNamedObjectPath [0x775B662D+237]
-	RtlGetAppContainerNamedObjectPath [0x775B65FD+189]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at com.mitthsb.qa.base.TestBase.initialization(TestBase.java:63)
-	at com.mitthsb.qa.testcases.EkonomiPageTest.setUp(EkonomiPageTest.java:52)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></td>
-                                                                   </tr>
-                                                            </tbody>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:58:29</td>
+																		<td><span class='category-link linked' extentid='418ff473-28b3-4532-b581-c9907e30b123'>validateAllaFakturorListItemTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:00:16</td>
+																		<td><span class='category-link linked' extentid='d32a58a6-eff1-495d-bd3d-9427f3f25494'>adminTabTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:02:22</td>
+																		<td><span class='category-link linked' extentid='2a9952fd-5c5f-4a40-92f5-4759d9777011'>sokBostadTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:02:02</td>
+																		<td><span class='category-link linked' extentid='d335fd20-37d4-4b76-825e-c57864d24090'>minBostadTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:02:15</td>
+																		<td><span class='category-link linked' extentid='85db3652-dd12-4ec7-a44c-376fcc9b707c'>minaSidorTitleTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:58:35</td>
+																		<td><span class='category-link linked' extentid='4a710648-450a-4a43-9e17-152749229230'>validateFinansiellaRapportListItemTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:00:31</td>
+																		<td><span class='category-link linked' extentid='e073659d-f282-47c5-9a9f-54109fc18aa9'>dokumentTabTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:59:30</td>
+																		<td><span class='category-link linked' extentid='7287b015-30bf-442e-8d8c-4469b1e882f3'>hsbLogoTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:01:04</td>
+																		<td><span class='category-link linked' extentid='10742e2a-b12b-4951-92f4-0c75afbfe3db'>fastighetenTabTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:01:42</td>
+																		<td><span class='category-link linked' extentid='aa45bdc7-7522-425d-b8f6-0bb35622dd45'>bosparTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:59:07</td>
+																		<td><span class='category-link linked' extentid='a6ca70ac-3167-4466-be8d-cb61eb617395'>brfDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:59:53</td>
+																		<td><span class='category-link linked' extentid='5e5d95c1-c5a8-4d72-b82a-4170a68ae595'>mittUpdragLinkTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:01:35</td>
+																		<td><span class='category-link linked' extentid='71f5aee2-c952-4f70-b851-aaa5f160d07d'>arendenTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:00:45</td>
+																		<td><span class='category-link linked' extentid='d43a27f0-68e0-45f5-bea0-b474628aa972'>ekonomiTabTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:01:48</td>
+																		<td><span class='category-link linked' extentid='a24b13c1-6b35-47dd-b84e-94c20354ab5b'>brfLandingTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:01:55</td>
+																		<td><span class='category-link linked' extentid='005b8545-bb66-4f3a-990e-522dc3adcaf0'>medelemskapTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:02:09</td>
+																		<td><span class='category-link linked' extentid='e43830c3-840c-480e-a777-53f05d49fc37'>minProfileTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:59:41</td>
+																		<td><span class='category-link linked' extentid='bd86fa36-ba24-4698-b1e3-088c26e06f99'>minaSidorlinkTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:00:04</td>
+																		<td><span class='category-link linked' extentid='454da697-0945-47f8-838d-ba5bb40fc7bf'>nyttLinkTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:59:18</td>
+																		<td><span class='category-link linked' extentid='359a322c-0a19-4bbf-8563-264dd3757934'>homePageTitleTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:58:23</td>
+																		<td><span class='category-link linked' extentid='d63d5b36-f3ff-4a0c-b004-dd27b4ec3b9a'>ekonomiPageTitleTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+															<tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>smokeTest</span>
+												</div>
+												<div class='category-status-counts'>
+														<span class='pass label dot'>Pass: 21</span>
+												</div>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>21</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Status</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:58:29</td>
+																		<td><span class='category-link linked' extentid='418ff473-28b3-4532-b581-c9907e30b123'>validateAllaFakturorListItemTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:00:16</td>
+																		<td><span class='category-link linked' extentid='d32a58a6-eff1-495d-bd3d-9427f3f25494'>adminTabTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:02:22</td>
+																		<td><span class='category-link linked' extentid='2a9952fd-5c5f-4a40-92f5-4759d9777011'>sokBostadTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:02:02</td>
+																		<td><span class='category-link linked' extentid='d335fd20-37d4-4b76-825e-c57864d24090'>minBostadTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:02:15</td>
+																		<td><span class='category-link linked' extentid='85db3652-dd12-4ec7-a44c-376fcc9b707c'>minaSidorTitleTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:58:35</td>
+																		<td><span class='category-link linked' extentid='4a710648-450a-4a43-9e17-152749229230'>validateFinansiellaRapportListItemTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:00:31</td>
+																		<td><span class='category-link linked' extentid='e073659d-f282-47c5-9a9f-54109fc18aa9'>dokumentTabTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:59:30</td>
+																		<td><span class='category-link linked' extentid='7287b015-30bf-442e-8d8c-4469b1e882f3'>hsbLogoTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:01:04</td>
+																		<td><span class='category-link linked' extentid='10742e2a-b12b-4951-92f4-0c75afbfe3db'>fastighetenTabTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:01:42</td>
+																		<td><span class='category-link linked' extentid='aa45bdc7-7522-425d-b8f6-0bb35622dd45'>bosparTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:59:07</td>
+																		<td><span class='category-link linked' extentid='a6ca70ac-3167-4466-be8d-cb61eb617395'>brfDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:59:53</td>
+																		<td><span class='category-link linked' extentid='5e5d95c1-c5a8-4d72-b82a-4170a68ae595'>mittUpdragLinkTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:01:35</td>
+																		<td><span class='category-link linked' extentid='71f5aee2-c952-4f70-b851-aaa5f160d07d'>arendenTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:00:45</td>
+																		<td><span class='category-link linked' extentid='d43a27f0-68e0-45f5-bea0-b474628aa972'>ekonomiTabTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:01:48</td>
+																		<td><span class='category-link linked' extentid='a24b13c1-6b35-47dd-b84e-94c20354ab5b'>brfLandingTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:01:55</td>
+																		<td><span class='category-link linked' extentid='005b8545-bb66-4f3a-990e-522dc3adcaf0'>medelemskapTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:02:09</td>
+																		<td><span class='category-link linked' extentid='e43830c3-840c-480e-a777-53f05d49fc37'>minProfileTabDisplayTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:59:41</td>
+																		<td><span class='category-link linked' extentid='bd86fa36-ba24-4698-b1e3-088c26e06f99'>minaSidorlinkTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 15:00:04</td>
+																		<td><span class='category-link linked' extentid='454da697-0945-47f8-838d-ba5bb40fc7bf'>nyttLinkTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:59:18</td>
+																		<td><span class='category-link linked' extentid='359a322c-0a19-4bbf-8563-264dd3757934'>homePageTitleTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-11-07 14:58:23</td>
+																		<td><span class='category-link linked' extentid='d63d5b36-f3ff-4a0c-b004-dd27b4ec3b9a'>ekonomiPageTitleTest</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+															<tbody>
 														</table>
 													</div>
 												</div> 
@@ -1159,16 +1458,19 @@ remote stacktrace: Backtrace:
 							</div>
 						</div>
 					</div>
-					<div id='exception-details-wrapper' class='col _addedCell2'>
+					<div id='cat-details-wrapper' class='col _addedCell2'>
 						<div class='contents'>
 							<div class='card-panel details-view'>
-								<h5 class='exception-name'></h5>
-								<div class='exception-container'>
+								<h5 class='cat-name'></h5>
+								<div class='cat-container'>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			<!-- /categories -->
+			
+			<!-- exceptions -->
 			<!-- /exceptions -->
 			
 			<!-- testrunner logs -->

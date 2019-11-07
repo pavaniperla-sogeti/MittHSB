@@ -36,6 +36,7 @@ import org.openqa.selenium.WebElement;
 
 import com.mitthsb.qa.base.TestBase;
 
+
 public class TestUtil extends TestBase {
 
 	public static final long PAGE_LOAD_TIMEOUT = 30;
@@ -71,6 +72,22 @@ public class TestUtil extends TestBase {
 		return ChildWindowId;
 
 	}
+	
+	public static void closeActiveTabSwitchToHomeTab() {
+
+		Set<String> handler = driver.getWindowHandles();
+		Iterator<String> it = handler.iterator();
+		String ParentWindowId =it.next();// pointing to first value of window handle		
+		// System.out.println("parent window id "+ ParentWindowId);
+		String ChildWindowId = it.next();// pointing to second value of window handle child window
+		driver.switchTo().window(ChildWindowId);
+		driver.close();
+		driver.switchTo().window(ParentWindowId);
+		
+
+	}
+	
+	
 	
 	public static boolean getRoleResult(String rolePrevilege, int ElementSize ) {
 

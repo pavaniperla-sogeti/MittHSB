@@ -1,0 +1,5 @@
+com\mitthsb\qa\testcases\MinaSidorPageTest.class
+com\mitthsb\qa\testcases\EkonomiPageTest.class
+com\mitthsb\qa\testcases\HomePageTest.class
+com\mitthsb\qa\testcases\AdministrationPageTest.class
+com\mitthsb\qa\testcases\LoginPageTest.class

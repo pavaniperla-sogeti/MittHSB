@@ -5,7 +5,9 @@ import java.lang.reflect.Method;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.testng.SkipException;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -29,25 +31,32 @@ public class AdministrationPageTest extends TestBase {
 // to call testbase constructor to execute prop
 
 	}
-
-	@BeforeMethod
-	public void setUp(Method method) throws StaleElementReferenceException {
+	
+	@BeforeClass(alwaysRun = true)
+	public void setUp() throws StaleElementReferenceException {
 
 		System.out.println("before intialization");
-
-		initialization();
-		System.out.println("class is" + this.getClass().getName() + "and method is" + method.getName());
-		String role = prop.getProperty("role");
-		rolePrevilege = TestUtil.retrieveRole(method.getName(), role);
-		System.out.println("roel is" + rolePrevilege);
+		initialization();				
 		loginPage = new Loginpage();
 		testUtil = new TestUtil();
 		homePage = loginPage.login(prop.getProperty("login"), prop.getProperty("pwd"), prop.getProperty("role"));
-		 softAssert = new SoftAssert();
+		softAssert = new SoftAssert();
 
 	}
 
-	@Test(description="Verify the title of Admin page is Styrelsekalender - NOT FOR COMMERCIAL USE")
+	@BeforeMethod(alwaysRun = true)
+	public void setUp(Method method) throws StaleElementReferenceException {
+		
+		TestUtil.pause(2000);
+		System.out.println("class is" + this.getClass().getName() + "and method is" + method.getName());
+		String role = prop.getProperty("role");
+		rolePrevilege = TestUtil.retrieveRole(method.getName(), role);
+		System.out.println("role is" + rolePrevilege);
+		TestUtil.pause(2000);
+
+	}
+
+	@Test(groups="Regression",description="Verify the title of Admin page is Styrelsekalender - NOT FOR COMMERCIAL USE")
 	public void adminPageTitleTest() {
 		
 		adminPage = homePage.adminTab(rolePrevilege);
@@ -61,7 +70,7 @@ public class AdministrationPageTest extends TestBase {
 			softAssert.assertTrue(true);
 	}
 
-	@Test(description="Verify whether SkapaKalender button functionality is proper or not based on the role")
+	@Test(groups="Regression",description="Verify whether SkapaKalender button functionality is proper or not based on the role")
 	public void skapaKalenderTest() {
 		adminPage = homePage.adminTab(rolePrevilege);
 
@@ -71,16 +80,17 @@ public class AdministrationPageTest extends TestBase {
 
 	}
 
-	@Test(dependsOnMethods = { "skapaKalenderTest" },description="verify whether created kalender event is getting displayed in Home page")
+	@Test(groups="Regression",dependsOnMethods = { "skapaKalenderTest" },description="verify whether created kalender event is getting displayed in Home page")
 	public void displayKalenderEventHomePageTest() {
-
+		
+		homePage=homePage.clickMittUppdragLink(rolePrevilege);
 		Boolean flag = homePage.displayKalenderHäandelse(rolePrevilege);
 		softAssert.assertTrue(flag);
 		softAssert.assertAll();
 
 	}
 
-	@Test(dependsOnMethods = { "skapaKalenderTest", "displayKalenderEventHomePageTest" },description="verify that delete kalender functionality is working and removing the calender event")
+	@Test(groups="Regression",dependsOnMethods = { "skapaKalenderTest", "displayKalenderEventHomePageTest" },description="verify that delete kalender functionality is working and removing the calender event")
 	public void deleteKalenderTest() {
 
 		adminPage = homePage.adminTab(rolePrevilege);
@@ -91,7 +101,7 @@ public class AdministrationPageTest extends TestBase {
 
 	}
 
-	@AfterMethod(alwaysRun = true)
+	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 
 		System.out.println("this methiod is ended");

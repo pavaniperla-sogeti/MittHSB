@@ -154,6 +154,7 @@ public static boolean deleteKalenderHäandelse(String rolePrevilege) {
 	
 		TestUtil.pause(2000);		
 		int calenderSizeAfterDelte= calenderCreationCheck.size();
+		System.out.println("calendersize before is"+calenderSizeBefore+"calendersizeafter is"+calenderSizeAfterDelte);
 		if(calenderSizeBefore>calenderSizeAfterDelte)
 		return true;
 		else

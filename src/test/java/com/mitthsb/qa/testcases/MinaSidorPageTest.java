@@ -4,7 +4,9 @@ import java.lang.reflect.Method;
 
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -49,25 +51,32 @@ public class MinaSidorPageTest extends TestBase {
 
 	} 
 	
-	@BeforeMethod
-	public void setUp(Method method) throws StaleElementReferenceException {
+	@BeforeClass(alwaysRun = true)
+	public void setUp() throws StaleElementReferenceException {
 
 		System.out.println("before intialization");
-
-		initialization();
-		System.out.println("class is" + this.getClass().getName() + "and method is" + method.getName());
-		role = prop.getProperty("role");
-		rolePrevilege = TestUtil.retrieveRole(method.getName(), role);
-		System.out.println("roel is" + rolePrevilege);
+		initialization();				
 		loginPage = new Loginpage();
 		testUtil = new TestUtil();
 		homePage = loginPage.login(prop.getProperty("login"), prop.getProperty("pwd"), prop.getProperty("role"));
-		MinaSidorPage=homePage.minaSidorLink();
 		softAssert = new SoftAssert();
 
 	}
 	
-	@Test(description="Verify the title of Minasidor Page as Översikt - NOT FOR COMMERCIAL USE")
+	@BeforeMethod(alwaysRun = true)
+	public void setUp(Method method) throws StaleElementReferenceException {
+
+		TestUtil.pause(2000);
+		System.out.println("class is" + this.getClass().getName() + "and method is" + method.getName());
+		role = prop.getProperty("role");
+		rolePrevilege = TestUtil.retrieveRole(method.getName(), role);
+		System.out.println("roel is" + rolePrevilege);
+		MinaSidorPage=homePage.minaSidorLink();
+		TestUtil.pause(2000);
+
+	}
+	
+	@Test(groups = { "Regression", "smokeTest" },description="Verify the title of Minasidor Page as Översikt - NOT FOR COMMERCIAL USE")
 	public void minaSidorTitleTest() {
 	
 		String title = MinaSidorPage.validateMinaSidorPageTitle();
@@ -80,7 +89,7 @@ public class MinaSidorPageTest extends TestBase {
 			softAssert.assertTrue(true);
 	}
 	
-	@Test(groups = "Regression",description="Verify whether Brf landing page is visible based on the role previlege")
+	@Test(groups = { "Regression", "smokeTest" },description="Verify whether Brf landing page is visible based on the role previlege")
 	public void brfLandingTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateBrfLandingTab(rolePrevilege);
@@ -97,7 +106,7 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 
-	@Test(groups = "Regression",description="Verify whether ArendenTab is visible based on the role previlege")
+	@Test(groups =  { "Regression", "smokeTest" },description="Verify whether ArendenTab is visible based on the role previlege")
 	public void arendenTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateArendenTab(rolePrevilege);
@@ -115,7 +124,7 @@ public class MinaSidorPageTest extends TestBase {
 	
 	
 
-	@Test(groups = "Regression",description="Verify whether MinBostad Tab is visible based on the role previlege")
+	@Test(groups =  { "Regression", "smokeTest" },description="Verify whether MinBostad Tab is visible based on the role previlege")
 	public void minBostadTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateMinBostadTab(rolePrevilege);
@@ -132,7 +141,7 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 
-	@Test(groups = "Regression",description="Verify whether Bospar Tab is visible based on the role previlege")
+	@Test(groups =  { "Regression", "smokeTest" },description="Verify whether Bospar Tab is visible based on the role previlege")
 	public void bosparTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateBosparTab(rolePrevilege);
@@ -149,7 +158,7 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 
-	@Test(groups = "Regression",description="Verify whether Medlemskap Tab is visible based on the role previlege")
+	@Test(groups =  { "Regression", "smokeTest" },description="Verify whether Medlemskap Tab is visible based on the role previlege")
 	public void medelemskapTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateMedlemskapTab(rolePrevilege);
@@ -166,7 +175,7 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 	
-	@Test(groups = "Regression",description="Verify whether SokBostad tab is visible based on the role previlege")
+	@Test(groups =  { "Regression", "smokeTest" },description="Verify whether SokBostad tab is visible based on the role previlege")
 	public void sokBostadTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateSokBostadTab(rolePrevilege);
@@ -183,7 +192,7 @@ public class MinaSidorPageTest extends TestBase {
 
 	}
 	
-	@Test(groups = "Regression",description="Verify whether Minprofile tab is visible based on the role previlege")
+	@Test(groups =  { "Regression", "smokeTest" },description="Verify whether Minprofile tab is visible based on the role previlege")
 	public void minProfileTabDisplayTest() {
 
 		boolean flag = MinaSidorPage.validateMinProfileTab(rolePrevilege);
@@ -270,7 +279,7 @@ public class MinaSidorPageTest extends TestBase {
 	
 	
 	
-	@AfterMethod(alwaysRun = true)
+	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 
 		System.out.println("this methiod is ended");

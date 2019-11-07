@@ -1,0 +1,27 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MittHSBRegressionTestSuite" preserve-order="true"
+	verbose="10" configfailurepolicy="continue">
+
+	<listeners>
+		<listener
+			class-name="com.qa.ExtentReportListner.ExtentRerportListener" />
+		<!--<listener class-name="com.mitthsb.qa.util.TestNGEmailableReport2" /> -->
+	</listeners>
+	<test name="MittHSBRegressionTests" preserve-order="true"
+		parallel="false">
+		<groups>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.mitthsb.qa.testcases.EkonomiPageTest" />
+			<class name="com.mitthsb.qa.testcases.HomePageTest" />
+			<class name="com.mitthsb.qa.testcases.MinaSidorPageTest" />
+			<class name="com.mitthsb.qa.testcases.AdministrationPageTest" />
+		</classes>
+	</test>
+
+</suite>

@@ -19,6 +19,10 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//h4[@class='bold-uppercase'][contains(text(),'Ekonomisk översikt')]")
 	WebElement ekonomiPageElement;
 	
+	
+	@FindBy(xpath = "//a[contains(text(),'in din lista')]")
+	WebElement oversiktPageElement;
+	
 	@FindBy(xpath = "//h1[contains(text(),'NYTT FRÅN HSB')]")
 	WebElement nyheterPageElement;
 	
@@ -106,7 +110,8 @@ public class HomePage extends TestBase {
 
 	@FindBy(linkText = "Ekonomi")
 	List<WebElement> ekonomiTab;
-
+	
+	
 	@FindBy(linkText = "Administration")
 	List<WebElement> adminTab;
 
@@ -545,9 +550,27 @@ public class HomePage extends TestBase {
 			return new DokumentPage();
 
 		else
-			return null;
+			return null;	
 
+	}
 	
+	
+public HomePage clickMittUppdragLink(String rolePrevilege) {
+		
+		int ElementSize = mittUppdragLink.size();
+		System.out.println("mittUppdragLink element size is" + ElementSize);
+		boolean flag = TestUtil.getRoleResult(rolePrevilege, ElementSize);
+		if (futheraction) {
+			mittUppdragLink.get(0).click();
+			wait.until(ExpectedConditions.visibilityOf(oversiktPageElement));
+			return new HomePage();
+
+		}
+		if (flag && !futheraction)
+			return new HomePage();
+
+		else
+			return null;	
 
 	}
 	// define Actions for minasidor page

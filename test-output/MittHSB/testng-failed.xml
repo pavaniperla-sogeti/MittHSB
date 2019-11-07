@@ -5,14 +5,17 @@
     <listener class-name="com.qa.ExtentReportListner.ExtentRerportListener"/>
   </listeners>
   <test name="MittHSBMittUppdragPages(failed)">
+    <groups>
+      <run>
+        <include name="smokeTest"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.mitthsb.qa.testcases.EkonomiPageTest">
+      <class name="com.mitthsb.qa.testcases.MinaSidorPageTest">
         <methods>
-          <include name="validateAllaFakturorListItemTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="minaSidorTitleTest"/>
         </methods>
-      </class> <!-- com.mitthsb.qa.testcases.EkonomiPageTest -->
+      </class> <!-- com.mitthsb.qa.testcases.MinaSidorPageTest -->
     </classes>
   </test> <!-- MittHSBMittUppdragPages(failed) -->
 </suite> <!-- Failed suite [MittHSB] -->

@@ -5,8 +5,10 @@ import java.lang.reflect.Method;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.SkipException;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -59,24 +61,33 @@ public class HomePageTest extends TestBase {
 
 	// testcases should be independent.. ideal is to close the browser afer every
 	// case and launched before the test case.
-	@BeforeMethod
-	public void setUp(Method method) throws StaleElementReferenceException {
+	@BeforeClass(alwaysRun = true)
+	public void setUp() throws StaleElementReferenceException {
 
 		System.out.println("before intialization");
+		initialization();				
+		loginPage = new Loginpage();
+		testUtil = new TestUtil();
+		homePage = loginPage.login(prop.getProperty("login"), prop.getProperty("pwd"), prop.getProperty("role"));
+		softAssert = new SoftAssert();
 
-		initialization();
+	}
+	
+	@BeforeMethod(alwaysRun = true)
+	public void setUp(Method method) throws StaleElementReferenceException {
+		
+		TestUtil.pause(4000);
 		System.out.println("class is" + this.getClass().getName() + "and method is" + method.getName());
 		String role=prop.getProperty("role");
 		rolePrevilege=TestUtil.retrieveRole(method.getName(),role);
-		System.out.println("roel is" + rolePrevilege);
-		loginPage = new Loginpage();
-		testUtil = new TestUtil();
-		homePage = loginPage.login(prop.getProperty("login"), prop.getProperty("pwd"), role);
-		 softAssert = new SoftAssert();
+		System.out.println("roel is" + rolePrevilege);	
+		homePage=homePage.clickMittUppdragLink(rolePrevilege);
+		TestUtil.pause(4000);
 
 	}
-
-	@Test(groups="Regression",description="Verify the title of MittUpdrag Page is Översikt - NOT FOR COMMERCIAL USE")
+	
+	
+	@Test(groups = { "Regression", "smokeTest" },description="Verify the title of MittUpdrag Page is Översikt - NOT FOR COMMERCIAL USE")
 	public void homePageTitleTest() {
 		String title = homePage.validateHomePageTitle();
 		softAssert.assertEquals(title, "Översikt - NOT FOR COMMERCIAL USE");
@@ -85,7 +96,7 @@ public class HomePageTest extends TestBase {
 
 	}
 
-	@Test(groups="Regression",description="Verify whether HSB logo is present in the top center of the page")
+	@Test(groups = { "Regression", "smokeTest" },description="Verify whether HSB logo is present in the top center of the page")
 	public void hsbLogoTest() {
 
 		boolean flag = homePage.validateHSBLogoHomePage();
@@ -94,6 +105,71 @@ public class HomePageTest extends TestBase {
 
 		
 	}
+	
+	@Test(groups = { "Regression", "smokeTest" },description="Verify that Brf Listbox  is displayed")
+	public void brfDisplayTest() {
+
+		boolean flag = homePage.validateBrfDisplay();
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+		
+
+	}
+
+	@Test(groups = { "Regression", "smokeTest" },description="Verify that MittUppdrag link is displayed")
+	public void mittUpdragLinkTest() {		
+		boolean flag = homePage.validateMittUpdragLink(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+	}
+
+	@Test(groups = { "Regression", "smokeTest" },description="Verify that MinaSidor link in top menu is displayed")
+	public void minaSidorlinkTest() {
+		boolean flag = homePage.validateMinaSidorLink(rolePrevilege);
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+	}
+
+	@Test(groups = { "Regression", "smokeTest" },description="Verify that NyttLinkfranHSB link is displayed")
+	public void nyttLinkTest() {
+		boolean flag = homePage.validateNyttFranHsb();
+		softAssert.assertTrue(flag);
+		softAssert.assertAll();
+
+	}
+	
+	@Test(groups = { "Regression", "smokeTest" },description="Verify whether Ekonomi tab in professional page is redirecting to the right page",dependsOnMethods={"homePageTitleTest", "hsbLogoTest"})
+	public void ekonomiTabTest() {
+		
+		ekonomiPage = homePage.ekonomiTab(rolePrevilege);
+
+	}
+
+	@Test(groups = { "Regression", "smokeTest" },description="Verify whether Admin tab in professional page is redirecting to the right page",dependsOnMethods={"homePageTitleTest", "hsbLogoTest"})
+	public void adminTabTest() {
+		
+			adminPage = homePage.adminTab(rolePrevilege);
+
+	}
+
+	@Test(groups = { "Regression", "smokeTest" },description="Verify whether Fastigheten tab in professional page is redirecting to the right page",dependsOnMethods={"homePageTitleTest", "hsbLogoTest"})
+	public void fastighetenTabTest() {
+		
+		fastiPage = homePage.fastightenTab(rolePrevilege);
+
+	}
+
+	@Test(groups = { "Regression", "smokeTest" },description="Verify whether Dokument tab in professional page is redirecting to the right page",dependsOnMethods={"homePageTitleTest", "hsbLogoTest"})
+	public void dokumentTabTest() {
+	
+		dokumentPage = homePage.dokumentTab(rolePrevilege);
+
+	}
+	
+
 
 	@Test(groups="Regression",description="verify the link StallInDinLista is displayed based on the role")
 	public void stallIDinListaLinkDisplayTest() {
@@ -126,40 +202,7 @@ public class HomePageTest extends TestBase {
 
 	}
 
-	@Test(groups="Regression",description="Verify that Brf Listbox  is displayed")
-	public void brfDisplayTest() {
-
-		boolean flag = homePage.validateBrfDisplay();
-		softAssert.assertTrue(flag);
-		softAssert.assertAll();
-
-		
-
-	}
-
-	@Test(groups="Regression",description="Verify that MittUppdrag link is displayed")
-	public void mittUpdragLinkTest() {		
-		boolean flag = homePage.validateMittUpdragLink(rolePrevilege);
-		softAssert.assertTrue(flag);
-		softAssert.assertAll();
-
-	}
-
-	@Test(groups="Regression",description="Verify that MinaSidor link in top menu is displayed")
-	public void minaSidorlinkTest() {
-		boolean flag = homePage.validateMinaSidorLink(rolePrevilege);
-		softAssert.assertTrue(flag);
-		softAssert.assertAll();
-
-	}
-
-	@Test(groups="Regression",description="Verify that NyttLinkfranHSB link is displayed")
-	public void nyttLinkTest() {
-		boolean flag = homePage.validateNyttFranHsb();
-		softAssert.assertTrue(flag);
-		softAssert.assertAll();
-
-	}
+	
 
 	@Test(groups="Regression",description="Verify that Fakturor list is displayed")
 	public void fakturorDisplayTest() {
@@ -251,33 +294,7 @@ public class HomePageTest extends TestBase {
 //		
 //	}
 
-	@Test(groups="Regression",description="Verify whether Ekonomi tab in professional page is redirecting to the right page")
-	public void ekonomiTabTest() {
-		
-		ekonomiPage = homePage.ekonomiTab(rolePrevilege);
 
-	}
-
-	@Test(groups="Regression",description="Verify whether Admin tab in professional page is redirecting to the right page")
-	public void adminTabTest() {
-		
-			adminPage = homePage.adminTab(rolePrevilege);
-
-	}
-
-	@Test(groups="Regression",description="Verify whether Fastigheten tab in professional page is redirecting to the right page")
-	public void fastighetenTabTest() {
-		
-		fastiPage = homePage.fastightenTab(rolePrevilege);
-
-	}
-
-	@Test(groups="Regression",description="Verify whether Dokument tab in professional page is redirecting to the right page")
-	public void dokumentTabTest() {
-	
-		dokumentPage = homePage.dokumentTab(rolePrevilege);
-
-	}
 
 //	@Test(priority=11)
 //	public void clickMinaSidorLinkTest() {
@@ -373,7 +390,7 @@ public class HomePageTest extends TestBase {
 ////	}
 ////		
 
-	@AfterMethod(alwaysRun = true)
+	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		
 		System.out.println("this methiod is ended");
