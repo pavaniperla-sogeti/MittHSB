@@ -1,402 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="47" total="68" passed="21">
+<testng-results skipped="0" failed="0" ignored="21" total="23" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="MittHSBSmokeTestSuite" duration-ms="268774" started-at="2019-11-07T13:57:54Z" finished-at="2019-11-07T14:02:23Z">
+  <suite name="MittHSBRegressionTestSuite" duration-ms="102946" started-at="2019-11-07T14:03:19Z" finished-at="2019-11-07T14:05:02Z">
     <groups>
       <group name="Regression">
-        <method signature="HomePageTest.brfDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="brfDisplayTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.homePageTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="homePageTitleTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.hsbLogoTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="hsbLogoTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.adminTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="adminTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.dokumentTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="dokumentTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.ekonomiTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="ekonomiTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.fastighetenTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="fastighetenTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.minaSidorlinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="minaSidorlinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.mittUpdragLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="mittUpdragLinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.nyttLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="nyttLinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="MinaSidorPageTest.arendenTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="arendenTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.bosparTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="bosparTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.brfLandingTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="brfLandingTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.medelemskapTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="medelemskapTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.minBostadTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minBostadTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.minProfileTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minProfileTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.minaSidorTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minaSidorTitleTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.sokBostadTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="sokBostadTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="EkonomiPageTest.ekonomiPageTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="ekonomiPageTitleTest" class="com.mitthsb.qa.testcases.EkonomiPageTest"/>
-        <method signature="EkonomiPageTest.validateAllaFakturorListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="validateAllaFakturorListItemTest" class="com.mitthsb.qa.testcases.EkonomiPageTest"/>
-        <method signature="EkonomiPageTest.validateFinansiellaRapportListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="validateFinansiellaRapportListItemTest" class="com.mitthsb.qa.testcases.EkonomiPageTest"/>
+        <method signature="MinaSidorPageTest.goTillKalenderAndCreateKalenderEvent()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="goTillKalenderAndCreateKalenderEvent" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.deleteKalenderHandelseMinaSidorPage()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="deleteKalenderHandelseMinaSidorPage" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
       </group> <!-- Regression -->
-      <group name="smokeTest">
-        <method signature="HomePageTest.brfDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="brfDisplayTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.homePageTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="homePageTitleTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.hsbLogoTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="hsbLogoTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.adminTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="adminTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.dokumentTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="dokumentTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.ekonomiTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="ekonomiTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.fastighetenTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="fastighetenTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.minaSidorlinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="minaSidorlinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.mittUpdragLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="mittUpdragLinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="HomePageTest.nyttLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="nyttLinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
-        <method signature="MinaSidorPageTest.arendenTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="arendenTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.bosparTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="bosparTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.brfLandingTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="brfLandingTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.medelemskapTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="medelemskapTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.minBostadTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minBostadTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.minProfileTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minProfileTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.minaSidorTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minaSidorTitleTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.sokBostadTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="sokBostadTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="EkonomiPageTest.ekonomiPageTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="ekonomiPageTitleTest" class="com.mitthsb.qa.testcases.EkonomiPageTest"/>
-        <method signature="EkonomiPageTest.validateAllaFakturorListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="validateAllaFakturorListItemTest" class="com.mitthsb.qa.testcases.EkonomiPageTest"/>
-        <method signature="EkonomiPageTest.validateFinansiellaRapportListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="validateFinansiellaRapportListItemTest" class="com.mitthsb.qa.testcases.EkonomiPageTest"/>
-      </group> <!-- smokeTest -->
     </groups>
-    <test name="MittHSBSmokeTests" duration-ms="268774" started-at="2019-11-07T13:57:54Z" finished-at="2019-11-07T14:02:23Z">
-      <class name="com.mitthsb.qa.testcases.EkonomiPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="21424" started-at="2019-11-07T14:57:54Z" finished-at="2019-11-07T14:58:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="7239" started-at="2019-11-07T14:58:15Z" finished-at="2019-11-07T14:58:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.ekonomiPageTitleTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ekonomiPageTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="ekonomiPageTitleTest" duration-ms="48" started-at="2019-11-07T14:58:23Z" description="Verify the title of ekonomiPage as Ekonomisk översikt - NOT FOR COMMERCIAL USE" finished-at="2019-11-07T14:58:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ekonomiPageTitleTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="6235" started-at="2019-11-07T14:58:23Z" finished-at="2019-11-07T14:58:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.validateAllaFakturorListItemTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateAllaFakturorListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="validateAllaFakturorListItemTest" duration-ms="18" started-at="2019-11-07T14:58:29Z" description="Verify the list item AllFaktuor is displayed or not" finished-at="2019-11-07T14:58:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAllaFakturorListItemTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="6327" started-at="2019-11-07T14:58:29Z" finished-at="2019-11-07T14:58:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.validateFinansiellaRapportListItemTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateFinansiellaRapportListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="validateFinansiellaRapportListItemTest" duration-ms="19" started-at="2019-11-07T14:58:35Z" description="Verify the list item Finansiella Rappport is displayed or not" finished-at="2019-11-07T14:58:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateFinansiellaRapportListItemTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="834" started-at="2019-11-07T14:58:35Z" finished-at="2019-11-07T14:58:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.mitthsb.qa.testcases.EkonomiPageTest -->
-      <class name="com.mitthsb.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="19160" started-at="2019-11-07T14:58:36Z" finished-at="2019-11-07T14:58:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="11354" started-at="2019-11-07T14:58:55Z" finished-at="2019-11-07T14:59:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.brfDisplayTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="brfDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="brfDisplayTest" duration-ms="41" started-at="2019-11-07T14:59:07Z" description="Verify that Brf Listbox  is displayed" finished-at="2019-11-07T14:59:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- brfDisplayTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="11373" started-at="2019-11-07T14:59:07Z" finished-at="2019-11-07T14:59:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.homePageTitleTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="homePageTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="homePageTitleTest" duration-ms="10" started-at="2019-11-07T14:59:18Z" description="Verify the title of MittUpdrag Page is Översikt - NOT FOR COMMERCIAL USE" finished-at="2019-11-07T14:59:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageTitleTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="11671" started-at="2019-11-07T14:59:18Z" finished-at="2019-11-07T14:59:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.hsbLogoTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="hsbLogoTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="hsbLogoTest" duration-ms="30" started-at="2019-11-07T14:59:30Z" description="Verify whether HSB logo is present in the top center of the page" finished-at="2019-11-07T14:59:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hsbLogoTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="11272" started-at="2019-11-07T14:59:30Z" finished-at="2019-11-07T14:59:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.minaSidorlinkTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="minaSidorlinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="minaSidorlinkTest" duration-ms="16" started-at="2019-11-07T14:59:41Z" description="Verify that MinaSidor link in top menu is displayed" finished-at="2019-11-07T14:59:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- minaSidorlinkTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="11589" started-at="2019-11-07T14:59:41Z" finished-at="2019-11-07T14:59:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.mittUpdragLinkTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="mittUpdragLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="mittUpdragLinkTest" duration-ms="9" started-at="2019-11-07T14:59:53Z" description="Verify that MittUppdrag link is displayed" finished-at="2019-11-07T14:59:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mittUpdragLinkTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="11347" started-at="2019-11-07T14:59:53Z" finished-at="2019-11-07T15:00:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.nyttLinkTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="nyttLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="nyttLinkTest" duration-ms="35" started-at="2019-11-07T15:00:04Z" description="Verify that NyttLinkfranHSB link is displayed" finished-at="2019-11-07T15:00:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- nyttLinkTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="11891" started-at="2019-11-07T15:00:04Z" finished-at="2019-11-07T15:00:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.adminTabTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="adminTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="adminTabTest" duration-ms="2824" started-at="2019-11-07T15:00:16Z" description="Verify whether Admin tab in professional page is redirecting to the right page" depends-on-methods="com.mitthsb.qa.testcases.HomePageTest.hsbLogoTest, com.mitthsb.qa.testcases.HomePageTest.homePageTitleTest" finished-at="2019-11-07T15:00:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adminTabTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="12523" started-at="2019-11-07T15:00:19Z" finished-at="2019-11-07T15:00:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.dokumentTabTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="dokumentTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="dokumentTabTest" duration-ms="770" started-at="2019-11-07T15:00:31Z" description="Verify whether Dokument tab in professional page is redirecting to the right page" depends-on-methods="com.mitthsb.qa.testcases.HomePageTest.hsbLogoTest, com.mitthsb.qa.testcases.HomePageTest.homePageTitleTest" finished-at="2019-11-07T15:00:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dokumentTabTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="12705" started-at="2019-11-07T15:00:32Z" finished-at="2019-11-07T15:00:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.ekonomiTabTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ekonomiTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="ekonomiTabTest" duration-ms="3249" started-at="2019-11-07T15:00:45Z" description="Verify whether Ekonomi tab in professional page is redirecting to the right page" depends-on-methods="com.mitthsb.qa.testcases.HomePageTest.hsbLogoTest, com.mitthsb.qa.testcases.HomePageTest.homePageTitleTest" finished-at="2019-11-07T15:00:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ekonomiTabTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="15989" started-at="2019-11-07T15:00:48Z" finished-at="2019-11-07T15:01:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.fastighetenTabTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="fastighetenTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="fastighetenTabTest" duration-ms="604" started-at="2019-11-07T15:01:04Z" description="Verify whether Fastigheten tab in professional page is redirecting to the right page" depends-on-methods="com.mitthsb.qa.testcases.HomePageTest.hsbLogoTest, com.mitthsb.qa.testcases.HomePageTest.homePageTitleTest" finished-at="2019-11-07T15:01:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fastighetenTabTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="tearDown" is-config="true" duration-ms="898" started-at="2019-11-07T15:01:05Z" finished-at="2019-11-07T15:01:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->
+    <test name="MittHSBRegressionTests" duration-ms="102946" started-at="2019-11-07T14:03:19Z" finished-at="2019-11-07T14:05:02Z">
       <class name="com.mitthsb.qa.testcases.MinaSidorPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="20557" started-at="2019-11-07T15:01:06Z" finished-at="2019-11-07T15:01:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="setUp" is-config="true" duration-ms="27798" started-at="2019-11-07T15:03:19Z" finished-at="2019-11-07T15:03:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="9196" started-at="2019-11-07T15:01:26Z" finished-at="2019-11-07T15:01:35Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="setUp" is-config="true" duration-ms="10917" started-at="2019-11-07T15:03:47Z" finished-at="2019-11-07T15:03:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.arendenTabDisplayTest()]]>
+                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.goTillKalenderAndCreateKalenderEvent()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="arendenTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="arendenTabDisplayTest" duration-ms="43" started-at="2019-11-07T15:01:35Z" description="Verify whether ArendenTab is visible based on the role previlege" finished-at="2019-11-07T15:01:35Z">
+        <test-method status="PASS" signature="goTillKalenderAndCreateKalenderEvent()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="goTillKalenderAndCreateKalenderEvent" duration-ms="19516" started-at="2019-11-07T15:03:58Z" description="verify whether go till kalender is properly redirecting to kalender page and verify the functionality of skapa kalender button" finished-at="2019-11-07T15:04:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- arendenTabDisplayTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="6303" started-at="2019-11-07T15:01:35Z" finished-at="2019-11-07T15:01:42Z">
+        </test-method> <!-- goTillKalenderAndCreateKalenderEvent -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="setUp" is-config="true" duration-ms="6466" started-at="2019-11-07T15:04:17Z" finished-at="2019-11-07T15:04:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.bosparTabDisplayTest()]]>
+                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.deleteKalenderHandelseMinaSidorPage()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bosparTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="bosparTabDisplayTest" duration-ms="131" started-at="2019-11-07T15:01:42Z" description="Verify whether Bospar Tab is visible based on the role previlege" finished-at="2019-11-07T15:01:42Z">
+        <test-method status="PASS" signature="deleteKalenderHandelseMinaSidorPage()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="deleteKalenderHandelseMinaSidorPage" duration-ms="37302" started-at="2019-11-07T15:04:24Z" description="verify whether go till kalender is properly redirecting to kalender page and verify the functionality of skapa kalender button" depends-on-methods="com.mitthsb.qa.testcases.MinaSidorPageTest.goTillKalenderAndCreateKalenderEvent" finished-at="2019-11-07T15:05:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bosparTabDisplayTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="6448" started-at="2019-11-07T15:01:42Z" finished-at="2019-11-07T15:01:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.brfLandingTabDisplayTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="brfLandingTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="brfLandingTabDisplayTest" duration-ms="105" started-at="2019-11-07T15:01:48Z" description="Verify whether Brf landing page is visible based on the role previlege" finished-at="2019-11-07T15:01:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- brfLandingTabDisplayTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="6567" started-at="2019-11-07T15:01:48Z" finished-at="2019-11-07T15:01:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.medelemskapTabDisplayTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="medelemskapTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="medelemskapTabDisplayTest" duration-ms="95" started-at="2019-11-07T15:01:55Z" description="Verify whether Medlemskap Tab is visible based on the role previlege" finished-at="2019-11-07T15:01:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- medelemskapTabDisplayTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="6841" started-at="2019-11-07T15:01:55Z" finished-at="2019-11-07T15:02:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.minBostadTabDisplayTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="minBostadTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minBostadTabDisplayTest" duration-ms="139" started-at="2019-11-07T15:02:02Z" description="Verify whether MinBostad Tab is visible based on the role previlege" finished-at="2019-11-07T15:02:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- minBostadTabDisplayTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="6503" started-at="2019-11-07T15:02:02Z" finished-at="2019-11-07T15:02:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.minProfileTabDisplayTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="minProfileTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minProfileTabDisplayTest" duration-ms="92" started-at="2019-11-07T15:02:09Z" description="Verify whether Minprofile tab is visible based on the role previlege" finished-at="2019-11-07T15:02:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- minProfileTabDisplayTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="6303" started-at="2019-11-07T15:02:09Z" finished-at="2019-11-07T15:02:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.minaSidorTitleTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="minaSidorTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minaSidorTitleTest" duration-ms="8" started-at="2019-11-07T15:02:15Z" description="Verify the title of Minasidor Page as Översikt - NOT FOR COMMERCIAL USE" finished-at="2019-11-07T15:02:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- minaSidorTitleTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="6820" started-at="2019-11-07T15:02:15Z" finished-at="2019-11-07T15:02:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.sokBostadTabDisplayTest()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="sokBostadTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="sokBostadTabDisplayTest" duration-ms="42" started-at="2019-11-07T15:02:22Z" description="Verify whether SokBostad tab is visible based on the role previlege" finished-at="2019-11-07T15:02:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sokBostadTabDisplayTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="tearDown" is-config="true" duration-ms="851" started-at="2019-11-07T15:02:22Z" finished-at="2019-11-07T15:02:23Z">
+        </test-method> <!-- deleteKalenderHandelseMinaSidorPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="tearDown" is-config="true" duration-ms="814" started-at="2019-11-07T15:05:01Z" finished-at="2019-11-07T15:05:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mitthsb.qa.testcases.MinaSidorPageTest -->
-    </test> <!-- MittHSBSmokeTests -->
-  </suite> <!-- MittHSBSmokeTestSuite -->
+    </test> <!-- MittHSBRegressionTests -->
+  </suite> <!-- MittHSBRegressionTestSuite -->
 </testng-results>

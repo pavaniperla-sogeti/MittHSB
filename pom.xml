@@ -179,8 +179,8 @@
 				<version>3.0.0-M3</version>
 				<configuration>
 					<suiteXmlFiles>
-					<!--	<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->
-						<suiteXmlFile>SmokeTestNG</suiteXmlFile>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+						
 					</suiteXmlFiles>
 					<properties>
 						<property>
