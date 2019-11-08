@@ -1,55 +1,2594 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="21" total="23" passed="2">
+<testng-results skipped="21" failed="0" ignored="47" total="68" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="MittHSBRegressionTestSuite" duration-ms="102946" started-at="2019-11-07T14:03:19Z" finished-at="2019-11-07T14:05:02Z">
+  <suite name="MittHSBSmokeTestSuite" duration-ms="53243" started-at="2019-11-08T08:03:32Z" finished-at="2019-11-08T08:04:25Z">
     <groups>
       <group name="Regression">
-        <method signature="MinaSidorPageTest.goTillKalenderAndCreateKalenderEvent()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="goTillKalenderAndCreateKalenderEvent" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
-        <method signature="MinaSidorPageTest.deleteKalenderHandelseMinaSidorPage()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="deleteKalenderHandelseMinaSidorPage" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="HomePageTest.brfDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="brfDisplayTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.homePageTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="homePageTitleTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.hsbLogoTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="hsbLogoTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.adminTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="adminTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.dokumentTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="dokumentTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.ekonomiTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="ekonomiTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.fastighetenTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="fastighetenTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.minaSidorlinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="minaSidorlinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.mittUpdragLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="mittUpdragLinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.nyttLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="nyttLinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="MinaSidorPageTest.arendenTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="arendenTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.bosparTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="bosparTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.brfLandingTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="brfLandingTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.medelemskapTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="medelemskapTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.minBostadTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minBostadTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.minProfileTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minProfileTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.minaSidorTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minaSidorTitleTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.sokBostadTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="sokBostadTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="EkonomiPageTest.ekonomiPageTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="ekonomiPageTitleTest" class="com.mitthsb.qa.testcases.EkonomiPageTest"/>
+        <method signature="EkonomiPageTest.validateAllaFakturorListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="validateAllaFakturorListItemTest" class="com.mitthsb.qa.testcases.EkonomiPageTest"/>
+        <method signature="EkonomiPageTest.validateFinansiellaRapportListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="validateFinansiellaRapportListItemTest" class="com.mitthsb.qa.testcases.EkonomiPageTest"/>
       </group> <!-- Regression -->
+      <group name="smokeTest">
+        <method signature="HomePageTest.brfDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="brfDisplayTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.homePageTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="homePageTitleTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.hsbLogoTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="hsbLogoTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.adminTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="adminTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.dokumentTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="dokumentTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.ekonomiTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="ekonomiTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.fastighetenTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="fastighetenTabTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.minaSidorlinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="minaSidorlinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.mittUpdragLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="mittUpdragLinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="HomePageTest.nyttLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="nyttLinkTest" class="com.mitthsb.qa.testcases.HomePageTest"/>
+        <method signature="MinaSidorPageTest.arendenTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="arendenTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.bosparTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="bosparTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.brfLandingTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="brfLandingTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.medelemskapTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="medelemskapTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.minBostadTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minBostadTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.minProfileTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minProfileTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.minaSidorTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minaSidorTitleTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="MinaSidorPageTest.sokBostadTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="sokBostadTabDisplayTest" class="com.mitthsb.qa.testcases.MinaSidorPageTest"/>
+        <method signature="EkonomiPageTest.ekonomiPageTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="ekonomiPageTitleTest" class="com.mitthsb.qa.testcases.EkonomiPageTest"/>
+        <method signature="EkonomiPageTest.validateAllaFakturorListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="validateAllaFakturorListItemTest" class="com.mitthsb.qa.testcases.EkonomiPageTest"/>
+        <method signature="EkonomiPageTest.validateFinansiellaRapportListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="validateFinansiellaRapportListItemTest" class="com.mitthsb.qa.testcases.EkonomiPageTest"/>
+      </group> <!-- smokeTest -->
     </groups>
-    <test name="MittHSBRegressionTests" duration-ms="102946" started-at="2019-11-07T14:03:19Z" finished-at="2019-11-07T14:05:02Z">
+    <test name="MittHSBSmokeTests" duration-ms="53243" started-at="2019-11-08T08:03:32Z" finished-at="2019-11-08T08:04:25Z">
+      <class name="com.mitthsb.qa.testcases.EkonomiPageTest">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="2242" started-at="2019-11-08T09:03:32Z" finished-at="2019-11-08T09:03:34Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.mitthsb.qa.base.TestBase.initialization(TestBase.java:63)
+	at com.mitthsb.qa.testcases.EkonomiPageTest.setUp(EkonomiPageTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="2525" started-at="2019-11-08T09:03:35Z" finished-at="2019-11-08T09:03:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.ekonomiPageTitleTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.EkonomiPageTest.setUp(EkonomiPageTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="ekonomiPageTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="ekonomiPageTitleTest" duration-ms="1" started-at="2019-11-08T09:03:37Z" description="Verify the title of ekonomiPage as Ekonomisk översikt - NOT FOR COMMERCIAL USE" finished-at="2019-11-08T09:03:37Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.EkonomiPageTest.setUp(EkonomiPageTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ekonomiPageTitleTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="2106" started-at="2019-11-08T09:03:37Z" finished-at="2019-11-08T09:03:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.validateAllaFakturorListItemTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.EkonomiPageTest.setUp(EkonomiPageTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateAllaFakturorListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="validateAllaFakturorListItemTest" duration-ms="0" started-at="2019-11-08T09:03:39Z" description="Verify the list item AllFaktuor is displayed or not" finished-at="2019-11-08T09:03:39Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.EkonomiPageTest.setUp(EkonomiPageTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAllaFakturorListItemTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="setUp" is-config="true" duration-ms="2085" started-at="2019-11-08T09:03:39Z" finished-at="2019-11-08T09:03:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.EkonomiPageTest.validateFinansiellaRapportListItemTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.EkonomiPageTest.setUp(EkonomiPageTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="validateFinansiellaRapportListItemTest()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="validateFinansiellaRapportListItemTest" duration-ms="0" started-at="2019-11-08T09:03:42Z" description="Verify the list item Finansiella Rappport is displayed or not" finished-at="2019-11-08T09:03:42Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.EkonomiPageTest.setUp(EkonomiPageTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFinansiellaRapportListItemTest -->
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.EkonomiPageTest@7ea37dbf]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-11-08T09:03:42Z" finished-at="2019-11-08T09:03:42Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.EkonomiPageTest.tearDown(EkonomiPageTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mitthsb.qa.testcases.EkonomiPageTest -->
+      <class name="com.mitthsb.qa.testcases.HomePageTest">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="1395" started-at="2019-11-08T09:03:42Z" finished-at="2019-11-08T09:03:43Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.mitthsb.qa.base.TestBase.initialization(TestBase.java:63)
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="4069" started-at="2019-11-08T09:03:43Z" finished-at="2019-11-08T09:03:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.brfDisplayTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="brfDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="brfDisplayTest" duration-ms="0" started-at="2019-11-08T09:03:47Z" description="Verify that Brf Listbox  is displayed" finished-at="2019-11-08T09:03:47Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.mitthsb.qa.base.TestBase.initialization(TestBase.java:63)
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brfDisplayTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="4055" started-at="2019-11-08T09:03:47Z" finished-at="2019-11-08T09:03:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.homePageTitleTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="homePageTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="homePageTitleTest" duration-ms="0" started-at="2019-11-08T09:03:51Z" description="Verify the title of MittUpdrag Page is Översikt - NOT FOR COMMERCIAL USE" finished-at="2019-11-08T09:03:51Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.mitthsb.qa.base.TestBase.initialization(TestBase.java:63)
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="4030" started-at="2019-11-08T09:03:51Z" finished-at="2019-11-08T09:03:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.hsbLogoTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="hsbLogoTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="hsbLogoTest" duration-ms="0" started-at="2019-11-08T09:03:55Z" description="Verify whether HSB logo is present in the top center of the page" finished-at="2019-11-08T09:03:55Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.mitthsb.qa.base.TestBase.initialization(TestBase.java:63)
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hsbLogoTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="4036" started-at="2019-11-08T09:03:55Z" finished-at="2019-11-08T09:03:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.minaSidorlinkTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="minaSidorlinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="minaSidorlinkTest" duration-ms="0" started-at="2019-11-08T09:03:59Z" description="Verify that MinaSidor link in top menu is displayed" finished-at="2019-11-08T09:03:59Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.mitthsb.qa.base.TestBase.initialization(TestBase.java:63)
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- minaSidorlinkTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="4053" started-at="2019-11-08T09:03:59Z" finished-at="2019-11-08T09:04:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.mittUpdragLinkTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="mittUpdragLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="mittUpdragLinkTest" duration-ms="0" started-at="2019-11-08T09:04:03Z" description="Verify that MittUppdrag link is displayed" finished-at="2019-11-08T09:04:03Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.mitthsb.qa.base.TestBase.initialization(TestBase.java:63)
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mittUpdragLinkTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="setUp" is-config="true" duration-ms="4054" started-at="2019-11-08T09:04:03Z" finished-at="2019-11-08T09:04:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.HomePageTest.nyttLinkTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="nyttLinkTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="nyttLinkTest" duration-ms="0" started-at="2019-11-08T09:04:07Z" description="Verify that NyttLinkfranHSB link is displayed" finished-at="2019-11-08T09:04:07Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.HomePageTest.setUp(HomePageTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nyttLinkTest -->
+        <test-method status="SKIP" signature="adminTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="adminTabTest" duration-ms="0" started-at="2019-11-08T09:04:07Z" description="Verify whether Admin tab in professional page is redirecting to the right page" depends-on-methods="com.mitthsb.qa.testcases.HomePageTest.hsbLogoTest, com.mitthsb.qa.testcases.HomePageTest.homePageTitleTest" finished-at="2019-11-08T09:04:07Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method HomePageTest.adminTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method HomePageTest.adminTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminTabTest -->
+        <test-method status="SKIP" signature="dokumentTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="dokumentTabTest" duration-ms="0" started-at="2019-11-08T09:04:08Z" description="Verify whether Dokument tab in professional page is redirecting to the right page" depends-on-methods="com.mitthsb.qa.testcases.HomePageTest.hsbLogoTest, com.mitthsb.qa.testcases.HomePageTest.homePageTitleTest" finished-at="2019-11-08T09:04:08Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method HomePageTest.dokumentTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method HomePageTest.dokumentTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dokumentTabTest -->
+        <test-method status="SKIP" signature="ekonomiTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="ekonomiTabTest" duration-ms="0" started-at="2019-11-08T09:04:08Z" description="Verify whether Ekonomi tab in professional page is redirecting to the right page" depends-on-methods="com.mitthsb.qa.testcases.HomePageTest.hsbLogoTest, com.mitthsb.qa.testcases.HomePageTest.homePageTitleTest" finished-at="2019-11-08T09:04:08Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method HomePageTest.ekonomiTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method HomePageTest.ekonomiTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ekonomiTabTest -->
+        <test-method status="SKIP" signature="fastighetenTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="fastighetenTabTest" duration-ms="0" started-at="2019-11-08T09:04:08Z" description="Verify whether Fastigheten tab in professional page is redirecting to the right page" depends-on-methods="com.mitthsb.qa.testcases.HomePageTest.hsbLogoTest, com.mitthsb.qa.testcases.HomePageTest.homePageTitleTest" finished-at="2019-11-08T09:04:08Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method HomePageTest.fastighetenTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method HomePageTest.fastighetenTabTest()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fastighetenTabTest -->
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.HomePageTest@4b44655e]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-11-08T09:04:08Z" finished-at="2019-11-08T09:04:08Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.HomePageTest.tearDown(HomePageTest.java:398)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->
       <class name="com.mitthsb.qa.testcases.MinaSidorPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="setUp" is-config="true" duration-ms="27798" started-at="2019-11-07T15:03:19Z" finished-at="2019-11-07T15:03:47Z">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="1479" started-at="2019-11-08T09:04:08Z" finished-at="2019-11-08T09:04:09Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.mitthsb.qa.base.TestBase.initialization(TestBase.java:63)
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="setUp" is-config="true" duration-ms="10917" started-at="2019-11-07T15:03:47Z" finished-at="2019-11-07T15:03:57Z">
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="2060" started-at="2019-11-08T09:04:09Z" finished-at="2019-11-08T09:04:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.goTillKalenderAndCreateKalenderEvent()]]>
+                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.arendenTabDisplayTest()]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="goTillKalenderAndCreateKalenderEvent()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="goTillKalenderAndCreateKalenderEvent" duration-ms="19516" started-at="2019-11-07T15:03:58Z" description="verify whether go till kalender is properly redirecting to kalender page and verify the functionality of skapa kalender button" finished-at="2019-11-07T15:04:17Z">
+        <test-method status="SKIP" signature="arendenTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="arendenTabDisplayTest" duration-ms="1" started-at="2019-11-08T09:04:11Z" description="Verify whether ArendenTab is visible based on the role previlege" finished-at="2019-11-08T09:04:11Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'LNOR070828', ip: '10.225.99.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01477C53+1473619]
+	Ordinal0 [0x013FAD71+961905]
+	Ordinal0 [0x013842B3+475827]
+	Ordinal0 [0x0131F365+62309]
+	Ordinal0 [0x0131BC77+48247]
+	Ordinal0 [0x01339149+168265]
+	Ordinal0 [0x01338D1D+167197]
+	Ordinal0 [0x0133742B+160811]
+	Ordinal0 [0x01320AE6+68326]
+	Ordinal0 [0x01321BF0+72688]
+	Ordinal0 [0x01321B89+72585]
+	Ordinal0 [0x01414B37+1067831]
+	GetHandleVerifier [0x01516845+506677]
+	GetHandleVerifier [0x015165E0+506064]
+	GetHandleVerifier [0x0151D188+533624]
+	GetHandleVerifier [0x0151701A+508682]
+	Ordinal0 [0x0140C226+1032742]
+	Ordinal0 [0x0140C09F+1032351]
+	Ordinal0 [0x01416A4B+1075787]
+	Ordinal0 [0x01416BB3+1076147]
+	Ordinal0 [0x01415B65+1071973]
+	BaseThreadInitThunk [0x75EF0419+25]
+	RtlGetAppContainerNamedObjectPath [0x7706662D+237]
+	RtlGetAppContainerNamedObjectPath [0x770665FD+189]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.mitthsb.qa.base.TestBase.initialization(TestBase.java:63)
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goTillKalenderAndCreateKalenderEvent -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="setUp" is-config="true" duration-ms="6466" started-at="2019-11-07T15:04:17Z" finished-at="2019-11-07T15:04:24Z">
+        </test-method> <!-- arendenTabDisplayTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="2044" started-at="2019-11-08T09:04:11Z" finished-at="2019-11-08T09:04:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.deleteKalenderHandelseMinaSidorPage()]]>
+                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.bosparTabDisplayTest()]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deleteKalenderHandelseMinaSidorPage()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="deleteKalenderHandelseMinaSidorPage" duration-ms="37302" started-at="2019-11-07T15:04:24Z" description="verify whether go till kalender is properly redirecting to kalender page and verify the functionality of skapa kalender button" depends-on-methods="com.mitthsb.qa.testcases.MinaSidorPageTest.goTillKalenderAndCreateKalenderEvent" finished-at="2019-11-07T15:05:01Z">
+        <test-method status="SKIP" signature="bosparTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="bosparTabDisplayTest" duration-ms="0" started-at="2019-11-08T09:04:13Z" description="Verify whether Bospar Tab is visible based on the role previlege" finished-at="2019-11-08T09:04:13Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteKalenderHandelseMinaSidorPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@7ff95560]" name="tearDown" is-config="true" duration-ms="814" started-at="2019-11-07T15:05:01Z" finished-at="2019-11-07T15:05:02Z">
+        </test-method> <!-- bosparTabDisplayTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="2021" started-at="2019-11-08T09:04:13Z" finished-at="2019-11-08T09:04:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.brfLandingTabDisplayTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="brfLandingTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="brfLandingTabDisplayTest" duration-ms="0" started-at="2019-11-08T09:04:15Z" description="Verify whether Brf landing page is visible based on the role previlege" finished-at="2019-11-08T09:04:15Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brfLandingTabDisplayTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="2028" started-at="2019-11-08T09:04:15Z" finished-at="2019-11-08T09:04:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.medelemskapTabDisplayTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="medelemskapTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="medelemskapTabDisplayTest" duration-ms="0" started-at="2019-11-08T09:04:17Z" description="Verify whether Medlemskap Tab is visible based on the role previlege" finished-at="2019-11-08T09:04:17Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- medelemskapTabDisplayTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="2022" started-at="2019-11-08T09:04:17Z" finished-at="2019-11-08T09:04:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.minBostadTabDisplayTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="minBostadTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minBostadTabDisplayTest" duration-ms="0" started-at="2019-11-08T09:04:19Z" description="Verify whether MinBostad Tab is visible based on the role previlege" finished-at="2019-11-08T09:04:19Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- minBostadTabDisplayTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="2024" started-at="2019-11-08T09:04:19Z" finished-at="2019-11-08T09:04:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.minProfileTabDisplayTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="minProfileTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minProfileTabDisplayTest" duration-ms="0" started-at="2019-11-08T09:04:21Z" description="Verify whether Minprofile tab is visible based on the role previlege" finished-at="2019-11-08T09:04:21Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- minProfileTabDisplayTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="2024" started-at="2019-11-08T09:04:21Z" finished-at="2019-11-08T09:04:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.minaSidorTitleTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="minaSidorTitleTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="minaSidorTitleTest" duration-ms="0" started-at="2019-11-08T09:04:23Z" description="Verify the title of Minasidor Page as Översikt - NOT FOR COMMERCIAL USE" finished-at="2019-11-08T09:04:23Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- minaSidorTitleTest -->
+        <test-method status="FAIL" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="setUp" is-config="true" duration-ms="2032" started-at="2019-11-08T09:04:23Z" finished-at="2019-11-08T09:04:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mitthsb.qa.testcases.MinaSidorPageTest.sokBostadTabDisplayTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="sokBostadTabDisplayTest()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="sokBostadTabDisplayTest" duration-ms="0" started-at="2019-11-08T09:04:25Z" description="Verify whether SokBostad tab is visible based on the role previlege" finished-at="2019-11-08T09:04:25Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.setUp(MinaSidorPageTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sokBostadTabDisplayTest -->
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.mitthsb.qa.testcases.MinaSidorPageTest@290d210d]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-11-08T09:04:25Z" finished-at="2019-11-08T09:04:25Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.mitthsb.qa.testcases.MinaSidorPageTest.tearDown(MinaSidorPageTest.java:287)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mitthsb.qa.testcases.MinaSidorPageTest -->
-    </test> <!-- MittHSBRegressionTests -->
-  </suite> <!-- MittHSBRegressionTestSuite -->
+    </test> <!-- MittHSBSmokeTests -->
+  </suite> <!-- MittHSBSmokeTestSuite -->
 </testng-results>

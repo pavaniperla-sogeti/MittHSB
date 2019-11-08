@@ -1,26 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [MittHSBRegressionTestSuite]">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [MittHSBSmokeTestSuite]">
   <listeners>
     <listener class-name="com.qa.ExtentReportListner.ExtentRerportListener"/>
   </listeners>
-  <test name="MittHSBRegressionTests(failed)">
+  <test name="MittHSBSmokeTests(failed)">
     <groups>
       <run>
-        <include name="Regression"/>
+        <include name="smokeTest"/>
       </run>
     </groups>
     <classes>
+      <class name="com.mitthsb.qa.testcases.EkonomiPageTest">
+        <methods>
+          <include name="ekonomiPageTitleTest"/>
+          <include name="validateAllaFakturorListItemTest"/>
+          <include name="validateFinansiellaRapportListItemTest"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mitthsb.qa.testcases.EkonomiPageTest -->
+      <class name="com.mitthsb.qa.testcases.MinaSidorPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="minaSidorTitleTest"/>
+          <include name="medelemskapTabDisplayTest"/>
+          <include name="sokBostadTabDisplayTest"/>
+          <include name="brfLandingTabDisplayTest"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="minBostadTabDisplayTest"/>
+          <include name="bosparTabDisplayTest"/>
+          <include name="minProfileTabDisplayTest"/>
+          <include name="arendenTabDisplayTest"/>
+        </methods>
+      </class> <!-- com.mitthsb.qa.testcases.MinaSidorPageTest -->
       <class name="com.mitthsb.qa.testcases.HomePageTest">
         <methods>
+          <include name="dokumentTabTest"/>
+          <include name="tearDown"/>
+          <include name="mittUpdragLinkTest"/>
+          <include name="brfDisplayTest"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="adminTabTest"/>
+          <include name="ekonomiTabTest"/>
           <include name="hsbLogoTest"/>
           <include name="homePageTitleTest"/>
-          <include name="tearDown"/>
-          <include name="oversiktTabTest"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
+          <include name="nyttLinkTest"/>
+          <include name="minaSidorlinkTest"/>
+          <include name="fastighetenTabTest"/>
         </methods>
       </class> <!-- com.mitthsb.qa.testcases.HomePageTest -->
     </classes>
-  </test> <!-- MittHSBRegressionTests(failed) -->
-</suite> <!-- Failed suite [MittHSBRegressionTestSuite] -->
+  </test> <!-- MittHSBSmokeTests(failed) -->
+</suite> <!-- Failed suite [MittHSBSmokeTestSuite] -->
