@@ -56,7 +56,7 @@
           <Property name="TestSettingsUIType" value="LoadTest" />
         </Properties>
       </TestSettings>
-      <WebTestResultFilePath>pperla_LNOR070828 2020-05-18 14_36_51\In\3fe96326-1297-4a02-af9b-bddff2ac5b4e\WebTest1.webtestResult</WebTestResultFilePath>
+      <WebTestResultFilePath>WebTest1.webtestResult</WebTestResultFilePath>
     </WebTestResult>
   </Results>
 </TestRun>
