@@ -2,17 +2,41 @@
 <testsuites xmlns:a="http://microsoft.com/schemas/VisualStudio/TeamTest/2006"
             xmlns:b="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
    <testsuite name="MSTestSuite"
-              tests="2"
+              tests="3"
               time="0"
-              failures="0"
+              failures="2"
               errors="0"
               skipped="0">
       <testcase classname="ProLoggerTests.UnitTest1"
                 name="MixedStatuses"
                 time="0.1386413">
+         <failure>
+                    MESSAGE:
+                    Assert.Fail failed. Dll throws exception 
+                    +++++++++++++++++++
+                    STACK TRACE:
+                       at ProLog.Utils.Reporters.SetAssert(TestStatus reportStatus, String message, Boolean useAsserts, Boolean iterate) in C:\Users\NivNavick\Desktop\ProLogWin\ProLog\ProLog\Utils\Reporters.cs:line 37
+   at ProLog.Utils.Reporters.AddLogRow(TestStatus reportStatus, String function, String message, String exception) in C:\Users\NivNavick\Desktop\ProLogWin\ProLog\ProLog\Utils\Reporters.cs:line 86
+   at ProLog.Utils.Reporters.ReportLog(TestStatus reportStatus, String function, String message, Exception exception) in C:\Users\NivNavick\Desktop\ProLogWin\ProLog\ProLog\Utils\Reporters.cs:line 114
+   at ProLoggerTests.UnitTest1.MixedStatuses() in C:\Users\NivNavick\Desktop\ProLogWin\ProLog\ProLoggerTests\Tests\UnitTest1.cs:line 74
+</failure>
       </testcase>
       <testcase classname="ProLoggerTests.UnitTest1"
                 name="EditedException"
                 time="0.0008713"/>
-         </testsuite>
+      <testcase classname="ProLoggerTests.UnitTest1"
+                name="InvalidCasting"
+                time="0.134028">
+         <failure>
+                    MESSAGE:
+                    Assert.Fail failed. Parsing vars
+                    +++++++++++++++++++
+                    STACK TRACE:
+                       at ProLog.Utils.Reporters.SetAssert(TestStatus reportStatus, String message, Boolean useAsserts, Boolean iterate) in C:\Users\NivNavick\Desktop\ProLogWin\ProLog\ProLog\Utils\Reporters.cs:line 37
+   at ProLog.Utils.Reporters.AddLogRow(TestStatus reportStatus, String function, String message, String exception) in C:\Users\NivNavick\Desktop\ProLogWin\ProLog\ProLog\Utils\Reporters.cs:line 86
+   at ProLog.Utils.Reporters.ReportLog(TestStatus reportStatus, String function, String message, Exception exception) in C:\Users\NivNavick\Desktop\ProLogWin\ProLog\ProLog\Utils\Reporters.cs:line 114
+   at ProLoggerTests.UnitTest1.InvalidCasting() in C:\Users\NivNavick\Desktop\ProLogWin\ProLog\ProLoggerTests\Tests\UnitTest1.cs:line 105
+</failure>
+      </testcase>
+   </testsuite>
 </testsuites>
