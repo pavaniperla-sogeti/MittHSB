@@ -6,18 +6,17 @@
               time="0"
               failures="0"
               errors="0"
-              skipped="0">
-      <testcases>
+              skipped="0">    
+              
          <testcase classname="TransactionSummary"
                    name="RetrieveAll"
                    totaltests="85"
-                   time="0.085"/>
-      </testcases>
-      <testcases>
+                   time="0.085"/>     
+      
          <testcase classname="TransactionSummary"
                    name="RetrieveEmployeeOne"
                    totaltests="694"
                    time="0.694"/>
-      </testcases>
+      
    </testsuite>
 </testsuites>
