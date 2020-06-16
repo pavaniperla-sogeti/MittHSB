@@ -2,11 +2,7 @@
 <testsuites xmlns:a="http://microsoft.com/schemas/VisualStudio/TeamTest/2006"
             xmlns:b="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <testsuite name="MSTestSuite"
-              tests="2"
-              time="0"
-              failures="0"
-              errors="0"
-              skipped="0">    
+              tests="2">    
               
          <testcase classname="TransactionSummary"
                    name="RetrieveAll"
