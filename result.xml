@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites xmlns:a="http://microsoft.com/schemas/VisualStudio/TeamTest/2006"
             xmlns:b="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <testsuite name="MSTestSuite"
-              tests="2">    
-              
-         <testcase classname="TransactionSummary"
-                   name="RetrieveAll"
-                   totaltests="85"
-                   time="0.085"/>     
-      
-         <testcase classname="TransactionSummary"
-                   name="RetrieveEmployeeOne"
-                   totaltests="694"
-                   time="0.694"/>
-      
+   <testsuite name="DSLLoadTest" tests="2">
+      <testcase classname="TransactionSummary"
+                name="RetrieveAll"
+                totaltests="2341"
+                time="0.085"/>
+      <testcase classname="TransactionSummary"
+                name="RetrieveEmployeeOne"
+                totaltests="2339"
+                time="0.694"/>
    </testsuite>
 </testsuites>
