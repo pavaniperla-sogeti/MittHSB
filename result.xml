@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites xmlns:a="http://microsoft.com/schemas/VisualStudio/TeamTest/2006"
             xmlns:b="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-   <testsuite name="DSLLoadTest" tests="2">
+  <testsuite name="MSTestSuite"
+              tests="2"
+              time="0"
+              failures="0"
+              errors="0"
+              skipped="0">
       <testcases>
          <testcase classname="TransactionSummary"
                    name="RetrieveAll"
