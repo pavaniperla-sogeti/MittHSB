@@ -4,13 +4,9 @@
    <testsuite name="DSLLoadTest" tests="2">
          <testcase classname="TransactionSummary"
                    name="RetrieveAll"
-                   totaltests="85"
-                   time="0.085"/>
-            
+                   time="0.085"/>            
          <testcase classname="TransactionSummary"
                    name="RetrieveEmployeeOne"
-                   totaltests="694"
-                   time="0.694"/>
-      
+                   time="0.694"/>      
    </testsuite>
 </testsuites>
