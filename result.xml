@@ -2,10 +2,18 @@
 <testsuites xmlns:a="http://microsoft.com/schemas/VisualStudio/TeamTest/2006"
             xmlns:b="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
    <testsuite name="DSLLoadTest" tests="2">
+               <properties>
+      <!-- property can appear multiple times. The name and value attributres are required. -->
+      <property name="Totalcalls" value="2000"/>
+      <property name="Totalfailures" value="100"/>
+       <property name="TotalPassedTransactions" value="1900"/>
+    </properties>
       <testcase classname="TransactionSummary"
                 name="RetrieveAll"
                 totaltests="2341"
-                time="0.085"/>
+                time="0.085">
+                   <system-out>Total calls =100 and Total faiures=29</system-out>
+        </testcase>
       <testcase classname="TransactionSummary"
                 name="RetrieveEmployeeOne"
                 totaltests="2339"
