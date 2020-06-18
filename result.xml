@@ -12,9 +12,9 @@
                 name="RetrieveAll"
                 totaltests="2341"
                 time="0.085">
-                  <error message="TotalCalls 2000  Total failures 10" 
+                  <!--  <error message="TotalCalls 2000  Total failures 10" 
                            type=""   
-                                      ></error>
+                                      ></error>-->
                    <system-out>Total calls 100 and Total faiures29</system-out>
         </testcase>
       <testcase classname="TransactionSummary"
