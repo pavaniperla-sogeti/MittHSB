@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites xmlns:a="http://microsoft.com/schemas/VisualStudio/TeamTest/2006"
             xmlns:b="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-   <testsuite name="DSLLoadTest" tests="2">
+   <testsuite name="DSLLoadTest" tests="2" hostname="localhost" timestamp="2020-06-18T16:17:18">
                <properties>
       <!-- property can appear multiple times. The name and value attributres are required. -->
       <property name="Totalcalls" value="2000"/>
@@ -12,7 +12,10 @@
                 name="RetrieveAll"
                 totaltests="2341"
                 time="0.085">
-                   <system-out>Total calls =100 and Total faiures=29</system-out>
+                  <error message="TotalCalls 2000  Total failures 10" 
+                           type=""   
+                                      ></error>
+                   <system-out>Total calls 100 and Total faiures29</system-out>
         </testcase>
       <testcase classname="TransactionSummary"
                 name="RetrieveEmployeeOne"
